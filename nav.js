@@ -5,7 +5,7 @@ let navbar = `
     <a href="./" id="espanol">es</a>
     </h1>
     <h1><a href="/">home</a></h1>
-    <h1><a href="/store" data-i18n="store"></a></h1>
+    <h1><a href="https://piruetas.xyz/tienda" data-i18n="store"></a></h1>
     <h1><a href="/info">info</a></h1>
     <h1><a href="/people" data-i18n="people"></a></h1>
     <h1 data-i18n="projects"></h1>
