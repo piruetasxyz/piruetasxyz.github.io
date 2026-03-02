@@ -9,6 +9,23 @@ let navbar = `
     <h1><a href="/info">info</a></h1>
     <h1><a href="/people" data-i18n="people"></a></h1>
     <h1 data-i18n="projects"></h1>
+
+    <h3 data-i18n="popusintes"></h3>
+    <ol>
+        <li>
+            <a href="/projects/parla" data-i18n="projects-parla">
+            </a>
+            <span data-i18n="projects-parla-years"></span>
+        </li>
+
+        <li>
+            <a href="/projects/osca" data-i18n="projects-osca">
+            </a>
+            <span data-i18n="projects-osca-years"></span>
+        </li>
+
+    </ol>
+
     <h3>software</h3>
     <ol>
         <li>
@@ -17,6 +34,7 @@ let navbar = `
             <span data-i18n="projects-maquinitas-tidal-years"></span>
         </li>
     </ol>
+    
     <h3>hardware</h3>
     <ol>
         <li>
@@ -24,13 +42,16 @@ let navbar = `
             </a>
             <span data-i18n="projects-gerassic-organ-years"></span>
         </li>
+    </ol>
+
+    <h3>teaching</h3>
+    <ol>
         <li>
-            <a href="/projects/parla" data-i18n="projects-parla">
+            <a href="/projects/talleres-momentos" data-i18n="projects-talleres-momentos">
             </a>
-            <span data-i18n="projects-parla-years"></span>
+            <span data-i18n="projects-talleres-momentos-years"></span>
         </li>
     </ol>
-    <h3>teaching</h3>
     </nav>
 `;
 
