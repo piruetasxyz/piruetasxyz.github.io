@@ -1,13 +1,12 @@
 * {
   box-sizing: border-box;
-  align-items: stretch;
 }
 
-.lang-en .es { display: none; }
-.lang-es .en { display: none; }
-
-div {
-  margin: 10px;
+body {
+  background-color: #fff;
+  max-width: 100%;
+  font-family: sans-serif;
+  margin: 30px;
 }
 
 .flex-container {
@@ -25,32 +24,18 @@ div {
   flex-grow: 0;
 }
 
+div {
+  margin: 10px;
+}
+
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
   }
 }
 
-body {
-  background-color: #fff;
-  max-width: 100%;
-  font-family: sans-serif;
-  margin: 30px;
-}
-
-img {
-  max-width: 70%;
-  /* border: 10px solid pink; */
-  /* border-radius: 10px; */
-  /* padding: 10px; */
+h1, h2, h3, h4, h5, h6, p {
   margin: 10px;
-  /* box-shadow: inset 0 0 10px pink; */
-  border: 1px solid;
-  box-shadow: 5px 10px pink;
-}
-
-video {
-  max-width: 100%;
 }
 
 p {
@@ -59,16 +44,24 @@ p {
   max-width: 100%;
 }
 
+img {
+  max-width: 100%;
+  border: 1px solid;
+  box-shadow: 5px 10px pink;
+  margin: 10px;
+}
+
+video {
+  max-width: 100%;
+}
+
 a {
   text-decoration: underline;
   color: blue;
-  /* background-color: #ffffff; */
 }
 
-a:hover,
-a:active {
+a:hover {
   background-color: white;
-  color: blue;
 }
 
 .cajita {
@@ -76,122 +69,98 @@ a:active {
   box-shadow: 5px 10px pink;
 }
 
-.contenedor {
-  max-width: 100%;
-  margin: auto;
+html[lang="en"] .es {
+  display: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 10px;
+html[lang="es"] .en {
+  display: none;
 }
 
-li {
-  margin: 10px;
-}
-
-/* .proyectos {
-  text-align: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.persona-card {
   display: flex;
-  flex-wrap: wrap;
-  text-align: left;
-  text-align: center;
-} */
+  flex-direction: row;
+  margin: 20px;
+  gap: 30px;
+  align-items: flex-start;
+}
 
-/* .proyectos li {
-  list-style: none;
-  margin: 3px;
-  padding: 0;
-  width: 25%;
-  padding: 20px 20px 20px 20px;
+.persona-foto {
+  flex: 0 0 300px;
+  height: 300px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.persona-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   margin: 0;
-} */
+  border: 1px solid;
+  box-shadow: 5px 10px pink;
+}
 
-/* .proyectos a {
-  padding: 4px;
-  padding: 0;
-  display: block;
+.persona-info {
+  flex: 1;
+}
+
+.persona-info p {
+  font-size: 11pt;
+  line-height: 1.4em;
+  margin: 8px 10px;
+}
+
+.nombre-destacado {
+  font-weight: bold;
+  font-size: 1.6em;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.pronombres {
+  font-size: 0.6em;
+  color: blue;
+}
+
+.rol {
+  font-size: 11pt !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+  font-weight: bold;
+}
+
+.persona-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.boton-piruetas {
   text-decoration: none;
-} */
+  border: 1px solid black;
+  padding: 5px 12px;
+  background-color: white;
+  box-shadow: 4px 4px pink;
+  font-size: 11pt;
+  color: black;
+}
 
-/* .proyectos .titulo {
-  font-style: normal;
-} */
+.boton-piruetas:hover {
+  background-color: pink;
+  box-shadow: none;
+  transform: translate(2px, 2px);
+}
 
-/* .proyectos .proyecto-meta {
-  margin-top: 5px;
-} */
+@media (max-width: 800px) {
+  .persona-card {
+    flex-direction: column;
+  }
 
-/* .proyectos img {
-  width: 100%;
-  display: block;
-} */
-
-/* .proyectos video {
-  width: 100%;
-  padding-top: auto;
-  display: block;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-} */
-
-/* @media (max-width: 1200px) {
-  .proyectos li {
-    width: 33%;
-    padding: 20px;
-    margin: 0;
+  .persona-foto {
+    flex: 0 0 auto;
+    width: 300px;
   }
-  .masonry {
-    column-count: 2;
-    column-gap: 20px;
-    padding: 20px;
-  }
-} */
-
-/* @media (max-width: 950px) {
-  .proyectos li {
-    width: 50%;
-    padding: 20px;
-    margin: 0;
-  }
-  .student-projects {
-    column-count: 1;
-  }
-} */
-
-/* @media (max-width: 768px) {
-  .proyectos li {
-    width: 100%;
-    padding: 10px;
-    margin: 0;
-  }
-  header {
-    padding: 10px;
-    text-align: left;
-  }
-  #logo {
-    padding: 0;
-    display: block;
-  }
-  header nav {
-    margin: 0;
-  }
-  header nav a {
-    margin: 0;
-    padding: 0;
-  }
-  .masonry {
-    column-count: 1;
-    column-gap: 0;
-    padding: 10px;
-  }
-} */
+}

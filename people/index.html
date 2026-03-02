@@ -1,66 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/png" href="/assets/favicon.ico" />
-        <title>piruetas</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    </head>
-    <body>
-        <div class="flex-container">
-            <div class="left" id="divLeftMenu"></div>
-            <div class="right">
-                <h1 class="cajita"><span class="es">personas</span><span class="en">people</span></h1>
-                <p>
-                    <span class="es">las siguientes personas han trabajado en proyectos de piruetas a través de los años.</span>
-                    <span class="en">the following people have worked in several projects for piruetas over the years.</span>
-                </p>
-                <ol>
-                    <li>
-                        janis sepúlveda /
-                        <span class="es">docencia, programación</span><span class="en">teaching, programming</span>
-                        / 2023 - 2025
-                    </li>
-                    <li>
-                        andrés martin /
-                        <span class="es">docencia, programación, prototipado</span><span class="en">teaching, programming, prototyping</span>
-                        / 2023 - 2025
-                    </li>
-                    <li>
-                        bernardita lobo /
-                        <span class="es">prototipado, fabricación</span><span class="en">prototyping, fabrication</span>
-                        / 2025
-                    </li>
-                    <li>
-                        francisco stephens /
-                        <span class="es">prototipado, soldadura</span><span class="en">prototyping, soldering</span>
-                        / 2025
-                    </li>
-                    <li>
-                        valentina montecinos /
-                        <span class="es">docencia</span><span class="en">teaching</span>
-                        / 2023
-                    </li>
-                    <li>
-                        joaquín pérez /
-                        <span class="es">docencia</span><span class="en">teaching</span>
-                        / 2023
-                    </li>
-                    <li>
-                        sofía sandoval /
-                        <span class="es">docencia, investigación</span><span class="en">teaching, research</span>
-                        / 2023
-                    </li>
-                    <li>
-                        ignacio passalacqua /
-                        <span class="es">docencia, electrónica, programación</span><span class="en">teaching, electronics, programming</span>
-                        / 2022 - 2023
-                    </li>
-                </ol>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/assets/favicon.ico" />
+    <title>personas | piruetas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="left" id="divLeftMenu"></div>
+
+        <div class="right">
+            <h1 class="cajita">
+                <span class="es">personas</span>
+                <span class="en">people</span>
+            </h1>
+
+            <div class="persona-card">
+                <div class="persona-foto">
+                    <img src="/media/proyectos/aaron-montoya.jpeg" alt="aarón montoya">
+                </div>
+
+                <div class="persona-info">
+                    <h2 class="nombre-destacado">
+                        Aarón Montoya Moraga <span class="pronombres">(elle)</span>
+                    </h2>
+                    <p class="rol">Principal Investigator</p>
+
+                    <p class="es">Aarón Montoya Moraga es ingeniere civil electricista de la Pontificia Universidad
+                        Católica de Chile (2014). Master in Interactive Telecommunications, New York University, Estados
+                        Unidos (2017). Master of Science in Media Arts and Sciences, Massachusetts Institute of
+                        Technology, Estados Unidos (2021). Actualmente cursa el Doctorado en Artes y Humanidades,
+                        Universidad de Santiago de Chile. Su línea de investigación es en interfaces humano computador,
+                        diseño computacional paramétrico de fuente abierta y diseño de instrumentos musicales
+                        electrónicos. Publicó la traducción del libro Introducción a p5.js (2018), Los Angeles, Estados
+                        Unidos (2018); Ha exhibido su trabajo en la W3C (2020) y dictado charlas en el Museo de Bellas
+                        Artes (2023). Fue becarie de Conicyt (2015) y Processing Foundation (2018).</p>
+                    <p class="en">description in english here...</p>
+
+                    <div class="persona-links">
+                        <a href="https://montoyamoraga.io/" target="_blank" class="boton-piruetas">website</a>
+                        <a href="https://www.instagram.com/montoyamoraga/?hl=es" target="_blank"
+                            class="boton-piruetas">instagram</a>
+                        <a href="https://github.com/montoyamoraga" target="_blank" class="boton-piruetas">github</a>
+                    </div>
+                </div>
+            </div>
+            <div class="persona-card">
+                <div class="persona-foto">
+                    <img src="/media/proyectos/janis-sepulveda.jpeg" alt="janis sepúlveda">
+                </div>
+
+                <div class="persona-info">
+                    <h2 class="nombre-destacado">
+                        Janis Sepúlveda Vera <span class="pronombres">(ella)</span>
+                    </h2>
+                    <p class="rol">Designer</p>
+
+                    <p class="es">Janis Sepúlveda Vera es diseñadora industrial de la Universidad Diego Portales (2025).
+                        Actualmente estudiante de Magister en Diseño Avanzado de la Pontificia Universidad Católica de
+                        Chile</p>
+                    <p class="en">description in english here...</p>
+
+                    <div class="persona-links">
+                        <a href="https://janisepulveda.cl/" target="_blank" class="boton-piruetas">website</a>
+                        <a href="https://www.instagram.com/janisepulveda" target="_blank"
+                            class="boton-piruetas">instagram</a>
+                        <a href="https://github.com/janisepulveda" target="_blank" class="boton-piruetas">github</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <script src="/nav.js"></script>
-        <script src="/script.js"></script>
-    </body>
+    </div>
+    <script src="/nav.js"></script>
+    <script src="/script.js"></script>
+</body>
+
 </html>
