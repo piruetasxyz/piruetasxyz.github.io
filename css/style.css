@@ -9,97 +9,96 @@ body {
   margin: 30px;
 }
 
+/* --- LAYOUT PRINCIPAL --- */
 .flex-container {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
 }
 
 .left {
   background-color: pink;
-  flex-grow: 0;
+  flex: 0 0 180px; /* Bloquea el ancho del menú para que no crezca */
+  padding: 15px;
+  margin: 0;
 }
 
 .right {
   background-color: greenyellow;
-  flex-grow: 0;
+  flex: 1;
+  margin: 0;
+  padding: 10px;
 }
 
-div {
-  margin: 10px;
+/* --- AJUSTE MENÚ LATERAL (nav.js) --- */
+#divLeftMenu a {
+  font-size: 11pt; /* Tamaño unificado para links del menú */
+  line-height: 1.2em;
+  display: block;
+  margin: 5px 0;
 }
 
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
-  }
+#divLeftMenu p, 
+#divLeftMenu li, 
+#divLeftMenu span {
+  font-size: 10pt;
+  line-height: 1.2em;
+  margin: 2px 0;
 }
 
+#divLeftMenu h1, 
+#divLeftMenu h2 {
+  font-size: 13pt; /* Títulos del menú más controlados */
+  margin: 10px 0 5px 0;
+}
+
+/* --- ELEMENTOS GENERALES --- */
 h1, h2, h3, h4, h5, h6, p {
   margin: 10px;
 }
 
 p {
-  font-size: 15pt;
-  line-height: 1.5em;
-  max-width: 100%;
+  font-size: 14pt;
+  line-height: 1.4em;
 }
 
 img {
   max-width: 100%;
-  border: 1px solid;
+  border: 1px solid black;
   box-shadow: 5px 10px pink;
-  margin: 10px;
-}
-
-video {
-  max-width: 100%;
-}
-
-a {
-  text-decoration: underline;
-  color: blue;
-}
-
-a:hover {
-  background-color: white;
 }
 
 .cajita {
-  border: 1px solid;
+  border: 1px solid black;
   box-shadow: 5px 10px pink;
 }
 
-html[lang="en"] .es {
-  display: none;
-}
+/* --- SISTEMA DE IDIOMAS --- */
+html[lang="en"] .es { display: none; }
+html[lang="es"] .en { display: none; }
 
-html[lang="es"] .en {
-  display: none;
-}
-
+/* --- SECCIÓN PERSONAS (Fichas Idénticas) --- */
 .persona-card {
   display: flex;
   flex-direction: row;
-  margin: 20px;
+  margin-bottom: 40px;
   gap: 30px;
   align-items: flex-start;
 }
 
 .persona-foto {
-  flex: 0 0 300px;
-  height: 300px;
+  flex: 0 0 250px; /* Todas las fotos medirán exactamente esto de ancho */
+  height: 250px;    /* Todas las fotos medirán exactamente esto de alto */
   overflow: hidden;
-  margin: 10px;
+  margin: 0;
 }
 
 .persona-foto img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Corta la imagen sobrante para que no se deforme */
   object-position: center;
   margin: 0;
-  border: 1px solid;
-  box-shadow: 5px 10px pink;
 }
 
 .persona-info {
@@ -107,44 +106,43 @@ html[lang="es"] .en {
 }
 
 .persona-info p {
-  font-size: 11pt;
+  font-size: 10.5pt; /* Tipografía de bio pequeña y legible */
   line-height: 1.4em;
-  margin: 8px 10px;
+  margin: 5px 0;
 }
 
 .nombre-destacado {
   font-weight: bold;
-  font-size: 1.6em;
-  margin-top: 0;
-  margin-bottom: 5px;
+  font-size: 1.5em;
+  margin: 0 0 5px 0;
 }
 
 .pronombres {
-  font-size: 0.6em;
+  font-size: 0.7em;
   color: blue;
 }
 
 .rol {
-  font-size: 11pt !important;
+  font-size: 10pt !important;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #333;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
+/* --- BOTONES --- */
 .persona-links {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   margin-top: 15px;
 }
 
 .boton-piruetas {
   text-decoration: none;
   border: 1px solid black;
-  padding: 5px 12px;
+  padding: 4px 10px;
   background-color: white;
-  box-shadow: 4px 4px pink;
-  font-size: 11pt;
+  box-shadow: 3px 3px pink;
+  font-size: 10pt;
   color: black;
 }
 
@@ -154,13 +152,20 @@ html[lang="es"] .en {
   transform: translate(2px, 2px);
 }
 
+/* --- RESPONSIVE --- */
 @media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+    flex: 0 0 auto;
+  }
   .persona-card {
     flex-direction: column;
   }
-
   .persona-foto {
-    flex: 0 0 auto;
-    width: 300px;
+    width: 250px; /* Mantiene el tamaño cuadrado en móvil */
+    margin: 0 auto; /* Centra la foto en móvil */
   }
 }
