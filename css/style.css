@@ -7,28 +7,52 @@ body {
   max-width: 100%;
   font-family: sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .flex-container {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+#menu-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 3000;
+  cursor: pointer;
 }
 
 .left {
   background-color: pink;
-  flex: 0 0 180px;
-  padding: 15px;
-  margin: 0;
-  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100vh;
+  padding: 80px 20px 20px 20px;
+  z-index: 2000;
+  transition: left 0.3s ease-in-out;
+  border: none;
+  box-shadow: 10px 0px 0px pink;
+  overflow-y: auto;
+}
+
+.left.active {
+  left: 0;
 }
 
 .right {
   background-color: greenyellow;
   flex: 1;
-  margin: 0;
-  padding: 40px;
+  padding: 80px 40px 120px 40px;
   min-height: 100vh;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.left.active + .right {
+  margin-left: 260px;
 }
 
 .proyectos-grid {
@@ -71,7 +95,6 @@ body {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  margin: 0;
   border: 1px solid black;
 }
 
@@ -90,38 +113,6 @@ body {
   font-weight: bold;
 }
 
-#divLeftMenu a {
-  font-size: 11pt;
-  line-height: 1.2em;
-  display: block;
-  margin: 5px 0;
-  color: blue;
-  text-decoration: underline;
-}
-
-#divLeftMenu p, 
-#divLeftMenu li, 
-#divLeftMenu span {
-  font-size: 10pt;
-  line-height: 1.2em;
-  margin: 2px 0;
-}
-
-#divLeftMenu h1, 
-#divLeftMenu h2 {
-  font-size: 13pt;
-  margin: 10px 0 5px 0;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  margin: 10px;
-}
-
-p {
-  font-size: 14pt;
-  line-height: 1.4em;
-}
-
 .cajita {
   border: 1px solid black;
   box-shadow: 5px 10px pink;
@@ -129,67 +120,6 @@ p {
   display: inline-block;
   background-color: white;
   margin-bottom: 20px;
-}
-
-html[lang="en"] .es { display: none; }
-html[lang="es"] .en { display: none; }
-
-.persona-card {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 40px;
-  gap: 30px;
-  align-items: flex-start;
-}
-
-.persona-foto {
-  flex: 0 0 250px;
-  height: 250px;
-  overflow: hidden;
-  margin: 0;
-}
-
-.persona-foto img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  margin: 0;
-  box-shadow: none;
-}
-
-.persona-info {
-  flex: 1;
-}
-
-.persona-info p {
-  font-size: 10.5pt;
-  line-height: 1.4em;
-  margin: 5px 0;
-}
-
-.nombre-destacado {
-  font-weight: bold;
-  font-size: 1.5em;
-  margin: 0 0 5px 0;
-}
-
-.pronombres {
-  font-size: 0.7em;
-  color: blue;
-}
-
-.rol {
-  font-size: 10pt !important;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.persona-links {
-  display: flex;
-  gap: 8px;
-  margin-top: 15px;
 }
 
 .boton-piruetas {
@@ -200,33 +130,41 @@ html[lang="es"] .en { display: none; }
   box-shadow: 3px 3px pink;
   font-size: 10pt;
   color: black;
-  display: inline-block;
 }
 
-.boton-piruetas:hover {
-  background-color: pink;
-  box-shadow: none;
-  transform: translate(2px, 2px);
+.colophon-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 2px solid black;
+  padding: 10px 20px;
+  font-size: 9pt;
+  z-index: 2500;
+  text-align: center;
 }
+
+html[lang="en"] .es { display: none; }
+html[lang="es"] .en { display: none; }
 
 @media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
-  }
-  .left {
-    width: 100%;
-    flex: 0 0 auto;
-    min-height: auto;
-  }
-  .proyectos-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-  .persona-card {
-    flex-direction: column;
-  }
-  .persona-foto {
-    width: 250px;
-    margin: 0 auto;
-  }
+  .proyectos-grid { grid-template-columns: 1fr; }
+  .right { padding: 80px 20px 120px 20px; }
+  .left.active + .right { margin-left: 0; } 
+}
+
+#divLeftMenu h1, #divLeftMenu h3 {
+    margin: 15px 0 5px 0;
+    font-size: 12pt;
+}
+
+#divLeftMenu ol {
+    padding-left: 20px;
+    font-size: 10pt;
+}
+
+#divLeftMenu a {
+    color: blue;
+    text-decoration: underline;
 }
