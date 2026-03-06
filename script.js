@@ -14,7 +14,6 @@ window.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('language', 'es');
     });
 
-    // Cerrar menú si haces click en el contenido principal
     document.querySelector('.right').addEventListener('click', () => {
         const menu = document.getElementById('divLeftMenu');
         const btn = document.getElementById('menu-btn');

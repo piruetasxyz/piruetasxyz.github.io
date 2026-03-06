@@ -25,6 +25,11 @@ const navbarContent = `
     <ol>
         <li><a href="/proyectos/gerassic-organ">gerassic organ</a></li>
     </ol>
+
+    <h3>teaching</h3>
+    <ol>
+        <li><a href="/proyectos/talleres-momentos">talleres momentos</a> (2023)</li>
+    </ol>
 `;
 
 document.getElementById('divLeftMenu').innerHTML = navbarContent;
