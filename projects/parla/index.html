@@ -1,46 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/png" href="/assets/favicon.ico" />
-        <title>parla</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    </head>
-    <body>
-        <div class="flex-container">
-            <div class="left" id="divLeftMenu"></div>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../assets/favicon.ico"
+    />
+    <title>parla — piruetas</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../css/style.css"
+    />
+  </head>
+  <body>
+    <button id="menu-btn" class="boton-piruetas">menú</button>
 
-            <div class="right">
-                <h1 class="cajita">parla</h1>
+    <div class="flex-container">
+      <div id="divLeftMenu" class="left"></div>
 
-                <img src="/media/proyectos/parla.jpg" alt="parla">
+      <div class="right">
+        <h1 class="cajita">parla</h1>
 
-                <p>
-                    <span class="es">parla es un proyecto de piruetas, en colaboración con rafita studio y misaa.cc.<br>es un pequeño parlante con un amplificador mono, para uso con sintetizadores.<br>nace en respuesta a los altos costos de parlantes con bluetooth, y a que muchos de ellos hoy en día ya no cuentan con entrada vía cable.</span>
-                    <span class="en">parla is a project by piruetas, in collaboration with rafita studio and misaa.cc.<br>is a small speaker with a mono amplifier, for use with synthesizers.<br>was born in response to the high cost of bluetooth speakers, and the fact that many of them no longer have a cable input.</span>
-                </p>
+        <img
+          src="../../media/proyectos/parla.jpg"
+          alt="parla"
+          class="proyecto-item"
+          style="margin-bottom: 30px; max-width: 600px"
+        />
 
-                <h2 class="cajita"><span class="es">producto</span><span class="en">product</span></h2>
-                <p>
-                    <span class="es">para este proyecto hicimos 50 PCBs, de las cuales 5 están disponibles en este formato PCB con componentes SMT.<br>este producto consiste en la PCB del proyecto, diseñada en santiago de chile, ensamble SMD en hong kong.<br>no incluye circuitos integrados, ni potenciómetro, ni parlante, ni carcasa.<br>entrega en santiago de chile.</span>
-                    <span class="en">for this project we made 50 PCBs, of which 5 are available in this format as PCB with SMT components.<br>this product consists of the project PCB, designed in santiago de chile, SMD assembly in hong kong.<br>does not include integrated circuits, potentiometer, speaker, or enclosure.<br>delivery in santiago de chile.</span>
-                </p>
+        <div class="contenido-texto">
+          <p>
+            <span class="es"
+              >parla es un proyecto de piruetas, en colaboración con
+              rafita studio y misaa.cc.<br />es un pequeño parlante
+              con un amplificador mono, para uso con
+              sintetizadores.<br />nace en respuesta a los altos
+              costos de parlantes con bluetooth, y a que muchos de
+              ellos hoy en día ya no cuentan con entrada vía
+              cable.</span
+            >
+            <span class="en"
+              >parla is a project by piruetas, in collaboration with
+              rafita studio and misaa.cc.<br />is a small speaker with
+              a mono amplifier, for use with synthesizers.<br />was
+              born in response to the high cost of bluetooth speakers,
+              and the fact that many of them no longer have a cable
+              input.</span
+            >
+          </p>
 
-                <p class="nota-tecnica">
-                <span class="es">👁️ <strong>nota:</strong> para esta primera versión se requiere una correccion de polaridad vcc y gnd.</span>
-                <span class="en">👁️ <strong>note:</strong> for this first version a vcc and gnd polarity correction is required.</span>
-                </p>
+          <h2 class="cajita">
+            <span class="es">producto</span
+            ><span class="en">product</span>
+          </h2>
+          <p>
+            <span class="es"
+              >para este proyecto hicimos 50 PCBs, de las cuales 5
+              están disponibles en este formato PCB con componentes
+              SMT.<br />este producto consiste en la PCB del proyecto,
+              diseñada en santiago de chile, ensamble SMD en hong
+              kong.<br />no incluye circuitos integrados, ni
+              potenciómetro, ni parlante, ni carcasa.<br />entrega en
+              santiago de chile.</span
+            >
+            <span class="en"
+              >for this project we made 50 PCBs, of which 5 are
+              available in this format as PCB with SMT components.<br />this
+              product consists of the project PCB, designed in
+              santiago de chile, SMD assembly in hong kong.<br />does
+              not include integrated circuits, potentiometer, speaker,
+              or enclosure.<br />delivery in santiago de chile.</span
+            >
+          </p>
 
-                <h2 class="cajita"><span class="es">créditos</span><span class="en">collabs</span></h2>
-                <p>
-                    <span class="es">empresa: @piruetas.xyz<br>concepto: @montoyamoraga<br>pcb: @misaa.cc<br>gráfica y fotografía: @rafita.studio<br>logística: @jnsplv<br>tipografía: @uno_ca</span>
-                    <span class="en">company: @piruetas.xyz<br>concept: @montoyamoraga<br>pcb: @misaa.cc<br>graphic design and photography: @rafita.studio<br>logistics: @jnsplv<br>font: @uno_ca</span>
-                </p>
-            </div>
+          <p
+            class="nota-tecnica"
+            style="
+              background: white;
+              border: 1px solid black;
+              padding: 10px;
+              box-shadow: 5px 5px 0px pink;
+            "
+          >
+            <span class="es"
+              >👁️ <strong>nota:</strong> para esta primera versión se
+              requiere una correccion de polaridad vcc y gnd.</span
+            >
+            <span class="en"
+              >👁️ <strong>note:</strong> for this first version a vcc
+              and gnd polarity correction is required.</span
+            >
+          </p>
+
+          <h2 class="cajita">
+            <span class="es">créditos</span
+            ><span class="en">collabs</span>
+          </h2>
+          <p>
+            <span class="es"
+              >empresa: @piruetas.xyz<br />concepto: @montoyamoraga<br />pcb:
+              @misaa.cc<br />gráfica y fotografía: @rafita.studio<br />logística:
+              @jnsplv<br />tipografía: @uno_ca</span
+            >
+            <span class="en"
+              >company: @piruetas.xyz<br />concept: @montoyamoraga<br />pcb:
+              @misaa.cc<br />graphic design and photography:
+              @rafita.studio<br />logistics: @jnsplv<br />font:
+              @uno_ca</span
+            >
+          </p>
         </div>
+      </div>
+    </div>
 
-        <script src="/nav.js"></script>
-        <script src="/script.js"></script>
-    </body>
+    <script src="../../nav.js"></script>
+    <script src="../../script.js"></script>
+  </body>
 </html>
