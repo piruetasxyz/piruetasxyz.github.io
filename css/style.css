@@ -6,10 +6,9 @@ body {
   background-color: #fff;
   max-width: 100%;
   font-family: sans-serif;
-  margin: 30px;
+  margin: 0;
 }
 
-/* --- LAYOUT PRINCIPAL --- */
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -18,24 +17,86 @@ body {
 
 .left {
   background-color: pink;
-  flex: 0 0 180px; /* Bloquea el ancho del menú para que no crezca */
+  flex: 0 0 180px;
   padding: 15px;
   margin: 0;
+  min-height: 100vh;
 }
 
 .right {
   background-color: greenyellow;
   flex: 1;
   margin: 0;
-  padding: 10px;
+  padding: 40px;
+  min-height: 100vh;
 }
 
-/* --- AJUSTE MENÚ LATERAL (nav.js) --- */
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  margin: 20px 0;
+}
+
+.proyecto-item {
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 0px pink;
+}
+
+.proyecto-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.proyecto-meta {
+  font-family: monospace;
+  font-size: 8pt;
+  text-transform: uppercase;
+}
+
+.proyecto-tag {
+  font-family: monospace;
+  font-size: 8pt;
+  background-color: pink;
+  padding: 2px 5px;
+  border: 1px solid black;
+}
+
+.proyecto-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  margin: 0;
+  border: 1px solid black;
+}
+
+.proyecto-titulo {
+  font-size: 14pt;
+  font-weight: bold;
+  margin: 15px 0 2px 0;
+  text-transform: lowercase;
+}
+
+.proyecto-sub {
+  font-size: 9pt;
+  margin: 0;
+  color: blue;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 #divLeftMenu a {
-  font-size: 11pt; /* Tamaño unificado para links del menú */
+  font-size: 11pt;
   line-height: 1.2em;
   display: block;
   margin: 5px 0;
+  color: blue;
+  text-decoration: underline;
 }
 
 #divLeftMenu p, 
@@ -48,11 +109,10 @@ body {
 
 #divLeftMenu h1, 
 #divLeftMenu h2 {
-  font-size: 13pt; /* Títulos del menú más controlados */
+  font-size: 13pt;
   margin: 10px 0 5px 0;
 }
 
-/* --- ELEMENTOS GENERALES --- */
 h1, h2, h3, h4, h5, h6, p {
   margin: 10px;
 }
@@ -62,22 +122,18 @@ p {
   line-height: 1.4em;
 }
 
-img {
-  max-width: 100%;
-  border: 1px solid black;
-  box-shadow: 5px 10px pink;
-}
-
 .cajita {
   border: 1px solid black;
   box-shadow: 5px 10px pink;
+  padding: 5px 15px;
+  display: inline-block;
+  background-color: white;
+  margin-bottom: 20px;
 }
 
-/* --- SISTEMA DE IDIOMAS --- */
 html[lang="en"] .es { display: none; }
 html[lang="es"] .en { display: none; }
 
-/* --- SECCIÓN PERSONAS (Fichas Idénticas) --- */
 .persona-card {
   display: flex;
   flex-direction: row;
@@ -87,8 +143,8 @@ html[lang="es"] .en { display: none; }
 }
 
 .persona-foto {
-  flex: 0 0 250px; /* Todas las fotos medirán exactamente esto de ancho */
-  height: 250px;    /* Todas las fotos medirán exactamente esto de alto */
+  flex: 0 0 250px;
+  height: 250px;
   overflow: hidden;
   margin: 0;
 }
@@ -96,9 +152,10 @@ html[lang="es"] .en { display: none; }
 .persona-foto img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Corta la imagen sobrante para que no se deforme */
+  object-fit: cover;
   object-position: center;
   margin: 0;
+  box-shadow: none;
 }
 
 .persona-info {
@@ -106,7 +163,7 @@ html[lang="es"] .en { display: none; }
 }
 
 .persona-info p {
-  font-size: 10.5pt; /* Tipografía de bio pequeña y legible */
+  font-size: 10.5pt;
   line-height: 1.4em;
   margin: 5px 0;
 }
@@ -129,7 +186,6 @@ html[lang="es"] .en { display: none; }
   margin-bottom: 10px;
 }
 
-/* --- BOTONES --- */
 .persona-links {
   display: flex;
   gap: 8px;
@@ -144,6 +200,7 @@ html[lang="es"] .en { display: none; }
   box-shadow: 3px 3px pink;
   font-size: 10pt;
   color: black;
+  display: inline-block;
 }
 
 .boton-piruetas:hover {
@@ -152,7 +209,6 @@ html[lang="es"] .en { display: none; }
   transform: translate(2px, 2px);
 }
 
-/* --- RESPONSIVE --- */
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
@@ -160,12 +216,17 @@ html[lang="es"] .en { display: none; }
   .left {
     width: 100%;
     flex: 0 0 auto;
+    min-height: auto;
+  }
+  .proyectos-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
   }
   .persona-card {
     flex-direction: column;
   }
   .persona-foto {
-    width: 250px; /* Mantiene el tamaño cuadrado en móvil */
-    margin: 0 auto; /* Centra la foto en móvil */
+    width: 250px;
+    margin: 0 auto;
   }
 }

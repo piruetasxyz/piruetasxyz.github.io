@@ -1,27 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="es">
+<head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="/assets/favicon.ico" />
     <title>piruetas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <div class="flex-container">
-      <div class="left" id="divLeftMenu"></div>
-      <div class="right">
-        <h1 class="cajita">home</h1>
-        <img src="./media/piruetas-v0.jpg">
-        <p>
-          <span class="es">piruetas es un estudio chileno de arte, fundado el año 2022.</span>
-          <span class="en">piruetas is a chilean art studio, founded in 2022.</span>
-        </p>
-        <h1 class="cajita">colophon</h1>
-        <p>this website was manually written using HTML, CSS, and JS. it doesn't rely on external libraries, nor use any tracking system or cookies, nor collect data about you when you visit. it is hosted on GitHub Pages.</p>
-      </div>
+        <div class="left" id="divLeftMenu"></div>
+
+        <div class="right">
+            <h1 class="cajita">proyectos</h1>
+
+            <div class="proyectos-grid">
+                
+                <article class="proyecto-item">
+                    <div class="proyecto-header">
+                        <span class="proyecto-meta">2025 - ahora</span>
+                        <span class="proyecto-tag">popusintes</span>
+                    </div>
+                    <a href="parla.html">
+                        <img src="/media/proyectos/parla.jpg" alt="parla">
+                    </a>
+                    <h2 class="proyecto-titulo">parla</h2>
+                    <p class="proyecto-sub">hardware</p>
+                </article>
+
+                <article class="proyecto-item">
+                    <div class="proyecto-header">
+                        <span class="proyecto-meta">coming soon</span>
+                        <span class="proyecto-tag">popusintes</span>
+                    </div>
+                    <img src="./media/piruetas-v0.jpg" alt="osca">
+                    <h2 class="proyecto-titulo">osca</h2>
+                    <p class="proyecto-sub">software</p>
+                </article>
+
+                <article class="proyecto-item">
+                    <div class="proyecto-header">
+                        <span class="proyecto-meta">2019 - ahora</span>
+                        <span class="proyecto-tag">maquinitas-tidal</span>
+                    </div>
+                    <img src="./media/piruetas-v0.jpg" alt="maquinitas-tidal">
+                    <h2 class="proyecto-titulo">maquinitas-tidal</h2>
+                    <p class="proyecto-sub">hardware</p>
+                </article>
+
+                <article class="proyecto-item">
+                    <div class="proyecto-header">
+                        <span class="proyecto-meta">2022 - ahora</span>
+                        <span class="proyecto-tag">gerassic organ</span>
+                    </div>
+                    <img src="./media/piruetas-v0.jpg" alt="gerassic organ">
+                    <h2 class="proyecto-titulo">gerassic organ</h2>
+                    <p class="proyecto-sub">teaching</p>
+                </article>
+
+                <article class="proyecto-item">
+                    <div class="proyecto-header">
+                        <span class="proyecto-meta">2023</span>
+                        <span class="proyecto-tag">talleres momentos</span>
+                    </div>
+                    <img src="./media/piruetas-v0.jpg" alt="talleres momentos">
+                    <h2 class="proyecto-titulo">talleres momentos</h2>
+                    <p class="proyecto-sub">teaching</p>
+                </article>
+
+            </div>
+        </div>
     </div>
+
     <script src="/nav.js"></script>
     <script src="/script.js"></script>
-  </body>
+</body>
 </html>
