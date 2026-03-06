@@ -3,32 +3,38 @@ const navbarContent = `
         <a href="#" id="english">en</a> /
         <a href="#" id="espanol">es</a>
     </h1>
-    <h1><a href="/">home</a></h1>
-    <h1><a href="/store"><span class="es">tienda</span><span class="en">store</span></a></h1>
-    <h1><a href="/info">info</a></h1>
-    <h1><a href="/people"><span class="es">personas</span><span class="en">people</span></a></h1>
+    <h1><a href="/index.html">home</a></h1>
+    
+    <h1>
+        <a href="https://piruetas.xyz/tienda">
+            <span class="es">tienda</span><span class="en">shop</span>
+        </a>
+    </h1>
+    
+    <h1><a href="/info.html">info</a></h1>
+    <h1><a href="/people.html"><span class="es">personas</span><span class="en">people</span></a></h1>
     
     <hr style="border: 0; border-top: 1px solid black; margin: 20px 0;">
     
-    <h3>popusintes</h3>
+    <h3 class="es">popusintes</h3><h3 class="en">popusynths</h3>
     <ol>
-        <li><a href="/proyectos/parla">parla</a> (2025)</li>
-        <li><a href="/proyectos/osca">osca</a> (soon)</li>
+        <li><a href="/proyectos/parla.html">parla</a> (2025)</li>
+        <li><a href="/proyectos/osca.html">osca</a> (soon)</li>
     </ol>
 
     <h3>software</h3>
     <ol>
-        <li><a href="/proyectos/maquinitas-tidal">maquinitas-tidal</a></li>
+        <li><a href="/proyectos/maquinitas-tidal.html">maquinitas-tidal</a></li>
     </ol>
 
     <h3>hardware</h3>
     <ol>
-        <li><a href="/proyectos/gerassic-organ">gerassic organ</a></li>
+        <li><a href="/proyectos/gerassic-organ.html">gerassic organ</a></li>
     </ol>
 
-    <h3>teaching</h3>
+    <h3 class="es">enseñanza</h3><h3 class="en">teaching</h3>
     <ol>
-        <li><a href="/proyectos/talleres-momentos">talleres momentos</a> (2023)</li>
+        <li><a href="/proyectos/talleres-momentos.html">talleres momentos</a> (2023)</li>
     </ol>
 `;
 
