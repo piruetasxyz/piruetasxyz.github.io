@@ -24,7 +24,7 @@ const navbarContent = `
 
     <h3>software</h3>
     <ol>
-        <li><a href="/proyectos/maquinitas-tidal.html">maquinitas-tidal</a></li>
+        <li><a href="/proyectos/maquinitas-tidal.html">ronda</a></li>
     </ol>
 
     <h3>hardware</h3>
