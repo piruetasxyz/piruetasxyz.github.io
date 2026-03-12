@@ -142,13 +142,28 @@ html[lang="en"] .es { display: none; }
 html[lang="es"] .en { display: none; }
 
 @media (max-width: 1100px) {
-  .proyectos-grid { grid-template-columns: 1fr 1fr; }
+  .proyectos-grid { 
+    grid-template-columns: 1fr 1fr; 
+  }
 }
 
 @media (max-width: 800px) {
-  .proyectos-grid { grid-template-columns: 1fr; }
-  .right { padding: 80px 20px 120px 20px; }
-  .left.active ~ .right { transform: translateX(0); }
+  .proyectos-grid { 
+    grid-template-columns: 1fr; 
+  }
+  .right { 
+    padding: 80px 20px 120px 20px; 
+  }
+  .left.active ~ .right { 
+    transform: translateX(0); 
+  }
+  .left {
+    width: 80%;
+    left: -85%;
+  }
+  .left.active {
+    left: 0;
+  }
 }
 
 #divLeftMenu h1, #divLeftMenu h3 {
