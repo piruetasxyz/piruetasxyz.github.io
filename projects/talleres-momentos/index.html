@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>talleres momentos — piruetas</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../css/style.css"
+    />
+  </head>
+  <body>
+    <button id="menu-btn" class="boton-piruetas">menú</button>
+
+    <div class="flex-container">
+      <div id="divLeftMenu" class="left"></div>
+
+      <div class="right">
+        <div class="contenedor-producto">
+          <div class="proyecto-item">
+            <div class="carousel-container">
+              <button
+                class="carousel-btn prev"
+                onclick="moveCarousel(-1)"
+              >
+                &#10094;
+              </button>
+              <button
+                class="carousel-btn next"
+                onclick="moveCarousel(1)"
+              >
+                &#10095;
+              </button>
+
+              <div class="carousel-track" id="track">
+                <img
+                  src="../../media/proyectos/teaching-1.jpg"
+                  alt="clase 1"
+                />
+                <img
+                  src="../../media/proyectos/teaching-2.jpg"
+                  alt="clase 2"
+                />
+                <img
+                  src="../../media/proyectos/teaching-3.jpg"
+                  alt="clase 3"
+                />
+                <img
+                  src="../../media/proyectos/teaching-4.jpg"
+                  alt="clase 4"
+                />
+                <img
+                  src="../../media/proyectos/teaching-5.jpg"
+                  alt="clase 5"
+                />
+                <img
+                  src="../../media/proyectos/teaching-6.jpg"
+                  alt="clase 6"
+                />
+                <img
+                  src="../../media/proyectos/teaching-7.jpg"
+                  alt="clase 7"
+                />
+                <img
+                  src="../../media/proyectos/teaching-8.jpg"
+                  alt="clase 8"
+                />
+              </div>
+              <div class="carousel-nav-hint">
+                usa las flechas o desliza →
+              </div>
+            </div>
+          </div>
+
+          <div class="contenido-texto">
+            <h1 class="cajita">talleres momentos</h1>
+
+            <p>
+              <span class="es">
+                registro de experiencias en torno al diseño y la
+                tecnología, explorando la intersección entre lo físico
+                y lo digital.
+              </span>
+              <span class="en">
+                record of experiences around design and technology,
+                exploring the intersection between the physical and
+                the digital.
+              </span>
+            </p>
+
+            <p
+              class="nota-tecnica"
+              style="
+                background: white;
+                border: 1px solid black;
+                padding: 10px;
+                box-shadow: 5px 5px 0px pink;
+              "
+            >
+              <span class="es">ayudantía / docente / relatoría</span>
+              <span class="en">teaching assistant / lecturer</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="colophon-banner">
+      piruetas xyz — hecho a mano con html, css y js.
+    </div>
+
+    <script src="../../nav.js"></script>
+    <script src="../../script.js"></script>
+    <script>
+      function moveCarousel(direction) {
+        const track = document.getElementById('track');
+        const scrollAmount = track.clientWidth;
+        track.scrollBy({
+          left: direction * scrollAmount,
+          behavior: 'smooth',
+        });
+      }
+    </script>
+  </body>
+</html>
