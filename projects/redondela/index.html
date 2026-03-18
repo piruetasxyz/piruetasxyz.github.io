@@ -1,29 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <!-- character encoding -->
-        <meta charset="utf-8" />
-        <!-- favicon -->
-        <link rel="icon" type="image/png" href="/assets/favicon.ico" />
-        <!-- title -->
-        <title>redondela</title>
-        <!-- full width on device -->
-        <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-        />
-        <!-- external css file -->
-        <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    </head>
-    <body>
-        <div class="flex-container">
-        <div class="left" id="divLeftMenu"></div>
-        <div class="right">
-            <h1 class="cajita" data-i18n="TODO"></h1>
-            <h2 data-i18n="TODO"></h2>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="../../assets/favicon.ico" />
+    <title>parla — piruetas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  </head>
+  <body>
+    <button id="menu-btn" class="boton-piruetas">menú</button>
+
+    <div class="flex-container">
+      <div id="divLeftMenu" class="left"></div>
+
+      <div class="right">
+        <div class="contenedor-producto">
+          <div class="proyecto-item">
+            <img src="../../media/proyectos/parla-canasto.jpg" alt="parla" />
+          </div>
+
+          <div class="contenido-texto">
+            <h1 class="cajita">parla</h1>
+
+            <p>
+              <span class="es">
+                redondela es un proyecto de piruetas.
+              </span>
+              <span class="en">
+                redondela is a project by piruetas.
+              </span>
+            </p>
+
+            <h2 class="cajita">
+              <span class="es">producto</span><span class="en">product</span>
+            </h2>
+            <p>
+              <span class="es">
+                para este proyecto hicimos...
+              </span>
+              <span class="en">
+                for this project we made...
+              </span>
+            </p>
+
+            <h2 class="cajita">
+              <span class="es">créditos</span><span class="en">collabs</span>
+            </h2>
+            <p>
+              <span class="es">
+                empresa: @piruetas.xyz
+              </span>
+              <span class="en">
+                company: @piruetas.xyz
+              </span>
+            </p>
+          </div>
         </div>
-        </div>
-        <script src="/nav.js"></script>
-        <script src="/script.js"></script>
-    </body>
+      </div>
+    </div>
+
+    <script src="../../nav.js"></script>
+    <script src="../../script.js"></script>
+  </body>
 </html>
