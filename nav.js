@@ -12,7 +12,7 @@ const navbarContent = `
     </h1>
     
     <h1><a href="/info.html">info</a></h1>
-    <h1><a href="/people.html"><span class="es">personas</span><span class="en">people</span></a></h1>
+    <h1><a href="/people/index.html"><span class="es">personas</span><span class="en">people</span></a></h1>
     
     <hr style="border: 0; border-top: 1px solid black; margin: 20px 0;">
     
@@ -24,7 +24,7 @@ const navbarContent = `
 
     <h3>software</h3>
     <ol>
-        <li><a href="/proyectos/maquinitas-tidal.html">ronda</a></li>
+        <li><a href="/proyectos/maquinitas-tidal.html">redondela</a></li>
     </ol>
 
     <h3>hardware</h3>
