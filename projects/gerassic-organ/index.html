@@ -1,29 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <!-- character encoding -->
-        <meta charset="utf-8" />
-        <!-- favicon -->
-        <link rel="icon" type="image/png" href="/assets/favicon.ico" />
-        <!-- title -->
-        <title>gerassic-organ</title>
-        <!-- full width on device -->
-        <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-        />
-        <!-- external css file -->
-        <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    </head>
-    <body>
-        <div class="flex-container">
-        <div class="left" id="divLeftMenu"></div>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="../../assets/favicon.ico" />
+    <title>en mantención — piruetas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+</head>
+<body>
+    <button id="menu-btn" class="boton-piruetas">menú</button>
+
+    <div class="flex-container">
+        <div id="divLeftMenu" class="left"></div>
+
         <div class="right">
-            <h1 class="cajita" data-i18n="TODO"></h1>
-            <h2 data-i18n="TODO"></h2>
+            <div class="contenedor-producto">
+                <div class="contenido-texto">
+                    <h1 class="cajita">
+                        <span class="es">página en mantención</span>
+                        <span class="en">under maintenance</span>
+                    </h1>
+                    <p>
+                        <span class="es">próximamente más información sobre este proyecto.</span>
+                        <span class="en">more information about this project coming soon.</span>
+                    </p>
+                    <a href="../../index.html" class="boton-piruetas">
+                        <span class="es">volver al inicio</span>
+                        <span class="en">back to home</span>
+                    </a>
+                </div>
+            </div>
         </div>
-        </div>
-        <script src="/nav.js"></script>
-        <script src="/script.js"></script>
-    </body>
+    </div>
+
+     <footer class="colophon-banner">
+    <span class="es">piruetas xyz — hecho a mano con html, css y js.</span>
+    <span class="en">piruetas xyz — handmade with html, css and js.</span>
+  </footer>
+  
+    <script src="../../nav.js"></script>
+    <script src="../../script.js"></script>
+</body>
 </html>

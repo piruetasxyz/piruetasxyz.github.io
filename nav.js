@@ -18,23 +18,23 @@ const navbarContent = `
     
     <h3 class="es">popusintes</h3><h3 class="en">popusynths</h3>
     <ol>
-        <li><a href="/proyectos/parla.html">parla</a> (2025)</li>
-        <li><a href="/proyectos/osca.html">osca</a> (soon)</li>
+        <li><a href="/projects/parla/index.html">parla</a> (2025)</li>
+        <li><a href="/projects/osca/index.html">osca</a> (soon)</li>
     </ol>
 
     <h3>software</h3>
     <ol>
-        <li><a href="/proyectos/maquinitas-tidal.html">redondela</a></li>
+        <li><a href="/projects/redondela/index.html">redondela</a></li>
     </ol>
 
     <h3>hardware</h3>
     <ol>
-        <li><a href="/proyectos/gerassic-organ.html">gerassic organ</a></li>
+        <li><a href="/projects/gerassic-organ/index.html">gerassic organ</a></li>
     </ol>
 
     <h3 class="es">enseñanza</h3><h3 class="en">teaching</h3>
     <ol>
-        <li><a href="/proyectos/talleres-momentos.html">talleres momentos</a> (2023)</li>
+        <li><a href="/projects/talleres-momentos/index.html">talleres momentos</a> (2023)</li>
     </ol>
 `;
 
