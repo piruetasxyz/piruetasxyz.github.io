@@ -83,16 +83,23 @@ body {
 .proyecto-item {
   background-color: white;
   border: 1px solid black;
-  padding: 15px;
+  padding: 18px;
   display: flex;
   flex-direction: column;
-  box-shadow: 8px 8px 0px pink;
+  box-shadow: 10px 10px 0px pink;
 }
 
 .proyecto-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 12px;
+}
+
+.proyecto-meta-left {
+  font-family: monospace;
+  font-size: 7.5pt;
+  text-transform: uppercase;
 }
 
 .proyecto-meta {
@@ -103,32 +110,37 @@ body {
 
 .proyecto-tag {
   font-family: monospace;
-  font-size: 7.5pt;
+  font-size: 7pt;
   background-color: pink;
-  padding: 2px 5px;
+  padding: 3px 6px;
   border: 1px solid black;
-}
-
-.proyecto-item img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border: 1px solid black;
-}
-
-.proyecto-titulo {
-  font-size: 13pt;
-  font-weight: bold;
-  margin: 12px 0 2px 0;
   text-transform: lowercase;
 }
 
-.proyecto-sub {
-  font-size: 8.5pt;
+.proyecto-imgwrap {
+  padding: 0;
+  background: white;
+  border: 1px solid black;
+}
+.proyecto-imgwrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
   margin: 0;
-  color: blue;
-  text-transform: uppercase;
-  font-weight: bold;
+}
+
+.proyecto-title {
+  font-size: 13pt;
+  font-weight: 700;
+  margin: 10px 0 4px 0;
+  text-transform: lowercase;
+}
+
+/* hide subtitle as requested */
+.proyecto-sub {
+  display: none;
 }
 
 .cajita {
@@ -383,4 +395,47 @@ html[lang="es"] .en {
 #divLeftMenu a {
   color: blue;
   text-decoration: underline;
+}
+
+/* Clientes list styling */
+.clientes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.cliente-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid black;
+  background: white;
+  box-shadow: 6px 6px 0px pink;
+}
+
+.cliente-nombre {
+  font-size: 13pt;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.cliente-ano {
+  font-family: monospace;
+  font-size: 10pt;
+  color: #444;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+  .cliente-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .cliente-ano {
+    margin-left: 0;
+  }
 }

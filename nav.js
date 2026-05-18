@@ -13,6 +13,7 @@ const navbarContent = `
     
     <h1><a href="/info.html">info</a></h1>
     <h1><a href="/personas/index.html"><span class="es">personas</span><span class="en">people</span></a></h1>
+    <h1><a href="/clientes/index.html"><span class="es">clientes</span><span class="en">clients</span></a></h1>
     
     <hr style="border: 0; border-top: 1px solid black; margin: 20px 0;">
     

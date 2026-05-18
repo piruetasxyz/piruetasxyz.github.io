@@ -209,29 +209,34 @@
       const article = document.createElement('article');
       article.className = 'proyecto-item';
 
-      const link = document.createElement(p.link ? 'a' : 'div');
-      if (p.link) {
-        link.href = p.link;
-        link.className = 'proyecto-link';
-      }
-
-      if (p.image) {
-        const img = document.createElement('img');
-        img.src = p.image;
-        // support bilingual alt
-        if (p.alt && typeof p.alt === 'object') img.alt = p.alt.es || p.alt.en || '';
-        else img.alt = p.alt || p.titulo || '';
-        link.appendChild(img);
-      }
-
-      const meta = document.createElement('div');
-      meta.className = 'proyecto-meta';
+      // header with meta (left) and tag (right)
+      const header = document.createElement('div');
+      header.className = 'proyecto-header';
+      const metaLeft = document.createElement('div');
+      metaLeft.className = 'proyecto-meta-left';
+      metaLeft.textContent = typeof p.meta === 'object' ? (p.meta.es || p.meta.en || '') : (p.meta || '');
+      header.appendChild(metaLeft);
       if (p.tag) {
         const tag = document.createElement('div');
         tag.className = 'proyecto-tag';
         tag.textContent = typeof p.tag === 'object' ? (p.tag.es || p.tag.en || '') : p.tag;
-        meta.appendChild(tag);
+        header.appendChild(tag);
       }
+
+      // image wrapped in link
+      const link = document.createElement(p.link ? 'a' : 'div');
+      if (p.link) link.href = p.link;
+      link.className = 'proyecto-link';
+      const imgWrap = document.createElement('div');
+      imgWrap.className = 'proyecto-imgwrap';
+      const img = document.createElement('img');
+      img.src = p.image || '/media/piruetas-v0.jpg';
+      if (p.alt && typeof p.alt === 'object') img.alt = p.alt.es || p.alt.en || '';
+      else img.alt = p.alt || (p.titulo && (p.titulo.es || p.titulo.en)) || 'piruetas';
+      imgWrap.appendChild(img);
+      link.appendChild(imgWrap);
+
+      // title and subtitle
       const h3 = document.createElement('h3');
       h3.className = 'proyecto-title';
       if (p.titulo && typeof p.titulo === 'object') {
@@ -246,25 +251,52 @@
       } else {
         h3.textContent = p.titulo || '';
       }
-      meta.appendChild(h3);
-      if (p.subtitulo) {
-        const sub = document.createElement('p');
-        sub.className = 'proyecto-subtitle';
-        sub.textContent = typeof p.subtitulo === 'object' ? (p.subtitulo.es || p.subtitulo.en || '') : p.subtitulo;
-        meta.appendChild(sub);
-      }
-      // optional meta/date
-      if (p.meta) {
-        const m = document.createElement('div');
-        m.className = 'proyecto-date';
-        m.textContent = typeof p.meta === 'object' ? (p.meta.es || p.meta.en || '') : p.meta;
-        meta.appendChild(m);
-      }
+      const sub = document.createElement('p');
+      sub.className = 'proyecto-sub';
+      sub.textContent = typeof p.subtitulo === 'object' ? (p.subtitulo.es || p.subtitulo.en || '') : (p.subtitulo || '');
 
-      link.appendChild(meta);
+      article.appendChild(header);
       article.appendChild(link);
+      article.appendChild(h3);
+      article.appendChild(sub);
       container.appendChild(article);
     });
+    
+    // If a hero exists on the page, setup rotating hero from projects
+    const hero = document.getElementById('hero-img');
+    const heroLink = document.getElementById('hero-link');
+    const heroTitleEs = document.querySelector('.hero-title .es');
+    const heroTitleEn = document.querySelector('.hero-title .en');
+    const heroDescEs = document.querySelector('.hero-description .es');
+    const heroDescEn = document.querySelector('.hero-description .en');
+    if (hero && (data.proyectos || []).length) {
+      // pick specific projects to rotate (parla and redondela)
+      const desired = ['parla', 'redondela'];
+      const candidates = (data.proyectos || []).filter((p) => {
+        const t = ((p.titulo && (p.titulo.es || p.titulo.en)) || '').toString().toLowerCase();
+        return desired.includes(t);
+      });
+      const rotList = candidates.length ? candidates : (data.proyectos || []);
+      let idx = 0;
+      // ensure placeholder initially
+      hero.src = hero.src || '/media/piruetas-v0.jpg';
+      function show(i) {
+        const p = rotList[i];
+        if (!p) return;
+        hero.src = p.image || '/media/piruetas-v0.jpg';
+        hero.alt = (p.alt && (p.alt.es || p.alt.en)) || (p.titulo && (p.titulo.es || p.titulo.en)) || 'piruetas';
+        if (heroLink && p.link) heroLink.href = p.link;
+        if (heroTitleEs) heroTitleEs.textContent = (p.titulo && p.titulo.es) || '';
+        if (heroTitleEn) heroTitleEn.textContent = (p.titulo && p.titulo.en) || '';
+        if (heroDescEs) heroDescEs.textContent = (p.subtitulo && p.subtitulo.es) || '';
+        if (heroDescEn) heroDescEn.textContent = (p.subtitulo && p.subtitulo.en) || '';
+      }
+      show(idx);
+      setInterval(() => {
+        idx = (idx + 1) % rotList.length;
+        show(idx);
+      }, 5000);
+    }
   }
 
   function renderProjectDetail(data) {
@@ -324,6 +356,33 @@
     });
   }
 
+  function renderClientes(data) {
+    const h1es = document.querySelector('h1.cajita .es');
+    const h1en = document.querySelector('h1.cajita .en');
+    if (h1es) h1es.textContent = (data.ui && data.ui.title && data.ui.title.es) || '';
+    if (h1en) h1en.textContent = (data.ui && data.ui.title && data.ui.title.en) || '';
+
+    const container = document.getElementById('clientes');
+    if (!container) {
+      console.warn('No clientes container found (expected #clientes)');
+      return;
+    }
+    container.innerHTML = '';
+    (data.clientes || []).forEach((c) => {
+      const row = document.createElement('div');
+      row.className = 'cliente-item';
+      const name = document.createElement('div');
+      name.className = 'cliente-nombre';
+      name.textContent = c.nombre || '';
+      const year = document.createElement('div');
+      year.className = 'cliente-ano';
+      year.textContent = c.ano ? String(c.ano) : '';
+      row.appendChild(name);
+      row.appendChild(year);
+      container.appendChild(row);
+    });
+  }
+
   (async function main() {
     const yamlLib = findYamlLib();
     if (!yamlLib || typeof yamlLib.load !== 'function') {
@@ -341,6 +400,8 @@
         renderProjectDetail(data);
       } else if (dataPage === 'personas') {
         renderPersonas(data);
+      } else if (dataPage === 'clientes') {
+        renderClientes(data);
       } else if (dataPage === 'proyectos' || dataPage === 'projects' || data.proyectos) {
         renderProyectos(data);
       } else {
