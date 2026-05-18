@@ -1,0 +1,91 @@
+ui:
+  title:
+    es: "parla"
+    en: "parla"
+  meta:
+    es: "2025"
+    en: "2025"
+  tag:
+    es: "popusintes"
+    en: "popusynths"
+
+hero:
+  image: "/media/proyectos/parla-canasto.jpg"
+  alt:
+    es: "parla"
+    en: "parla"
+
+sections:
+  - id: descripcion
+    title:
+      es: "descripción"
+      en: "description"
+    content:
+      es: |-
+        parla es un proyecto de piruetas, en colaboración con
+        rafita studio y misaa.cc.
+        es un pequeño parlante con un amplificador mono, para
+        uso con sintetizadores.
+        nace en respuesta a los altos costos de parlantes con
+        bluetooth, y a que muchos de ellos hoy en día ya no
+        cuentan con entrada vía cable.
+      en: |-
+        parla is a project by piruetas, in collaboration with
+        rafita studio and misaa.cc.
+        It is a small speaker with a mono amplifier for use with
+        synthesizers.
+        It was born in response to the high cost of Bluetooth
+        speakers and the fact that many of them no longer
+        include a wired input.
+
+  - id: producto
+    title:
+      es: "producto"
+      en: "product"
+    content:
+      es: |-
+        para este proyecto hicimos 50 PCBs, de las cuales 5
+        están disponibles en este formato PCB con componentes
+        SMT.
+        este producto consiste en la PCB del proyecto,
+        diseñada en santiago de chile, ensamble SMD en hong
+        kong.
+        no incluye circuitos integrados, ni potenciómetro, ni
+        parlante, ni carcasa.
+        entrega en santiago de chile.
+      en: |-
+        For this project we made 50 PCBs, of which 5 are
+        available in this PCB format with SMT components.
+        This product consists of the project PCB, designed in
+        Santiago de Chile, SMD assembly in Hong Kong.
+        It does not include integrated circuits, potentiometer,
+        speaker, or enclosure.
+        Delivery in Santiago de Chile.
+
+  - id: nota
+    title:
+      es: "nota técnica"
+      en: "technical note"
+    content:
+      es: "👁️ <strong>nota:</strong> para esta primera versión se requiere una correccion de polaridad vcc y gnd."
+      en: "👁️ <strong>note:</strong> for this first version a VCC and GND polarity correction is required."
+
+  - id: creditos
+    title:
+      es: "créditos"
+      en: "collabs"
+    content:
+      es: |-
+        empresa: @piruetas.xyz
+        concepto: @montoyamoraga
+        pcb: @misaa.cc
+        gráfica y fotografía: @rafita.studio
+        logística: @jnsplv
+        tipografía: @uno_ca
+      en: |-
+        company: @piruetas.xyz
+        concept: @montoyamoraga
+        pcb: @misaa.cc
+        graphic design and photography: @rafita.studio
+        logistics: @jnsplv
+        font: @uno_ca

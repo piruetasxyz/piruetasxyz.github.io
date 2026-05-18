@@ -1,0 +1,9 @@
+ui:
+  title:
+    es: "página en mantención"
+    en: "under maintenance"
+sections:
+  - title: {}
+    content:
+      es: "próximamente más información sobre este proyecto."
+      en: "more information about this project coming soon."
