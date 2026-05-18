@@ -1,0 +1,90 @@
+proyectos:
+  - titulo:
+      es: "parla"
+      en: "parla"
+    meta:
+      es: "2025"
+      en: "2025"
+    tag:
+      es: "popusintes"
+      en: "popusynths"
+    image: "/media/proyectos/parla-canasto.jpg"
+    alt:
+      es: "parla"
+      en: "parla"
+    link: "/proyectos/parla/index.html"
+    subtitulo:
+      es: "pequeño parlante con amplificador mono para sintetizadores"
+      en: "small speaker with mono amplifier for synthesizers"
+
+  - titulo:
+      es: "osca"
+      en: "osca"
+    meta:
+      es: "soon"
+      en: "soon"
+    tag:
+      es: "popusintes"
+      en: "popusynths"
+    image: "/media/proyectos/osca.jpg"
+    alt:
+      es: "osca"
+      en: "osca"
+    link: "/proyectos/osca/index.html"
+    subtitulo:
+      es: "proyecto en desarrollo"
+      en: "project in development"
+
+  - titulo:
+      es: "redondela"
+      en: "redondela"
+    meta:
+      es: "software"
+      en: "software"
+    tag:
+      es: "software"
+      en: "software"
+    image: "/media/proyectos/redondela.jpg"
+    alt:
+      es: "redondela"
+      en: "redondela"
+    link: "/proyectos/redondela/index.html"
+    subtitulo:
+      es: "herramienta de software"
+      en: "software tool"
+
+  - titulo:
+      es: "gerassic organ"
+      en: "gerassic organ"
+    meta:
+      es: "hardware"
+      en: "hardware"
+    tag:
+      es: "hardware"
+      en: "hardware"
+    image: "/media/proyectos/gerassic-organ.jpg"
+    alt:
+      es: "gerassic organ"
+      en: "gerassic organ"
+    link: "/proyectos/gerassic-organ/index.html"
+    subtitulo:
+      es: "instrumento electrónico / hardware"
+      en: "electronic instrument / hardware"
+
+  - titulo:
+      es: "talleres momentos"
+      en: "talleres momentos"
+    meta:
+      es: "2023"
+      en: "2023"
+    tag:
+      es: "enseñanza"
+      en: "teaching"
+    image: "/media/proyectos/talleres-momentos.jpg"
+    alt:
+      es: "talleres momentos"
+      en: "talleres momentos"
+    link: "/proyectos/talleres-momentos/index.html"
+    subtitulo:
+      es: "actividades de enseñanza y workshops"
+      en: "teaching activities and workshops"

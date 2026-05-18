@@ -1,0 +1,224 @@
+ui:
+  title:
+    es: "personas"
+    en: "people"
+  collaborators_header:
+    es: "colaboradores anteriores"
+    en: "past collaborators"
+
+miembros:
+  - nombre: "Aarón Montoya Moraga"
+    pronombres:
+      es: "(elle)"
+      en: "(they)"
+    rol:
+      es: "Investigador principal"
+      en: "Principal Investigator"
+    foto: "../media/proyectos/aaron-montoya.jpeg"
+    descripcion:
+      es: |-
+        Aarón Montoya Moraga es ingeniere civil electricista de
+        la Pontificia Universidad Católica de Chile (2014).
+        Master in Interactive Telecommunications, New York
+        University, Estados Unidos (2017). Master of Science in
+        Media Arts and Sciences, Massachusetts Institute of
+        Technology, Estados Unidos (2021). Actualmente cursa el
+        Doctorado en Artes y Humanidades, Universidad de
+        Santiago de Chile. Su línea de investigación es en
+        interfaces humano computador, diseño computacional
+        paramétrico de fuente abierta y diseño de instrumentos
+        musicales electrónicos.
+      en: |-
+        Aarón Montoya Moraga is an electrical civil engineer from
+        the Pontificia Universidad Católica de Chile (2014). They
+        hold a Master's in Interactive Telecommunications from New
+        York University, USA (2017), and a Master of Science in
+        Media Arts and Sciences from the Massachusetts Institute of
+        Technology, USA (2021). They are currently pursuing a
+        PhD in Arts and Humanities at the Universidad de Santiago de
+        Chile. Their research focuses on human–computer interfaces,
+        open-source parametric computational design, and the design
+        of electronic musical instruments.
+    links:
+      - label:
+          es: "sitio"
+          en: "website"
+        url: "https://montoyamoraga.io/"
+      - label:
+          es: "instagram"
+          en: "instagram"
+        url: "https://www.instagram.com/montoyamoraga/?hl=es"
+      - label:
+          es: "github"
+          en: "github"
+        url: "https://github.com/montoyamoraga"
+
+  - nombre: "Janis Sepúlveda Vera"
+    pronombres:
+      es: "(ella)"
+      en: "(she)"
+    rol:
+      es: "Diseñadora"
+      en: "Designer"
+    foto: "../media/proyectos/janis-sepulveda.jpeg"
+    descripcion:
+      es: |-
+        Janis Sepúlveda Vera es diseñadora industrial de la
+        Universidad Diego Portales (2025). Actualmente
+        estudiante de Magister en Diseño Avanzado de la
+        Pontificia Universidad Católica de Chile.
+      en: |-
+        Janis Sepúlveda Vera is an industrial designer from
+        Universidad Diego Portales (2025) and is currently a
+        Master's student in Advanced Design at the Pontificia
+        Universidad Católica de Chile.
+    links:
+      - label:
+          es: "sitio"
+          en: "website"
+        url: "https://janisepulveda.cl/"
+      - label:
+          es: "instagram"
+          en: "instagram"
+        url: "https://www.instagram.com/janisepulveda"
+      - label:
+          es: "github"
+          en: "github"
+        url: "https://github.com/janisepulveda"
+
+colaboradores:
+  - nombre: "Andrés Martin"
+    pronombres:
+      es: "(él)"
+      en: "(he)"
+    rol:
+      es: "docencia, programación, prototipado (2023-2025)"
+      en: "teaching, programming, prototyping (2023-2025)"
+    descripcion:
+      es: "Breve descripción del trabajo realizado en Piruetas."
+      en: "Brief description of the work carried out at Piruetas."
+    links:
+      - label:
+          es: "sitio"
+          en: "website"
+        url: "https://andresmartinm.github.io/portafolioAnim2023/"
+      - label:
+          es: "instagram"
+          en: "instagram"
+        url: "https://www.instagram.com/andresmartin_elmartin/"
+      - label:
+          es: "github"
+          en: "github"
+        url: "https://github.com/AndresMartinM"
+
+  - nombre: "Mateo Arce"
+    pronombres:
+      es: "(él)"
+      en: "(he)"
+    rol:
+      es: "docencia, programación, prototipado (2025)"
+      en: "teaching, programming, prototyping (2025)"
+    descripcion:
+      es: "Breve descripción del trabajo realizado en Piruetas."
+      en: "Brief description of the work carried out at Piruetas."
+    links:
+      - label:
+          es: "github"
+          en: "github"
+        url: "https://github.com/matbutom"
+
+  - nombre: "Bernardita Lobos"
+    pronombres:
+      es: "(ella)"
+      en: "(she)"
+    rol:
+      es: "prototipado, fabricación (2025)"
+      en: "prototyping, fabrication (2025)"
+    descripcion:
+      es: "Breve descripción del trabajo realizado en Piruetas."
+      en: "Brief description of the work carried out at Piruetas."
+    links:
+      - label:
+          es: "github"
+          en: "github"
+        url: "https://github.com/Bernardita-Jesus"
+
+  - nombre: "Francisco Stephens"
+    pronombres:
+      es: "(él)"
+      en: "(he)"
+    rol:
+      es: "prototipado, soldadura (2025)"
+      en: "prototyping, soldering (2025)"
+    descripcion:
+      es: "Breve descripción del trabajo realizado en Piruetas."
+      en: "Brief description of the work carried out at Piruetas."
+    links:
+      - label:
+          es: "github"
+          en: "github"
+        url: "https://github.com/FranUDP"
+
+  - nombre: "Valentina Montecinos"
+    pronombres:
+      es: "(pronombre)"
+      en: "(pronoun)"
+    rol:
+      es: "docencia (2023)"
+      en: "teaching (2023)"
+    descripcion:
+      es: "Breve descripción del trabajo realizado en Piruetas."
+      en: "Brief description of the work carried out at Piruetas."
+    links:
+      - label:
+          es: "github"
+          en: "github"
+        url: "https://github.com/menteneon"
+
+  - nombre: "Joaquín Pérez"
+    pronombres:
+      es: "(él)"
+      en: "(he)"
+    rol:
+      es: "docencia (2023)"
+      en: "teaching (2023)"
+    descripcion:
+      es: "Breve descripción del trabajo realizado en Piruetas."
+      en: "Brief description of the work carried out at Piruetas."
+    links:
+      - label:
+          es: "github"
+          en: "github"
+        url: "https://github.com/usuario"
+
+  - nombre: "Sofía Sandoval"
+    pronombres:
+      es: "(pronombre)"
+      en: "(pronoun)"
+    rol:
+      es: "docencia, investigación (2023)"
+      en: "teaching, research (2023)"
+    descripcion:
+      es: "Breve descripción del trabajo realizado en Piruetas."
+      en: "Brief description of the work carried out at Piruetas."
+    links:
+      - label:
+          es: "github"
+          en: "github"
+        url: "https://github.com/ssofiasandoval"
+
+  - nombre: "Ignacio Passalacqua"
+    pronombres:
+      es: "(pronombre)"
+      en: "(pronoun)"
+    rol:
+      es: "docencia, electrónica, programación (2022-2023)"
+      en: "teaching, electronics, programming (2022-2023)"
+    descripcion:
+      es: "Breve descripción del trabajo realizado en Piruetas."
+      en: "Brief description of the work carried out at Piruetas."
+    links:
+      - label:
+          es: "github"
+          en: "github"
+        url: "https://github.com/usuario"
