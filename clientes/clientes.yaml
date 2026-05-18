@@ -1,0 +1,11 @@
+ui:
+  title:
+    es: "clientes"
+    en: "clients"
+clientes:
+  - nombre: "bibliotecaCuir"
+    ano: 2026
+  - nombre: "Sokio"
+    ano: 2025
+  - nombre: "Universidad Diego Portales"
+    ano: 2024
