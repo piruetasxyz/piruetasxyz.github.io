@@ -116,3 +116,75 @@ claudia-gonzalez-godoy:
           4017 chip as a sequencer, and the 4093 chip as an
           oscillator, and ported them to pcbs to be used in the
           course students' final projects.
+
+biblioteca-cuir:
+  titulo:
+    es: 'bibliotecaCuir'
+    en: 'bibliotecaCuir'
+  sections:
+    - titulo:
+        es: 'lorem ipsum'
+        en: 'lorem ipsum'
+      content:
+        es: |-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        en: |-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+
+sokio:
+  titulo:
+    es: 'Sokio'
+    en: 'Sokio'
+  sections:
+    - titulo:
+        es: 'lorem ipsum'
+        en: 'lorem ipsum'
+      content:
+        es: |-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        en: |-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+
+universidad-diego-portales:
+  titulo:
+    es: 'Universidad Diego Portales'
+    en: 'Universidad Diego Portales'
+  sections:
+    - titulo:
+        es: 'lorem ipsum'
+        en: 'lorem ipsum'
+      content:
+        es: |-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        en: |-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+    - titulo:
+        es: 'proyectos'
+        en: 'projects'
+      content:
+        es: '<a href="/proyectos/talleres-momentos/index.html">talleres momentos</a>'
+        en: '<a href="/proyectos/talleres-momentos/index.html">talleres momentos</a>'

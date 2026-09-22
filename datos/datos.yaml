@@ -112,6 +112,10 @@ personas:
           pronombres:
             es: '(él)'
             en: '(he)'
+          # placeholder hasta tener una foto real (ver plan de
+          # reemplazo de render.js, Etapa 4): sin esto, una vista sin
+          # JS del visor 3D no tiene nada que mostrar
+          foto: '../media/piruetas-v0.jpg'
           modelo3d: '../assets/3d/mateo-arce-2026-09.glb'
           rol:
             es: 'programador, diseñador gráfico'
@@ -524,75 +528,3 @@ tienda:
       content:
         es: 'desde el 2023 somos importadores oficiales de BASTL Instruments in Chile.'
         en: 'since 2023 we are official dealers of BASTL Instruments in Chile.'
-
-biblioteca-cuir:
-  titulo:
-    es: 'bibliotecaCuir'
-    en: 'bibliotecaCuir'
-  sections:
-    - titulo:
-        es: 'lorem ipsum'
-        en: 'lorem ipsum'
-      content:
-        es: |-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
-        en: |-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
-
-sokio:
-  titulo:
-    es: 'Sokio'
-    en: 'Sokio'
-  sections:
-    - titulo:
-        es: 'lorem ipsum'
-        en: 'lorem ipsum'
-      content:
-        es: |-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
-        en: |-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
-
-universidad-diego-portales:
-  titulo:
-    es: 'Universidad Diego Portales'
-    en: 'Universidad Diego Portales'
-  sections:
-    - titulo:
-        es: 'lorem ipsum'
-        en: 'lorem ipsum'
-      content:
-        es: |-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
-        en: |-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
-    - titulo:
-        es: 'proyectos'
-        en: 'projects'
-      content:
-        es: '<a href="/proyectos/talleres-momentos/index.html">talleres momentos</a>'
-        en: '<a href="/proyectos/talleres-momentos/index.html">talleres momentos</a>'

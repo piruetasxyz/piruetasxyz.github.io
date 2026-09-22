@@ -322,6 +322,7 @@ body.menu-ready .right {
 }
 
 .persona-foto {
+  position: relative;
   flex: 0 0 220px;
   border-right: 1px solid black;
   background-color: #eee;
@@ -335,7 +336,14 @@ body.menu-ready .right {
   display: block;
 }
 
-.visor-3d {
+/* cuando una persona tiene modelo3d, el visor va horneado junto a su
+   <img> de respaldo (ver renderizarPersonaCard en
+   scripts/lib/plantillas-sitio.js); se superpone por encima con
+   position:absolute para que la imagen se vea hasta que el modelo
+   termine de cargar */
+.persona-foto .visor-3d {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
 }

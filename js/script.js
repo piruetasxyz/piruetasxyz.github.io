@@ -17,10 +17,22 @@ function updateDocumentTitle(lang) {
     document.title = text ? text + ' — piruetas' : 'piruetas';
 }
 
-// exposed so render.js can refresh the title once it fills in
-// content that was empty (and thus title-less) at page load
+// exposed so render.js (or a generator script's baked page) can
+// refresh the title once content that was empty (and thus
+// title-less) at page load gets filled in
 window.refreshDocumentTitle = function () {
     updateDocumentTitle(document.documentElement.getAttribute('lang'));
+};
+
+// swaps each gallery photo's alt text between the data-alt-es/en
+// baked onto its <img> by the generator (or, on pages not yet
+// migrated, by render.js) when the language toggles
+window.refreshGaleriaAlt = function () {
+    const lang = document.documentElement.getAttribute('lang') || 'en';
+    const key = 'alt' + (lang === 'es' ? 'Es' : 'En');
+    document.querySelectorAll('.galeria-item img').forEach((img) => {
+        img.alt = img.dataset[key] || '';
+    });
 };
 
 function applyLang(lang) {
@@ -28,7 +40,7 @@ function applyLang(lang) {
     localStorage.setItem('language', lang);
     updateLangBtn(lang);
     updateDocumentTitle(lang);
-    if (window.refreshGaleriaAlt) window.refreshGaleriaAlt();
+    window.refreshGaleriaAlt();
 }
 
 applyLang(localStorage.getItem('language') || 'en');

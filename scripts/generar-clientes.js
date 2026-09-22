@@ -1,27 +1,31 @@
 #!/usr/bin/env node
-/* Genera clientes/<slug>/index.html a partir de datos/clientes.yaml
-   - Lee la lista `clientes` en datos/clientes.yaml
-   - Por cada cliente, obtiene el slug desde su campo `enlace`
-     (ej: '/clientes/sokio/index.html' -> 'sokio')
-   - Escribe (o sobreescribe) clientes/<slug>/index.html con la
-     plantilla estándar, seteando data-page="<slug>"
-   - De paso revisa datos/datos.yaml, donde todavía viven las
-     entradas de detalle de cada cliente (ej: "sokio:"), para avisar
-     si a alguna le falta esa entrada
-   - No requiere dependencias externas: usa la copia local de
-     js-yaml en lib/js-yaml.min.js
+/* Hornea el contenido de la seccion clientes a partir de
+   datos/clientes.yaml (el indice y las 4 fichas de detalle viven ahi,
+   consolidadas en un solo archivo):
+   - clientes/index.html: la lista de `clientes` (titulo + filas)
+   - clientes/<slug>/index.html por cada cliente con entrada de
+     detalle propia (`clientesYaml[slug]`), con el mismo molde
+     "titulo + secciones + galeria/ficha opcionales" que usan las
+     paginas de proyectos
+   Igual que scripts/generar-proyectos.js: si el archivo ya existe,
+   reemplaza solo el bloque que le corresponde (no regenera el
+   documento entero, para no tocar nada page-especifico); si el
+   cliente es nuevo y no tiene archivo todavia, lo crea desde una
+   plantilla minima ya horneada.
    Uso: node scripts/generar-clientes.js
 */
 const fs = require('fs');
 const path = require('path');
 const jsyaml = require('../lib/js-yaml.min.js');
+const { renderizarDetalle, renderizarTituloH1, renderizarClientesLista } = require('./lib/plantillas-sitio.js');
+const { reemplazarBloque, quitarScriptsRuntime, hornearIdiomaPorDefecto } = require('./lib/hornear-html.js');
 
 const RAIZ = path.join(__dirname, '..');
 const CLIENTES_YAML = path.join(RAIZ, 'datos', 'clientes.yaml');
-const DATOS_YAML = path.join(RAIZ, 'datos', 'datos.yaml');
+const INDEX_HTML = path.join(RAIZ, 'clientes', 'index.html');
 
-function plantilla(slug) {
-  return `<!DOCTYPE html>
+function plantillaNueva(slug, data) {
+  let html = `<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -48,11 +52,11 @@ function plantilla(slug) {
 
     <script src="/js/nav.js"></script>
     <script src="/js/script.js"></script>
-    <script src="/lib/js-yaml.min.js"></script>
-    <script src="/js/render.js"></script>
 </body>
 </html>
 `;
+  html = reemplazarBloque(html, '<div class="contenido-texto">', renderizarDetalle(data));
+  return hornearIdiomaPorDefecto(html);
 }
 
 function slugDesdeEnlace(enlace) {
@@ -60,18 +64,26 @@ function slugDesdeEnlace(enlace) {
   return m ? m[1] : null;
 }
 
-function main() {
-  const textoClientes = fs.readFileSync(CLIENTES_YAML, 'utf8');
-  const clientesYaml = jsyaml.load(textoClientes);
-  const clientes = (clientesYaml && clientesYaml.clientes) || [];
+function hornearIndice(clientesYaml) {
+  let html = fs.readFileSync(INDEX_HTML, 'utf8');
+  html = reemplazarBloque(html, '<h1 class="cajita">', renderizarTituloH1(clientesYaml.es, clientesYaml.en));
+  html = reemplazarBloque(html, '<div id="clientes" class="clientes-list">', renderizarClientesLista(clientesYaml.clientes));
+  html = quitarScriptsRuntime(html);
+  html = hornearIdiomaPorDefecto(html);
+  fs.writeFileSync(INDEX_HTML, html, 'utf8');
+  console.log('  clientes/index.html');
+}
 
-  const textoDatos = fs.readFileSync(DATOS_YAML, 'utf8');
-  const datos = jsyaml.load(textoDatos);
+function main() {
+  const clientesYaml = jsyaml.load(fs.readFileSync(CLIENTES_YAML, 'utf8'));
+  const clientes = (clientesYaml && clientesYaml.clientes) || [];
 
   if (clientes.length === 0) {
     console.warn('No se encontraron clientes en clientes.yaml');
     return;
   }
+
+  hornearIndice(clientesYaml);
 
   let creados = 0;
   let actualizados = 0;
@@ -80,36 +92,38 @@ function main() {
   clientes.forEach((c) => {
     const slug = slugDesdeEnlace(c.enlace);
     if (!slug) {
-      console.warn(
-        `Omitiendo "${c.nombre}": enlace inválido o ausente (${c.enlace})`,
-      );
+      console.warn(`Omitiendo "${c.nombre}": enlace inválido o ausente (${c.enlace})`);
       omitidos++;
       return;
     }
-    if (!clientesYaml[slug] && !datos[slug]) {
-      console.warn(
-        `Aviso: no hay entrada "${slug}:" en clientes.yaml ni en datos.yaml para "${c.nombre}"`,
-      );
+
+    const data = clientesYaml[slug];
+    if (!data) {
+      console.warn(`Omitiendo "${c.nombre}": no hay entrada "${slug}:" en clientes.yaml`);
+      omitidos++;
+      return;
     }
 
     const dir = path.join(RAIZ, 'clientes', slug);
     const archivo = path.join(dir, 'index.html');
     const existia = fs.existsSync(archivo);
 
-    fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(archivo, plantilla(slug), 'utf8');
-
     if (existia) {
+      let html = fs.readFileSync(archivo, 'utf8');
+      html = reemplazarBloque(html, '<div class="contenido-texto">', renderizarDetalle(data));
+      html = quitarScriptsRuntime(html);
+      html = hornearIdiomaPorDefecto(html);
+      fs.writeFileSync(archivo, html, 'utf8');
       actualizados++;
     } else {
+      fs.mkdirSync(dir, { recursive: true });
+      fs.writeFileSync(archivo, plantillaNueva(slug, data), 'utf8');
       creados++;
     }
     console.log(`  clientes/${slug}/index.html`);
   });
 
-  console.log(
-    `\nListo: ${creados} creados, ${actualizados} actualizados, ${omitidos} omitidos.`,
-  );
+  console.log(`\nListo: ${creados} creados, ${actualizados} actualizados, ${omitidos} omitidos.`);
 }
 
 main();

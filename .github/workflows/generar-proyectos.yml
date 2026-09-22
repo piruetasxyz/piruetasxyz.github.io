@@ -1,12 +1,12 @@
-name: Generar páginas de clientes
+name: Generar páginas de proyectos
 
 on:
   workflow_dispatch: {}
   push:
     branches: [main]
     paths:
-      - "datos/clientes.yaml"
-      - "scripts/generar-clientes.js"
+      - "datos/datos.yaml"
+      - "scripts/generar-proyectos.js"
       - "scripts/lib/**"
       - "lib/js-yaml.min.js"
 
@@ -25,17 +25,17 @@ jobs:
         with:
           node-version: 20
 
-      - name: Hornear clientes/index.html y clientes/*/index.html desde datos/clientes.yaml
-        run: node scripts/generar-clientes.js
+      - name: Hornear inicio, tienda, proyectos/index.html y proyectos/*/index.html desde datos/datos.yaml
+        run: node scripts/generar-proyectos.js
 
       - name: Commitear páginas generadas
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add clientes
+          git add index.html store proyectos
           if git diff --cached --quiet; then
             echo "Sin cambios que commitear."
           else
-            git commit -m "Generar páginas de clientes automáticamente"
+            git commit -m "Generar páginas de proyectos automáticamente"
             git push
           fi
