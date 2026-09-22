@@ -88,6 +88,24 @@ body.menu-ready .right {
   width: calc(100% - 220px);
 }
 
+/* above the mobile breakpoint, the menu stays open permanently
+   and the show/hide toggle is hidden since it no longer applies */
+@media (min-width: 801px) {
+  .left {
+    left: 0 !important;
+  }
+
+  .right {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+    transform: none !important;
+  }
+
+  #menu-toggle-row {
+    display: none;
+  }
+}
+
 .contenedor-producto {
   display: flex;
   align-items: flex-start;
@@ -183,26 +201,48 @@ body.menu-ready .right {
   display: none;
 }
 
-.galeria-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 25px;
+/* Each gallery photo gets its own full-width row with a solid
+   color background, so pictures read big instead of packed into a
+   grid. Colors cycle through tints/shades mixed from the site's two
+   brand colors (pink, greenyellow) so the row backgrounds feel like
+   variants of the same palette rather than random hues. The row
+   bleeds out to the edges of `.right` via a negative margin that
+   matches `.right`'s own horizontal padding (see the @media
+   overrides below, which keep that margin in sync). */
+.galeria-filas {
   margin: 20px 0 40px 0;
+}
+
+.galeria-fila {
+  margin: 0 -40px;
+  padding: 40px;
+}
+
+.galeria-fila:nth-of-type(4n + 1) {
+  background-color: pink;
+}
+
+.galeria-fila:nth-of-type(4n + 2) {
+  background-color: greenyellow;
+}
+
+.galeria-fila:nth-of-type(4n + 3) {
+  background-color: color-mix(in srgb, pink 60%, black);
+}
+
+.galeria-fila:nth-of-type(4n) {
+  background-color: color-mix(in srgb, greenyellow 55%, black);
 }
 
 .galeria-item {
   display: block;
-  background-color: white;
-  border: 1px solid black;
-  box-shadow: 10px 10px 0px pink;
 }
 
 .galeria-item img {
   display: block;
   width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  height: clamp(320px, 48vw, 680px);
+  object-fit: contain;
   margin: 0;
 }
 
@@ -467,10 +507,6 @@ html[lang="es"] .en {
   .proyectos-grid {
     grid-template-columns: 1fr 1fr;
   }
-
-  .galeria-grid {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 @media (max-width: 900px) {
@@ -507,8 +543,9 @@ html[lang="es"] .en {
     grid-template-columns: 1fr;
   }
 
-  .galeria-grid {
-    grid-template-columns: 1fr;
+  .galeria-fila {
+    margin: 0 -20px;
+    padding: 24px 20px;
   }
 
   .right {

@@ -2,7 +2,7 @@ document.body.insertAdjacentHTML(
   'afterbegin',
   `
     <div id="topbar-buttons">
-        <div class="topbar-row">
+        <div class="topbar-row" id="menu-toggle-row">
             <span class="es">menú:</span><span class="en">menu:</span>
             <button id="menu-btn" class="boton-piruetas">
                 <span class="es"><span data-state="show">mostrar</span> / <span data-state="hide">esconder</span></span>

@@ -86,9 +86,9 @@ function main() {
       omitidos++;
       return;
     }
-    if (!datos[slug]) {
+    if (!clientesYaml[slug] && !datos[slug]) {
       console.warn(
-        `Aviso: no hay entrada "${slug}:" en datos.yaml para "${c.nombre}"`,
+        `Aviso: no hay entrada "${slug}:" en clientes.yaml ni en datos.yaml para "${c.nombre}"`,
       );
     }
 

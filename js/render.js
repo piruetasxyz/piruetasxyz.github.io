@@ -366,9 +366,11 @@
     });
 
     if (Array.isArray(data.galeria) && data.galeria.length) {
-      const grid = document.createElement('div');
-      grid.className = 'galeria-grid';
+      const filas = document.createElement('div');
+      filas.className = 'galeria-filas';
       data.galeria.forEach((item) => {
+        const fila = document.createElement('div');
+        fila.className = 'galeria-fila';
         const a = document.createElement('a');
         a.className = 'galeria-item';
         a.href = item.image || '';
@@ -380,9 +382,10 @@
         img.dataset.altEs = (item.alt && item.alt.es) || '';
         img.dataset.altEn = (item.alt && item.alt.en) || '';
         a.appendChild(img);
-        grid.appendChild(a);
+        fila.appendChild(a);
+        filas.appendChild(fila);
       });
-      container.appendChild(grid);
+      container.appendChild(filas);
       window.refreshGaleriaAlt();
     }
 
