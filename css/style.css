@@ -203,11 +203,11 @@ body.menu-ready .right {
 
 /* Each gallery photo gets its own full-width row with a solid
    color background, so pictures read big instead of packed into a
-   grid. Colors cycle through tints/shades mixed from the site's two
-   brand colors (pink, greenyellow) so the row backgrounds feel like
-   variants of the same palette rather than random hues. The row
-   bleeds out to the edges of `.right` via a negative margin that
-   matches `.right`'s own horizontal padding (see the @media
+   grid. Colors cycle through tints/shades of a separate two-color
+   pair (skyblue, orange), kept distinct from the site's brand colors
+   (pink, greenyellow) so those stay reserved for the main site chrome.
+   The row bleeds out to the edges of `.right` via a negative margin
+   that matches `.right`'s own horizontal padding (see the @media
    overrides below, which keep that margin in sync). */
 .galeria-filas {
   margin: 20px 0 40px 0;
@@ -219,19 +219,19 @@ body.menu-ready .right {
 }
 
 .galeria-fila:nth-of-type(4n + 1) {
-  background-color: pink;
+  background-color: skyblue;
 }
 
 .galeria-fila:nth-of-type(4n + 2) {
-  background-color: greenyellow;
+  background-color: orange;
 }
 
 .galeria-fila:nth-of-type(4n + 3) {
-  background-color: color-mix(in srgb, pink 60%, black);
+  background-color: color-mix(in srgb, skyblue 60%, black);
 }
 
 .galeria-fila:nth-of-type(4n) {
-  background-color: color-mix(in srgb, greenyellow 55%, black);
+  background-color: color-mix(in srgb, orange 55%, black);
 }
 
 .galeria-item {
