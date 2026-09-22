@@ -24,7 +24,14 @@
 const fs = require('fs');
 const path = require('path');
 const jsyaml = require('../lib/js-yaml.min.js');
-const { renderizarDetalle, renderizarProyectosGrid, heroInicial, escaparHtml } = require('./lib/plantillas-sitio.js');
+const {
+  renderizarDetalle,
+  renderizarProyectosGrid,
+  heroInicial,
+  escaparHtml,
+  renderizarMetaHead,
+  extraerMetaDeDetalle,
+} = require('./lib/plantillas-sitio.js');
 const {
   reemplazarBloque,
   reemplazarAtributo,
@@ -59,6 +66,12 @@ function hornearIndiceProyectos(proyectos) {
     html = reemplazarAtributo(html, 'hero-link', 'href', escaparHtml(hero.href));
   }
 
+  html = reemplazarBloque(
+    html,
+    '<title>',
+    renderizarMetaHead({ titulo: 'projects', imagen: hero && hero.src, ruta: '/proyectos/' })
+  );
+
   html = quitarScriptsRuntime(html);
   html = hornearIdiomaPorDefecto(html);
   if (!html.includes('/js/proyectos-hero.js')) {
@@ -85,8 +98,10 @@ function main() {
     }
 
     const rutaArchivo = path.join(RAIZ, archivo);
+    const rutaPagina = `/${archivo.replace(/index\.html$/, '')}`;
     let html = fs.readFileSync(rutaArchivo, 'utf8');
     html = reemplazarBloque(html, '<div class="contenido-texto">', renderizarDetalle(data));
+    html = reemplazarBloque(html, '<title>', renderizarMetaHead({ ...extraerMetaDeDetalle(data), ruta: rutaPagina }));
     html = quitarScriptsRuntime(html);
     html = hornearIdiomaPorDefecto(html);
     fs.writeFileSync(rutaArchivo, html, 'utf8');

@@ -19,6 +19,73 @@ function escaparHtml(texto) {
     .replace(/"/g, '&quot;');
 }
 
+const DOMINIO = 'https://piruetas.xyz';
+const IMAGEN_DEFECTO = '/media/piruetas-v0.jpg';
+const DESCRIPCION_DEFECTO = 'piruetas es un estudio chileno de arte electrónico y computacional fundado en 2022.';
+
+function textoPlano(html) {
+  return String(html || '')
+    .replace(/<br\s*\/?>/gi, ' ')
+    .replace(/<[^>]+>/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function truncar(texto, maxLargo) {
+  if (texto.length <= maxLargo) return texto;
+  return texto.slice(0, maxLargo - 1).trimEnd() + '…';
+}
+
+function absolutizarUrl(ruta) {
+  return /^https?:\/\//.test(ruta) ? ruta : `${DOMINIO}${ruta}`;
+}
+
+/* Extrae titulo/descripcion/imagen de un `data` con la misma forma
+   que usa renderizarDetalle (titulo/es-en sueltos + sections +
+   galeria opcional), para armar los meta tags de la pagina. */
+function extraerMetaDeDetalle(data) {
+  const tituloData = data.titulo || data;
+  const titulo = (tituloData && (tituloData.en || tituloData.es)) || '';
+
+  const seccionConContenido = Array.isArray(data.sections)
+    ? data.sections.find((s) => s.content && (s.content.en || s.content.es))
+    : null;
+  const descripcion = seccionConContenido
+    ? truncar(textoPlano(seccionConContenido.content.en || seccionConContenido.content.es), 160)
+    : '';
+
+  const imagen = (Array.isArray(data.galeria) && data.galeria[0] && data.galeria[0].image) || '';
+
+  return { titulo, descripcion, imagen };
+}
+
+/* Arma el <title> + meta description/Open Graph/Twitter Card para el
+   <head> de una pagina. Sin esto, apps como WhatsApp/Telegram/iMessage
+   no tienen de donde sacar el icono, titulo o imagen al pegar un link
+   del sitio: muestran el link pelado. `ruta` es el path absoluto de
+   la pagina (ej. '/clientes/parla/'). */
+function renderizarMetaHead({ titulo, descripcion, imagen, ruta }) {
+  const tituloFinal = titulo ? `piruetas - ${titulo}` : 'piruetas';
+  const descripcionFinal = descripcion || DESCRIPCION_DEFECTO;
+  const imagenFinal = absolutizarUrl(imagen || IMAGEN_DEFECTO);
+  const urlFinal = absolutizarUrl(ruta);
+
+  const t = escaparHtml(tituloFinal);
+  const d = escaparHtml(descripcionFinal);
+  const i = escaparHtml(imagenFinal);
+  const u = escaparHtml(urlFinal);
+
+  return `<title>${t}</title>
+    <meta name="description" content="${d}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="piruetas" />
+    <meta property="og:title" content="${t}" />
+    <meta property="og:description" content="${d}" />
+    <meta property="og:image" content="${i}" />
+    <meta property="og:url" content="${u}" />
+    <meta name="twitter:card" content="summary_large_image" />`;
+}
+
 function spanEsEn(es, en, clasesExtra) {
   const clases = clasesExtra ? ' ' + clasesExtra : '';
   return (
@@ -315,4 +382,6 @@ module.exports = {
   renderizarGrupos,
   renderizarProyectosGrid,
   heroInicial,
+  renderizarMetaHead,
+  extraerMetaDeDetalle,
 };
