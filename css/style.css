@@ -183,6 +183,69 @@ body.menu-ready .right {
   display: none;
 }
 
+.galeria-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  margin: 20px 0 40px 0;
+}
+
+.galeria-item {
+  display: block;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 10px 10px 0px pink;
+}
+
+.galeria-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  margin: 0;
+}
+
+.ficha-tecnica {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 6px 20px;
+  margin: 20px 0 40px 0;
+  font-size: 10pt;
+}
+
+.ficha-tecnica dt {
+  font-family: 'Necto Mono', monospace;
+  text-transform: uppercase;
+  font-size: 8pt;
+  color: blue;
+  letter-spacing: 0.5px;
+  padding-top: 2px;
+}
+
+.ficha-tecnica dd {
+  margin: 0;
+}
+
+.equipo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.equipo-list li {
+  margin-bottom: 4px;
+}
+
+.equipo-nombre {
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.equipo-rol::before {
+  content: '— ';
+}
+
 .cajita {
   border: 1px solid black;
   box-shadow: 5px 10px pink;
@@ -404,6 +467,10 @@ html[lang="es"] .en {
   .proyectos-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .galeria-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 900px) {
@@ -437,6 +504,10 @@ html[lang="es"] .en {
 
 @media (max-width: 800px) {
   .proyectos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .galeria-grid {
     grid-template-columns: 1fr;
   }
 

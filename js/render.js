@@ -1,7 +1,12 @@
 /* Global render.js
    - Detects `data-page` on <body>
-   - Loads the single site-wide YAML file at /datos/datos.yaml
-   - Looks up data[dataPage] and renders it with the matching pattern
+   - Tries to load a standalone YAML file for the section first, at
+     /datos/<data-page>.yaml (e.g. /datos/clientes.yaml)
+   - For any other page, checks /datos/clientes.yaml for a matching
+     top-level key, so individual client detail pages (e.g.
+     claudia-gonzalez-godoy) don't need their own YAML file
+   - Falls back to the shared /datos/datos.yaml and looks up
+     data[dataPage], for sections that haven't been split out yet
    - Depends on js-yaml being available as a global (jsyaml or JS_YAML)
 */
 (function () {
@@ -12,6 +17,17 @@
   if (!dataPage) return;
 
   const DATOS_URL = '/datos/datos.yaml';
+  const DATOS_PROPIOS_URL = '/datos/' + dataPage + '.yaml';
+  const DATOS_CLIENTES_URL = '/datos/clientes.yaml';
+
+  // exposed so script.js can refresh gallery alt text on language toggle
+  window.refreshGaleriaAlt = function () {
+    const lang = document.documentElement.getAttribute('lang') || 'en';
+    const key = 'alt' + (lang === 'es' ? 'Es' : 'En');
+    document.querySelectorAll('.galeria-item img').forEach((img) => {
+      img.alt = img.dataset[key] || '';
+    });
+  };
 
   function findYamlLib() {
     return (
@@ -349,6 +365,102 @@
       if (startRemoving) node.remove();
     });
 
+    if (Array.isArray(data.galeria) && data.galeria.length) {
+      const grid = document.createElement('div');
+      grid.className = 'galeria-grid';
+      data.galeria.forEach((item) => {
+        const a = document.createElement('a');
+        a.className = 'galeria-item';
+        a.href = item.image || '';
+        a.target = '_blank';
+        a.rel = 'noopener';
+        const img = document.createElement('img');
+        img.src = item.image || '';
+        img.loading = 'lazy';
+        img.dataset.altEs = (item.alt && item.alt.es) || '';
+        img.dataset.altEn = (item.alt && item.alt.en) || '';
+        a.appendChild(img);
+        grid.appendChild(a);
+      });
+      container.appendChild(grid);
+      window.refreshGaleriaAlt();
+    }
+
+    const tieneFicha =
+      data.materiales || data.software || (data.equipo && data.equipo.length);
+    if (tieneFicha) {
+      const ficha = document.createElement('dl');
+      ficha.className = 'ficha-tecnica';
+
+      function addFilaTexto(labelEs, labelEn, valor) {
+        if (!valor) return;
+        const dt = document.createElement('dt');
+        const dtEs = document.createElement('span');
+        dtEs.className = 'es';
+        dtEs.textContent = labelEs;
+        const dtEn = document.createElement('span');
+        dtEn.className = 'en';
+        dtEn.textContent = labelEn;
+        dt.appendChild(dtEs);
+        dt.appendChild(dtEn);
+
+        const dd = document.createElement('dd');
+        const ddEs = document.createElement('span');
+        ddEs.className = 'es';
+        ddEs.textContent = valor.es || '';
+        const ddEn = document.createElement('span');
+        ddEn.className = 'en';
+        ddEn.textContent = valor.en || '';
+        dd.appendChild(ddEs);
+        dd.appendChild(ddEn);
+
+        ficha.appendChild(dt);
+        ficha.appendChild(dd);
+      }
+
+      addFilaTexto('materiales', 'materials', data.materiales);
+      addFilaTexto('software', 'software', data.software);
+
+      if (Array.isArray(data.equipo) && data.equipo.length) {
+        const dt = document.createElement('dt');
+        const dtEs = document.createElement('span');
+        dtEs.className = 'es';
+        dtEs.textContent = 'equipo';
+        const dtEn = document.createElement('span');
+        dtEn.className = 'en';
+        dtEn.textContent = 'team';
+        dt.appendChild(dtEs);
+        dt.appendChild(dtEn);
+        ficha.appendChild(dt);
+
+        const dd = document.createElement('dd');
+        const ul = document.createElement('ul');
+        ul.className = 'equipo-list';
+        data.equipo.forEach((miembro) => {
+          const li = document.createElement('li');
+          const nombre = document.createElement('span');
+          nombre.className = 'equipo-nombre';
+          nombre.textContent = miembro.nombre || '';
+          li.appendChild(nombre);
+          if (miembro.rol && (miembro.rol.es || miembro.rol.en)) {
+            const rolEs = document.createElement('span');
+            rolEs.className = 'es equipo-rol';
+            rolEs.textContent = miembro.rol.es || '';
+            const rolEn = document.createElement('span');
+            rolEn.className = 'en equipo-rol';
+            rolEn.textContent = miembro.rol.en || '';
+            li.appendChild(rolEs);
+            li.appendChild(rolEn);
+          }
+          ul.appendChild(li);
+        });
+        dd.appendChild(ul);
+        ficha.appendChild(dd);
+      }
+
+      container.appendChild(ficha);
+    }
+
     (data.sections || []).forEach((sec) => {
       if (sec.title && (sec.title.es || sec.title.en)) {
         const h2 = document.createElement('h2');
@@ -420,17 +532,39 @@
     }
 
     try {
-      const res = await fetch(DATOS_URL);
-      if (!res.ok) throw new Error('Could not fetch ' + DATOS_URL);
-      const text = await res.text();
-      const datos = yamlLib.load(text);
-      if (!datos) throw new Error('Parsed YAML is empty');
+      let data;
 
-      const data = datos[dataPage];
+      const resPropio = await fetch(DATOS_PROPIOS_URL);
+      if (resPropio.ok) {
+        const text = await resPropio.text();
+        data = yamlLib.load(text);
+        if (!data) throw new Error('Parsed YAML is empty: ' + DATOS_PROPIOS_URL);
+      }
+
+      if (!data && DATOS_PROPIOS_URL !== DATOS_CLIENTES_URL) {
+        const resClientes = await fetch(DATOS_CLIENTES_URL);
+        if (resClientes.ok) {
+          const text = await resClientes.text();
+          const clientesData = yamlLib.load(text);
+          if (clientesData && clientesData[dataPage]) {
+            data = clientesData[dataPage];
+          }
+        }
+      }
+
       if (!data) {
-        throw new Error(
-          'No entry for data-page "' + dataPage + '" in ' + DATOS_URL,
-        );
+        const res = await fetch(DATOS_URL);
+        if (!res.ok) throw new Error('Could not fetch ' + DATOS_URL);
+        const text = await res.text();
+        const datos = yamlLib.load(text);
+        if (!datos) throw new Error('Parsed YAML is empty');
+
+        data = datos[dataPage];
+        if (!data) {
+          throw new Error(
+            'No entry for data-page "' + dataPage + '" in ' + DATOS_URL,
+          );
+        }
       }
 
       if (data.sections) {

@@ -263,23 +263,6 @@ personas:
                 en: 'github'
               url: 'https://github.com/usuario'
 
-clientes:
-  en: 'clients'
-  es: 'clientes'
-  clientes:
-    - nombre: 'Claudia González Godoy'
-      anho: 2026
-      enlace: '/clientes/claudia-gonzalez-godoy/index.html'
-    - nombre: 'bibliotecaCuir'
-      anho: 2026
-      enlace: '/clientes/biblioteca-cuir/index.html'
-    - nombre: 'Sokio'
-      anho: 2025
-      enlace: '/clientes/sokio/index.html'
-    - nombre: 'Universidad Diego Portales'
-      anho: 2024
-      enlace: '/clientes/universidad-diego-portales/index.html'
-
 proyectos:
   proyectos:
     - titulo:
@@ -541,28 +524,6 @@ tienda:
       content:
         es: 'desde el 2023 somos importadores oficiales de BASTL Instruments in Chile.'
         en: 'since 2023 we are official dealers of BASTL Instruments in Chile.'
-
-claudia-gonzalez-godoy:
-  title:
-    es: 'Claudia González Godoy'
-    en: 'Claudia González Godoy'
-  sections:
-    - title:
-        es: 'lorem ipsum'
-        en: 'lorem ipsum'
-      content:
-        es: |-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
-        en: |-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
 
 biblioteca-cuir:
   title:

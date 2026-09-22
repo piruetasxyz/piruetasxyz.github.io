@@ -28,6 +28,7 @@ function applyLang(lang) {
     localStorage.setItem('language', lang);
     updateLangBtn(lang);
     updateDocumentTitle(lang);
+    if (window.refreshGaleriaAlt) window.refreshGaleriaAlt();
 }
 
 applyLang(localStorage.getItem('language') || 'en');

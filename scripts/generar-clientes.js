@@ -1,10 +1,13 @@
 #!/usr/bin/env node
-/* Genera clientes/<slug>/index.html a partir de datos/datos.yaml
-   - Lee clientes.clientes en datos/datos.yaml
+/* Genera clientes/<slug>/index.html a partir de datos/clientes.yaml
+   - Lee la lista `clientes` en datos/clientes.yaml
    - Por cada cliente, obtiene el slug desde su campo `enlace`
      (ej: '/clientes/sokio/index.html' -> 'sokio')
    - Escribe (o sobreescribe) clientes/<slug>/index.html con la
      plantilla estándar, seteando data-page="<slug>"
+   - De paso revisa datos/datos.yaml, donde todavía viven las
+     entradas de detalle de cada cliente (ej: "sokio:"), para avisar
+     si a alguna le falta esa entrada
    - No requiere dependencias externas: usa la copia local de
      js-yaml en lib/js-yaml.min.js
    Uso: node scripts/generar-clientes.js
@@ -14,6 +17,7 @@ const path = require('path');
 const jsyaml = require('../lib/js-yaml.min.js');
 
 const RAIZ = path.join(__dirname, '..');
+const CLIENTES_YAML = path.join(RAIZ, 'datos', 'clientes.yaml');
 const DATOS_YAML = path.join(RAIZ, 'datos', 'datos.yaml');
 
 function plantilla(slug) {
@@ -57,12 +61,15 @@ function slugDesdeEnlace(enlace) {
 }
 
 function main() {
-  const texto = fs.readFileSync(DATOS_YAML, 'utf8');
-  const datos = jsyaml.load(texto);
-  const clientes = (datos.clientes && datos.clientes.clientes) || [];
+  const textoClientes = fs.readFileSync(CLIENTES_YAML, 'utf8');
+  const clientesYaml = jsyaml.load(textoClientes);
+  const clientes = (clientesYaml && clientesYaml.clientes) || [];
+
+  const textoDatos = fs.readFileSync(DATOS_YAML, 'utf8');
+  const datos = jsyaml.load(textoDatos);
 
   if (clientes.length === 0) {
-    console.warn('No se encontraron clientes en datos.yaml');
+    console.warn('No se encontraron clientes en clientes.yaml');
     return;
   }
 

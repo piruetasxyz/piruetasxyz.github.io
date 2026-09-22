@@ -1,0 +1,105 @@
+en: 'clients'
+es: 'clientes'
+clientes:
+  - nombre: 'Claudia González Godoy'
+    anho: 2026
+    enlace: '/clientes/claudia-gonzalez-godoy/index.html'
+  - nombre: 'bibliotecaCuir'
+    anho: 2026
+    enlace: '/clientes/biblioteca-cuir/index.html'
+  - nombre: 'Sokio'
+    anho: 2025
+    enlace: '/clientes/sokio/index.html'
+  - nombre: 'Universidad Diego Portales'
+    anho: 2024
+    enlace: '/clientes/universidad-diego-portales/index.html'
+
+claudia-gonzalez-godoy:
+  title:
+    es: 'Claudia González Godoy'
+    en: 'Claudia González Godoy'
+  materiales:
+    es: 'PCB'
+    en: 'PCB'
+  software:
+    es: 'KiCad'
+    en: 'KiCad'
+  equipo:
+    - nombre: 'Mateo Arce'
+      rol:
+        es: 'esquemáticos y placas'
+        en: 'schematics and boards'
+    - nombre: 'Aarón Montoya'
+      rol:
+        es: 'fabricación e importación'
+        en: 'manufacturing and import'
+  galeria:
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/00.webp'
+      alt:
+        es: 'Claudia González Godoy, placa 00'
+        en: 'Claudia González Godoy, plate 00'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/01.webp'
+      alt:
+        es: 'Claudia González Godoy, placa 01'
+        en: 'Claudia González Godoy, plate 01'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/02.webp'
+      alt:
+        es: 'Claudia González Godoy, placa 02'
+        en: 'Claudia González Godoy, plate 02'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/03.webp'
+      alt:
+        es: 'Claudia González Godoy, placa 03'
+        en: 'Claudia González Godoy, plate 03'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/04.webp'
+      alt:
+        es: 'Claudia González Godoy, placa 04'
+        en: 'Claudia González Godoy, plate 04'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/05.webp'
+      alt:
+        es: 'Claudia González Godoy, placa 05'
+        en: 'Claudia González Godoy, plate 05'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/06.webp'
+      alt:
+        es: 'Claudia González Godoy, placa 06'
+        en: 'Claudia González Godoy, plate 06'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/07.webp'
+      alt:
+        es: 'Claudia González Godoy, placa 07'
+        en: 'Claudia González Godoy, plate 07'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/08.webp'
+      alt:
+        es: 'Claudia González Godoy, placa 08'
+        en: 'Claudia González Godoy, plate 08'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/09.webp'
+      alt:
+        es: 'Claudia González Godoy, placa 09'
+        en: 'Claudia González Godoy, plate 09'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/10.webp'
+      alt:
+        es: 'Claudia González Godoy, placa 10'
+        en: 'Claudia González Godoy, plate 10'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/11.webp'
+      alt:
+        es: 'Claudia González Godoy, placa 11'
+        en: 'Claudia González Godoy, plate 11'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/12.webp'
+      alt:
+        es: 'Claudia González Godoy, placa 12'
+        en: 'Claudia González Godoy, plate 12'
+  sections:
+    - title:
+        es: 'lorem ipsum'
+        en: 'lorem ipsum'
+      content:
+        es: |-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        en: |-
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.

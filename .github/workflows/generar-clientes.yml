@@ -5,6 +5,7 @@ on:
   push:
     branches: [main]
     paths:
+      - "datos/clientes.yaml"
       - "datos/datos.yaml"
       - "scripts/generar-clientes.js"
       - "lib/js-yaml.min.js"
