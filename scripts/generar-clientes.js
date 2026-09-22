@@ -24,7 +24,12 @@ const {
   renderizarMetaHead,
   extraerMetaDeDetalle,
 } = require('./lib/plantillas-sitio.js');
-const { reemplazarBloque, quitarScriptsRuntime, hornearIdiomaPorDefecto } = require('./lib/hornear-html.js');
+const {
+  reemplazarBloque,
+  reemplazarMetaHead,
+  quitarScriptsRuntime,
+  hornearIdiomaPorDefecto,
+} = require('./lib/hornear-html.js');
 
 const RAIZ = path.join(__dirname, '..');
 const CLIENTES_YAML = path.join(RAIZ, 'datos', 'clientes.yaml');
@@ -62,7 +67,7 @@ function plantillaNueva(slug, data) {
 </html>
 `;
   html = reemplazarBloque(html, '<div class="contenido-texto">', renderizarDetalle(data));
-  html = reemplazarBloque(html, '<title>', renderizarMetaHead({ ...extraerMetaDeDetalle(data), ruta: `/clientes/${slug}/` }));
+  html = reemplazarMetaHead(html, renderizarMetaHead({ ...extraerMetaDeDetalle(data), ruta: `/clientes/${slug}/` }));
   return hornearIdiomaPorDefecto(html);
 }
 
@@ -75,11 +80,7 @@ function hornearIndice(clientesYaml) {
   let html = fs.readFileSync(INDEX_HTML, 'utf8');
   html = reemplazarBloque(html, '<h1 class="cajita">', renderizarTituloH1(clientesYaml.es, clientesYaml.en));
   html = reemplazarBloque(html, '<div id="clientes" class="clientes-list">', renderizarClientesLista(clientesYaml.clientes));
-  html = reemplazarBloque(
-    html,
-    '<title>',
-    renderizarMetaHead({ titulo: clientesYaml.en || clientesYaml.es, ruta: '/clientes/' })
-  );
+  html = reemplazarMetaHead(html, renderizarMetaHead({ titulo: clientesYaml.en || clientesYaml.es, ruta: '/clientes/' }));
   html = quitarScriptsRuntime(html);
   html = hornearIdiomaPorDefecto(html);
   fs.writeFileSync(INDEX_HTML, html, 'utf8');
@@ -123,7 +124,7 @@ function main() {
     if (existia) {
       let html = fs.readFileSync(archivo, 'utf8');
       html = reemplazarBloque(html, '<div class="contenido-texto">', renderizarDetalle(data));
-      html = reemplazarBloque(html, '<title>', renderizarMetaHead({ ...extraerMetaDeDetalle(data), ruta: `/clientes/${slug}/` }));
+      html = reemplazarMetaHead(html, renderizarMetaHead({ ...extraerMetaDeDetalle(data), ruta: `/clientes/${slug}/` }));
       html = quitarScriptsRuntime(html);
       html = hornearIdiomaPorDefecto(html);
       fs.writeFileSync(archivo, html, 'utf8');

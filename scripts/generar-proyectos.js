@@ -34,6 +34,7 @@ const {
 } = require('./lib/plantillas-sitio.js');
 const {
   reemplazarBloque,
+  reemplazarMetaHead,
   reemplazarAtributo,
   quitarScriptsRuntime,
   hornearIdiomaPorDefecto,
@@ -66,11 +67,7 @@ function hornearIndiceProyectos(proyectos) {
     html = reemplazarAtributo(html, 'hero-link', 'href', escaparHtml(hero.href));
   }
 
-  html = reemplazarBloque(
-    html,
-    '<title>',
-    renderizarMetaHead({ titulo: 'projects', imagen: hero && hero.src, ruta: '/proyectos/' })
-  );
+  html = reemplazarMetaHead(html, renderizarMetaHead({ titulo: 'projects', imagen: hero && hero.src, ruta: '/proyectos/' }));
 
   html = quitarScriptsRuntime(html);
   html = hornearIdiomaPorDefecto(html);
@@ -101,7 +98,7 @@ function main() {
     const rutaPagina = `/${archivo.replace(/index\.html$/, '')}`;
     let html = fs.readFileSync(rutaArchivo, 'utf8');
     html = reemplazarBloque(html, '<div class="contenido-texto">', renderizarDetalle(data));
-    html = reemplazarBloque(html, '<title>', renderizarMetaHead({ ...extraerMetaDeDetalle(data), ruta: rutaPagina }));
+    html = reemplazarMetaHead(html, renderizarMetaHead({ ...extraerMetaDeDetalle(data), ruta: rutaPagina }));
     html = quitarScriptsRuntime(html);
     html = hornearIdiomaPorDefecto(html);
     fs.writeFileSync(rutaArchivo, html, 'utf8');

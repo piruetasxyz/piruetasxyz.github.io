@@ -92,9 +92,56 @@ function reemplazarAtributo(html, idElemento, atributo, valorNuevo) {
   return html.slice(0, inicioTag) + tagNuevo + html.slice(finTag + 1);
 }
 
+const META_INICIO = '<!-- meta-og:inicio -->';
+const META_FIN = '<!-- meta-og:fin -->';
+
+/* Matchea un <title> seguido de cero o mas <meta> "sueltas" (sin
+   marcadores) de una corrida vieja de reemplazarMetaHead, para poder
+   barrerlas junto con el <title> la primera vez que un archivo pasa
+   a tener marcadores. Sin este barrido, la primera corrida con
+   marcadores (ver mas abajo) dejaba esas <meta> viejas pegadas justo
+   despues del bloque nuevo en vez de reemplazarlas. */
+const META_SUELTA = /<meta\s+(?:name="description"|property="og:[a-z_:]+"|name="twitter:card")[^>]*\/>/;
+const META_SUELTAS_SEGUIDAS = new RegExp(`(?:\\s*${META_SUELTA.source})*`);
+const TITULO_Y_META_SUELTAS = new RegExp(`<title>[\\s\\S]*?</title>${META_SUELTAS_SEGUIDAS.source}`);
+
+/* Inserta (o reemplaza, si ya existe) el bloque de <title> + meta
+   description/Open Graph/Twitter que arma renderizarMetaHead(),
+   delimitado por comentarios para que hornear sea idempotente: si el
+   archivo ya trae el bloque de una corrida anterior, lo reemplaza
+   entero en vez de agregarle uno nuevo al lado (lo que duplicaría
+   los meta tags cada vez que corre el script, como pasó la primera
+   vez que esto se hizo con reemplazarBloque(html, '<title>', ...),
+   que solo pisa el <title> y deja los <meta> de la corrida anterior
+   sueltos). Ademas de reemplazar entre marcadores (o el <title>
+   original si todavia no hay marcadores), barre cualquier <meta>
+   suelta de una corrida vieja pegada justo despues del punto de
+   reemplazo, para poder limpiar en una sola corrida un archivo que
+   ya quedo con copias duplicadas por este mismo bug. */
+function reemplazarMetaHead(html, nuevoBloqueHtml) {
+  const bloqueMarcado = `${META_INICIO}\n    ${nuevoBloqueHtml}\n    ${META_FIN}`;
+  const inicio = html.indexOf(META_INICIO);
+  if (inicio !== -1) {
+    let fin = html.indexOf(META_FIN);
+    if (fin === -1) {
+      throw new Error(`"${META_INICIO}" sin "${META_FIN}" correspondiente`);
+    }
+    fin += META_FIN.length;
+    const sueltasRegex = new RegExp(`^${META_SUELTAS_SEGUIDAS.source}`);
+    const sueltas = sueltasRegex.exec(html.slice(fin));
+    if (sueltas) fin += sueltas[0].length;
+    return html.slice(0, inicio) + bloqueMarcado + html.slice(fin);
+  }
+  if (!TITULO_Y_META_SUELTAS.test(html)) {
+    throw new Error('No se encontró "<title>" en el HTML');
+  }
+  return html.replace(TITULO_Y_META_SUELTAS, bloqueMarcado);
+}
+
 module.exports = {
   reemplazarBloque,
   reemplazarAtributo,
   quitarScriptsRuntime,
   hornearIdiomaPorDefecto,
+  reemplazarMetaHead,
 };

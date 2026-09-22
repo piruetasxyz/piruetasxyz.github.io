@@ -13,7 +13,7 @@ const fs = require('fs');
 const path = require('path');
 const jsyaml = require('../lib/js-yaml.min.js');
 const { renderizarTituloH1, renderizarGrupos, renderizarMetaHead } = require('./lib/plantillas-sitio.js');
-const { reemplazarBloque, quitarScriptsRuntime, hornearIdiomaPorDefecto } = require('./lib/hornear-html.js');
+const { reemplazarBloque, reemplazarMetaHead, quitarScriptsRuntime, hornearIdiomaPorDefecto } = require('./lib/hornear-html.js');
 
 const RAIZ = path.join(__dirname, '..');
 const DATOS_YAML = path.join(RAIZ, 'datos', 'datos.yaml');
@@ -30,7 +30,7 @@ function main() {
   let html = fs.readFileSync(ARCHIVO, 'utf8');
   html = reemplazarBloque(html, '<h1 class="cajita">', renderizarTituloH1(personas.es, personas.en));
   html = reemplazarBloque(html, '<div id="grupos">', renderizarGrupos(personas.grupos));
-  html = reemplazarBloque(html, '<title>', renderizarMetaHead({ titulo: personas.en || personas.es, ruta: '/personas/' }));
+  html = reemplazarMetaHead(html, renderizarMetaHead({ titulo: personas.en || personas.es, ruta: '/personas/' }));
   html = quitarScriptsRuntime(html);
   html = hornearIdiomaPorDefecto(html);
   fs.writeFileSync(ARCHIVO, html, 'utf8');
