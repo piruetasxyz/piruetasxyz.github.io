@@ -33,6 +33,10 @@ claudia-gonzalez-godoy:
       rol:
         es: 'fabricación e importación'
         en: 'manufacturing and import'
+    - nombre: 'Bernardita Jesús'
+      rol:
+        es: 'fotografías'
+        en: 'photography'
   galeria:
     - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/00.webp'
       alt:
