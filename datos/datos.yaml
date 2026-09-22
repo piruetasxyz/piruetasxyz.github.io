@@ -2,11 +2,11 @@ inicio:
   en: 'home'
   es: 'inicio'
   sections:
-    - title: {}
+    - titulo: {}
       content:
         es: 'piruetas SpA es un estudio chileno de arte electrónico y computacional fundado en 2022.'
         en: 'piruetas SpA is a chilean studio founded in 2022, focusing on electronic and computational art.'
-    - title:
+    - titulo:
         es: 'enlaces'
         en: 'links'
       content:
@@ -373,7 +373,7 @@ parla:
 
   sections:
     - id: descripcion
-      title:
+      titulo:
         es: 'descripción'
         en: 'description'
       content:
@@ -395,7 +395,7 @@ parla:
           include a wired input.
 
     - id: producto
-      title:
+      titulo:
         es: 'producto'
         en: 'product'
       content:
@@ -419,7 +419,7 @@ parla:
           Delivery in Santiago de Chile.
 
     - id: nota
-      title:
+      titulo:
         es: 'nota técnica'
         en: 'technical note'
       content:
@@ -427,7 +427,7 @@ parla:
         en: '👁️ <strong>note:</strong> for this first version a VCC and GND polarity correction is required.'
 
     - id: creditos
-      title:
+      titulo:
         en: 'credits'
         es: 'créditos'
       content:
@@ -447,65 +447,65 @@ parla:
           font: @uno_ca
 
 investigacion-gerassic-organ:
-  title:
+  titulo:
     es: 'página en mantención'
     en: 'under maintenance'
   sections:
-    - title: {}
+    - titulo: {}
       content:
         es: 'próximamente más información sobre este proyecto.'
         en: 'more information about this project coming soon.'
 
 maquinitas-tidal:
-  title:
+  titulo:
     es: 'página en mantención'
     en: 'under maintenance'
   sections:
-    - title: {}
+    - titulo: {}
       content:
         es: 'próximamente más información sobre este proyecto.'
         en: 'more information about this project coming soon.'
 
 gerassic-organ:
-  title:
+  titulo:
     en: 'under maintenance'
     es: 'página en mantención'
   sections:
-    - title: {}
+    - titulo: {}
       content:
         es: 'próximamente más información sobre este proyecto.'
         en: 'more information about this project coming soon.'
 
 osca:
-  title:
+  titulo:
     es: 'página en mantención'
     en: 'under maintenance'
   sections:
-    - title: {}
+    - titulo: {}
       content:
         es: 'próximamente más información sobre este proyecto.'
         en: 'more information about this project coming soon.'
 
 redondela:
-  title:
+  titulo:
     es: 'página en mantención'
     en: 'under maintenance'
   sections:
-    - title: {}
+    - titulo: {}
       content:
         es: 'próximamente más información sobre este proyecto.'
         en: 'more information about this project coming soon.'
 
 talleres-momentos:
-  title:
+  titulo:
     es: 'página en mantención'
     en: 'under maintenance'
   sections:
-    - title: {}
+    - titulo: {}
       content:
         es: 'próximamente más información sobre este proyecto.'
         en: 'more information about this project coming soon.'
-    - title:
+    - titulo:
         es: 'cliente'
         en: 'client'
       content:
@@ -516,21 +516,21 @@ tienda:
   en: 'store'
   es: 'tienda'
   sections:
-    - title: {}
+    - titulo: {}
       content:
         es: 'pronto...'
         en: 'soon...'
-    - title: {}
+    - titulo: {}
       content:
         es: 'desde el 2023 somos importadores oficiales de BASTL Instruments in Chile.'
         en: 'since 2023 we are official dealers of BASTL Instruments in Chile.'
 
 biblioteca-cuir:
-  title:
+  titulo:
     es: 'bibliotecaCuir'
     en: 'bibliotecaCuir'
   sections:
-    - title:
+    - titulo:
         es: 'lorem ipsum'
         en: 'lorem ipsum'
       content:
@@ -548,11 +548,11 @@ biblioteca-cuir:
           commodo consequat.
 
 sokio:
-  title:
+  titulo:
     es: 'Sokio'
     en: 'Sokio'
   sections:
-    - title:
+    - titulo:
         es: 'lorem ipsum'
         en: 'lorem ipsum'
       content:
@@ -570,11 +570,11 @@ sokio:
           commodo consequat.
 
 universidad-diego-portales:
-  title:
+  titulo:
     es: 'Universidad Diego Portales'
     en: 'Universidad Diego Portales'
   sections:
-    - title:
+    - titulo:
         es: 'lorem ipsum'
         en: 'lorem ipsum'
       content:
@@ -590,7 +590,7 @@ universidad-diego-portales:
           magna aliqua. Ut enim ad minim veniam, quis nostrud
           exercitation ullamco laboris nisi ut aliquip ex ea
           commodo consequat.
-    - title:
+    - titulo:
         es: 'proyectos'
         en: 'projects'
       content:

@@ -15,7 +15,7 @@ clientes:
     enlace: '/clientes/universidad-diego-portales/index.html'
 
 claudia-gonzalez-godoy:
-  title:
+  titulo:
     es: 'Claudia González Godoy'
     en: 'Claudia González Godoy'
   materiales:
@@ -87,19 +87,28 @@ claudia-gonzalez-godoy:
         es: 'Claudia González Godoy, placa 12'
         en: 'Claudia González Godoy, plate 12'
   sections:
-    - title:
-        es: 'lorem ipsum'
-        en: 'lorem ipsum'
+    - titulo:
+        es: 'descripción'
+        en: 'description'
       content:
         es: |-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
+          proyecto realizado para el curso aplicaciones tecnológicas
+          dictado por la profesora claudia gonzález godoy en el
+          magíster de artes mediales de la universidad de chile.
+          <br><br>
+          tomamos los fundamentos de lo enseñado en el curso,
+          incluyendo el chip 555 usado en configuración astable como
+          reloj, el chip 4017 como secuenciador, y el chip 4093 como
+          oscilador, y lo portamos a placas pcb para ser usadas en los
+          proyectos finales de les estudiantes del curso.
         en: |-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
+          project made for the course aplicaciones tecnológicas
+          (technological applications), taught by professor claudia
+          gonzález godoy in the master's in media arts at universidad
+          de chile.
+          <br><br>
+          we took the fundamentals taught in the course, including
+          the 555 chip used in astable configuration as a clock, the
+          4017 chip as a sequencer, and the 4093 chip as an
+          oscillator, and ported them to pcbs to be used in the
+          course students' final projects.

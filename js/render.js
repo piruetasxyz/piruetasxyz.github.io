@@ -343,18 +343,18 @@
       return;
     }
 
-    // set title (either a nested `title: {es, en}`, or `es`/`en` directly on data)
+    // set titulo (either a nested `titulo: {es, en}`, or `es`/`en` directly on data)
     const h1 = container.querySelector('h1.cajita');
-    const titleData = data.title || data;
+    const tituloData = data.titulo || data;
     if (h1) {
       const esSpan = h1.querySelector('.es');
       const enSpan = h1.querySelector('.en');
-      if (esSpan) esSpan.textContent = (titleData && titleData.es) || '';
-      if (enSpan) enSpan.textContent = (titleData && titleData.en) || '';
+      if (esSpan) esSpan.textContent = (tituloData && tituloData.es) || '';
+      if (enSpan) enSpan.textContent = (tituloData && tituloData.en) || '';
     }
 
-    // clear existing sections except the title
-    // remove all children after the title
+    // clear existing sections except the titulo
+    // remove all children after the titulo
     let startRemoving = false;
     const children = Array.from(container.childNodes);
     children.forEach((node) => {
@@ -462,15 +462,15 @@
     }
 
     (data.sections || []).forEach((sec) => {
-      if (sec.title && (sec.title.es || sec.title.en)) {
+      if (sec.titulo && (sec.titulo.es || sec.titulo.en)) {
         const h2 = document.createElement('h2');
         h2.className = 'cajita';
         const es = document.createElement('span');
         es.className = 'es';
-        es.textContent = sec.title.es || '';
+        es.textContent = sec.titulo.es || '';
         const en = document.createElement('span');
         en.className = 'en';
-        en.textContent = sec.title.en || '';
+        en.textContent = sec.titulo.en || '';
         h2.appendChild(es);
         h2.appendChild(en);
         container.appendChild(h2);
