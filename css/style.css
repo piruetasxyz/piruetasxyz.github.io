@@ -258,9 +258,13 @@ body {
   display: inline-block;
   background-color: white;
   margin-bottom: 20px;
-  /* separa las cajitas que quedan una al lado de la otra (ej. el
-     título y "descripción"); la sombra ya ocupa 5px a la derecha */
-  margin-right: 20px;
+}
+
+/* el título va en su propia línea, sin la cajita que le sigue (ej.
+   "descripción") al lado; display: table mantiene el ancho justo del
+   texto, como inline-block */
+h1.cajita {
+  display: table;
 }
 
 .boton-piruetas {
