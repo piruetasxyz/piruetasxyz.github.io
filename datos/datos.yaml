@@ -759,6 +759,14 @@ boton:
       alt:
         es: 'gráfico de Boton: la lectura de un botón con rebotes y su valor estable después del antirrebote'
         en: 'Boton plot: a bouncing button reading and its stable value after debouncing'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-boton/svg/boton-umbral.svg'
+      alt:
+        es: 'gráfico de Boton: pulsos sin rebotes de 20 a 100 ms, y solo los que duran más que el antirrebote cambian el valor'
+        en: 'Boton plot: clean pulses from 20 to 100 ms, and only the ones longer than the debounce time change the value'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-boton/svg/boton-pulsaciones.svg'
+      alt:
+        es: 'gráfico de Boton: pulsaciones con rebotes cada vez más rápidas, y las de 35 ms se pierden'
+        en: 'Boton plot: bouncing presses getting faster, and the 35 ms ones are lost'
     - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-boton/svg/boton-arbol.svg'
       alt:
         es: 'estructura de archivos del repositorio de Boton, como treemap'
@@ -826,6 +834,18 @@ perilla:
       alt:
         es: 'gráfico de Perilla: la lectura de una perilla y su valor mapeado de 0 a 100'
         en: 'Perilla plot: a knob reading and its value mapped from 0 to 100'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-perilla/svg/perilla-rangos.svg'
+      alt:
+        es: 'gráfico de Perilla: el valor mapeado para cada lectura, con los rangos 0-100, 0-255 y 100-0'
+        en: 'Perilla plot: the mapped value for every reading, with the ranges 0-100, 0-255 and 100-0'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-perilla/svg/perilla-ruido.svg'
+      alt:
+        es: 'gráfico de Perilla: una perilla girada muy lento con ruido, y el valor mapeado saltando entre números vecinos'
+        en: 'Perilla plot: a knob turned very slowly with noise, and the mapped value jumping between neighboring numbers'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-perilla/svg/perilla-pico.svg'
+      alt:
+        es: 'gráfico de Perilla: lecturas de 12 bits de Raspberry Pi Pico, que se pasan de 100 sin setRangoLeido(0, 4095)'
+        en: 'Perilla plot: 12-bit Raspberry Pi Pico readings, which go past 100 without setRangoLeido(0, 4095)'
     - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-perilla/svg/perilla-arbol.svg'
       alt:
         es: 'estructura de archivos del repositorio de Perilla, como treemap'
