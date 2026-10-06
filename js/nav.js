@@ -39,6 +39,13 @@ const navbarContent = `
                 <li><a href="/proyectos/chufe/index.html">chufe</a> (2026)</li>
             </ol>
 
+            <h5><span class="es">bibliotecas</span><span class="en">libraries</span></h5>
+            <ol>
+                <li><a href="https://github.com/piruetasxyz/Boton">boton</a></li>
+                <li><a href="https://github.com/piruetasxyz/Perilla">perilla</a></li>
+            </ol>
+
+            <!-- ocultos por ahora: redondela, gerassic organ, talleres momentos
             <h5>software</h5>
             <ol>
                 <li><a href="/proyectos/redondela/index.html">redondela</a></li>
@@ -53,6 +60,7 @@ const navbarContent = `
             <ol>
                 <li><a href="/proyectos/talleres-momentos/index.html">talleres momentos</a> (2023)</li>
             </ol>
+            -->
         </div>
     </div>
 
