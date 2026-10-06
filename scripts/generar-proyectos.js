@@ -18,6 +18,8 @@
    js/proyectos-hero.js leyendo los atributos data-hero ya horneados
    en la grilla — no cambia el HTML generado ademas de agregar ese
    script.
+   Si el archivo de una pagina de PAGINAS todavia no existe (proyecto
+   nuevo), lo crea desde esqueletoPaginaDetalle() antes de hornearlo.
    Uso: node scripts/generar-proyectos.js
 */
 const fs = require('fs');
@@ -37,6 +39,7 @@ const {
   reemplazarAtributo,
   quitarScriptsRuntime,
   hornearIdiomaPorDefecto,
+  esqueletoPaginaDetalle,
 } = require('./lib/hornear-html.js');
 
 const RAIZ = path.join(__dirname, '..');
@@ -53,6 +56,8 @@ const PAGINAS = [
   { clave: 'maquinitas-tidal', archivo: 'proyectos/maquinitas-tidal/index.html' },
   { clave: 'gerassic-organ', archivo: 'proyectos/gerassic-organ/index.html' },
   { clave: 'osca', archivo: 'proyectos/osca/index.html' },
+  { clave: 'boton', archivo: 'proyectos/boton/index.html' },
+  { clave: 'perilla', archivo: 'proyectos/perilla/index.html' },
   { clave: 'redondela', archivo: 'proyectos/redondela/index.html' },
   { clave: 'talleres-momentos', archivo: 'proyectos/talleres-momentos/index.html' },
 ];
@@ -102,6 +107,11 @@ function main() {
 
     const rutaArchivo = path.join(RAIZ, archivo);
     const rutaPagina = `/${archivo.replace(/index\.html$/, '')}`;
+    if (!fs.existsSync(rutaArchivo)) {
+      fs.mkdirSync(path.dirname(rutaArchivo), { recursive: true });
+      fs.writeFileSync(rutaArchivo, esqueletoPaginaDetalle(clave), 'utf8');
+      console.log(`  (nueva) ${archivo}`);
+    }
     let html = fs.readFileSync(rutaArchivo, 'utf8');
     html = reemplazarBloque(html, '<div class="contenido-texto">', renderizarDetalle(data));
     html = reemplazarMetaHead(html, renderizarMetaHead({ ...extraerMetaDeDetalle(data), ruta: rutaPagina }));

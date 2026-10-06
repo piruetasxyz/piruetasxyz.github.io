@@ -342,6 +342,42 @@ proyectos:
         en: 'project in development'
 
     - titulo:
+        es: 'boton'
+        en: 'boton'
+      meta:
+        es: '2025'
+        en: '2025'
+      etiqueta:
+        es: 'bibliotecas'
+        en: 'libraries'
+      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-boton/svg/boton-diagrama.svg'
+      alt:
+        es: 'diagrama de flujo de señal de boton'
+        en: 'boton signal flow diagram'
+      enlace: '/proyectos/boton/index.html'
+      subtitulo:
+        es: 'biblioteca para leer botones con microcontroladores'
+        en: 'library for reading buttons with microcontrollers'
+
+    - titulo:
+        es: 'perilla'
+        en: 'perilla'
+      meta:
+        es: '2025'
+        en: '2025'
+      etiqueta:
+        es: 'bibliotecas'
+        en: 'libraries'
+      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-perilla/svg/perilla-diagrama.svg'
+      alt:
+        es: 'diagrama de flujo de señal de perilla'
+        en: 'perilla signal flow diagram'
+      enlace: '/proyectos/perilla/index.html'
+      subtitulo:
+        es: 'biblioteca para leer perillas con microcontroladores'
+        en: 'library for reading knobs with microcontrollers'
+
+    - titulo:
         es: 'redondela'
         en: 'redondela'
       meta:
@@ -707,6 +743,134 @@ chufe:
       content:
         es: 'hardware bajo CERN-OHL-P-2.0 y documentación bajo CC-BY-SA-4.0. el símbolo, la huella y los modelos 3D del convertidor DC-DC son de EasyEDA / LCSC / JLCPCB y no están cubiertos por estas licencias.'
         en: 'hardware licensed under CERN-OHL-P-2.0 and documentation under CC-BY-SA-4.0. The DC-DC converter symbol, footprint and 3D models are from EasyEDA / LCSC / JLCPCB and are not covered by these licenses.'
+
+boton:
+  es: 'boton'
+  en: 'boton'
+  meta:
+    es: '2025'
+    en: '2025'
+  etiqueta:
+    es: 'bibliotecas'
+    en: 'libraries'
+
+  imagenes:
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-boton/svg/boton-diagrama.svg'
+      alt:
+        es: 'diagrama de flujo de señal de boton v0.1.0'
+        en: 'boton v0.1.0 signal flow diagram'
+
+  sections:
+    - id: descripcion
+      titulo:
+        es: 'descripción'
+        en: 'description'
+      content:
+        es: |-
+          boton es una biblioteca de piruetas para leer botones con
+          microcontroladores, con antirrebote incluido.
+          funciona con placas Arduino y Raspberry Pi Pico, tanto desde
+          Arduino como desde el Pico SDK.
+        en: |-
+          boton is a piruetas library for reading buttons with
+          microcontrollers, with built-in debouncing.
+          It works with Arduino and Raspberry Pi Pico boards, both from
+          Arduino and from the Pico SDK.
+
+    - id: caracteristicas
+      titulo:
+        es: 'características'
+        en: 'features'
+      content:
+        es: |-
+          el botón va entre una patita digital y tierra (GND), sin resistencia externa: usa el pull-up interno.<br>
+          5 ejemplos para Arduino y para Pico SDK: leer, encender un led, alternar un led, contar pulsaciones y dos botones.
+        en: |-
+          The button goes between a digital pin and ground (GND), with no external resistor: it uses the internal pull-up.<br>
+          5 examples for Arduino and for Pico SDK: read, light an LED, toggle an LED, count presses and two buttons.
+
+    - id: documentacion
+      titulo:
+        es: 'documentación'
+        en: 'documentation'
+      content:
+        es: |-
+          código fuente, ejemplos y referencia: <a href="https://github.com/piruetasxyz/Boton">github.com/piruetasxyz/Boton</a>
+        en: |-
+          source code, examples and reference (in Spanish): <a href="https://github.com/piruetasxyz/Boton">github.com/piruetasxyz/Boton</a>
+
+    - id: licencia
+      titulo:
+        es: 'licencia'
+        en: 'license'
+      content:
+        es: 'código bajo licencia MIT.'
+        en: 'code licensed under MIT.'
+
+perilla:
+  es: 'perilla'
+  en: 'perilla'
+  meta:
+    es: '2025'
+    en: '2025'
+  etiqueta:
+    es: 'bibliotecas'
+    en: 'libraries'
+
+  imagenes:
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-perilla/svg/perilla-diagrama.svg'
+      alt:
+        es: 'diagrama de flujo de señal de perilla v0.1.0'
+        en: 'perilla v0.1.0 signal flow diagram'
+
+  sections:
+    - id: descripcion
+      titulo:
+        es: 'descripción'
+        en: 'description'
+      content:
+        es: |-
+          perilla es una biblioteca de piruetas para leer perillas
+          (potenciómetros) con microcontroladores, y mapear su valor
+          a otro rango.
+          funciona con placas Arduino y Raspberry Pi Pico, tanto desde
+          Arduino como desde el Pico SDK.
+        en: |-
+          perilla is a piruetas library for reading knobs
+          (potentiometers) with microcontrollers, and mapping their
+          value to another range.
+          It works with Arduino and Raspberry Pi Pico boards, both from
+          Arduino and from the Pico SDK.
+
+    - id: caracteristicas
+      titulo:
+        es: 'características'
+        en: 'features'
+      content:
+        es: |-
+          lee una entrada análoga y mapea el valor a otro rango (ej. de 0-1023 a 0-100).<br>
+          4 ejemplos para Arduino y para Pico SDK: leer, brillo de un led, umbral y dos perillas.
+        en: |-
+          Reads an analog input and maps the value to another range (e.g. from 0-1023 to 0-100).<br>
+          4 examples for Arduino and for Pico SDK: read, LED brightness, threshold and two knobs.
+
+    - id: documentacion
+      titulo:
+        es: 'documentación'
+        en: 'documentation'
+      content:
+        es: |-
+          código fuente, ejemplos y referencia: <a href="https://github.com/piruetasxyz/Perilla">github.com/piruetasxyz/Perilla</a>
+        en: |-
+          source code, examples and reference (in Spanish): <a href="https://github.com/piruetasxyz/Perilla">github.com/piruetasxyz/Perilla</a>
+
+    - id: licencia
+      titulo:
+        es: 'licencia'
+        en: 'license'
+      content:
+        es: 'código bajo licencia MIT.'
+        en: 'code licensed under MIT.'
 
 investigacion-gerassic-organ:
   titulo:

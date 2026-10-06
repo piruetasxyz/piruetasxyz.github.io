@@ -41,8 +41,8 @@ const navbarContent = `
 
             <h5><span class="es">bibliotecas</span><span class="en">libraries</span></h5>
             <ol>
-                <li><a href="https://github.com/piruetasxyz/Boton">boton</a></li>
-                <li><a href="https://github.com/piruetasxyz/Perilla">perilla</a></li>
+                <li><a href="/proyectos/boton/index.html">boton</a></li>
+                <li><a href="/proyectos/perilla/index.html">perilla</a></li>
             </ol>
 
             <!-- ocultos por ahora: redondela, gerassic organ, talleres momentos

@@ -138,7 +138,54 @@ function reemplazarMetaHead(html, nuevoBloqueHtml) {
   return html.replace(TITULO_Y_META_SUELTAS, bloqueMarcado);
 }
 
+/* Esqueleto de una página "detalle" nueva (ej. proyectos/<slug>/),
+   con el mismo marco que proyectos/chufe/index.html: menú lateral,
+   .contenido-texto vacío y marcadores de meta vacíos, para que
+   generar-*.js la cree la primera vez y después la hornee igual que
+   las demás, sin tener que escribir el HTML a mano. */
+function esqueletoPaginaDetalle(clave) {
+  return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/favicon.ico"
+    />
+    ${META_INICIO}
+    <title>piruetas</title>
+    ${META_FIN}
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/style.css"
+    />
+  </head>
+  <body data-page="${clave}">
+    <div class="flex-container">
+      <div id="divLeftMenu" class="left"></div>
+
+      <div class="right">
+        <div class="contenedor-producto">
+          <div class="contenido-texto"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/nav.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
+`;
+}
+
 module.exports = {
+  esqueletoPaginaDetalle,
   reemplazarBloque,
   reemplazarAtributo,
   quitarScriptsRuntime,
