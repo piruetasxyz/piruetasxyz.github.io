@@ -39,7 +39,7 @@ const navbarContent = `
                 <li><a href="/proyectos/chufe/index.html">chufe</a> (2026)</li>
             </ol>
 
-            <h5><span class="es">bibliotecas</span><span class="en">libraries</span></h5>
+            <h5><span class="es">bibliotecas micro</span><span class="en">MCU libraries</span></h5>
             <ol>
                 <li><a href="/proyectos/boton/index.html">Boton</a></li>
                 <li><a href="/proyectos/perilla/index.html">Perilla</a></li>

@@ -348,8 +348,8 @@ proyectos:
         es: '2025'
         en: '2025'
       etiqueta:
-        es: 'bibliotecas'
-        en: 'libraries'
+        es: 'biblioteca micro'
+        en: 'mcu library'
       image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-boton/svg/boton-grafico.svg'
       alt:
         es: 'gráfico de Boton: la lectura de un botón con rebotes y su valor estable después del antirrebote'
@@ -366,8 +366,8 @@ proyectos:
         es: '2025'
         en: '2025'
       etiqueta:
-        es: 'bibliotecas'
-        en: 'libraries'
+        es: 'biblioteca micro'
+        en: 'mcu library'
       image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-perilla/svg/perilla-grafico.svg'
       alt:
         es: 'gráfico de Perilla: la lectura de una perilla y su valor mapeado de 0 a 100'
@@ -751,8 +751,8 @@ boton:
     es: '2025'
     en: '2025'
   etiqueta:
-    es: 'bibliotecas'
-    en: 'libraries'
+    es: 'biblioteca micro'
+    en: 'mcu library'
 
   imagenes:
     - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-boton/svg/boton-grafico.svg'
@@ -826,8 +826,8 @@ perilla:
     es: '2025'
     en: '2025'
   etiqueta:
-    es: 'bibliotecas'
-    en: 'libraries'
+    es: 'biblioteca micro'
+    en: 'mcu library'
 
   imagenes:
     - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-perilla/svg/perilla-grafico.svg'
