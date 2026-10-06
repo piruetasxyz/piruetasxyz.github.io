@@ -350,10 +350,10 @@ proyectos:
       etiqueta:
         es: 'bibliotecas'
         en: 'libraries'
-      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-boton/svg/boton-arbol.svg'
+      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-boton/svg/boton-grafico.svg'
       alt:
-        es: 'estructura de archivos de Boton'
-        en: 'Boton file structure'
+        es: 'gráfico de Boton: la lectura de un botón con rebotes y su valor estable después del antirrebote'
+        en: 'Boton plot: a bouncing button reading and its stable value after debouncing'
       enlace: '/proyectos/boton/index.html'
       subtitulo:
         es: 'biblioteca para leer botones con microcontroladores'
@@ -368,10 +368,10 @@ proyectos:
       etiqueta:
         es: 'bibliotecas'
         en: 'libraries'
-      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-perilla/svg/perilla-arbol.svg'
+      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-perilla/svg/perilla-grafico.svg'
       alt:
-        es: 'estructura de archivos de Perilla'
-        en: 'Perilla file structure'
+        es: 'gráfico de Perilla: la lectura de una perilla y su valor mapeado de 0 a 100'
+        en: 'Perilla plot: a knob reading and its value mapped from 0 to 100'
       enlace: '/proyectos/perilla/index.html'
       subtitulo:
         es: 'biblioteca para leer perillas con microcontroladores'
@@ -755,6 +755,10 @@ boton:
     en: 'libraries'
 
   imagenes:
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-boton/svg/boton-grafico.svg'
+      alt:
+        es: 'gráfico de Boton: la lectura de un botón con rebotes y su valor estable después del antirrebote'
+        en: 'Boton plot: a bouncing button reading and its stable value after debouncing'
     - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-boton/svg/boton-arbol.svg'
       alt:
         es: 'estructura de archivos del repositorio de Boton, como treemap'
@@ -818,6 +822,10 @@ perilla:
     en: 'libraries'
 
   imagenes:
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-perilla/svg/perilla-grafico.svg'
+      alt:
+        es: 'gráfico de Perilla: la lectura de una perilla y su valor mapeado de 0 a 100'
+        en: 'Perilla plot: a knob reading and its value mapped from 0 to 100'
     - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-perilla/svg/perilla-arbol.svg'
       alt:
         es: 'estructura de archivos del repositorio de Perilla, como treemap'
