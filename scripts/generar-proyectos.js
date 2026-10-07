@@ -58,6 +58,8 @@ const PAGINAS = [
   { clave: 'osca', archivo: 'proyectos/osca/index.html' },
   { clave: 'boton', archivo: 'proyectos/boton/index.html' },
   { clave: 'perilla', archivo: 'proyectos/perilla/index.html' },
+  { clave: 'kicad-visor', archivo: 'proyectos/kicad-visor/index.html' },
+  { clave: 'kicad-retrata', archivo: 'proyectos/kicad-retrata/index.html' },
   { clave: 'redondela', archivo: 'proyectos/redondela/index.html' },
   { clave: 'talleres-momentos', archivo: 'proyectos/talleres-momentos/index.html' },
 ];

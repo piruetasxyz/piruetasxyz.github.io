@@ -45,6 +45,12 @@ const navbarContent = `
                 <li><a href="/proyectos/perilla/index.html">Perilla</a></li>
             </ol>
 
+            <h5><span class="es">bibliotecas docs</span><span class="en">docs libraries</span></h5>
+            <ol>
+                <li><a href="/proyectos/kicad-visor/index.html">kicad-visor</a></li>
+                <li><a href="/proyectos/kicad-retrata/index.html">kicad-retrata</a></li>
+            </ol>
+
             <!-- ocultos por ahora: redondela, gerassic organ, talleres momentos
             <h5>software</h5>
             <ol>
