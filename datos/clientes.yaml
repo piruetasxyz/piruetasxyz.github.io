@@ -11,7 +11,7 @@ clientes:
     anho: 2025
     enlace: '/clientes/sokio/index.html'
   - nombre: 'Universidad Diego Portales'
-    anho: 2024
+    anho: 2023
     enlace: '/clientes/universidad-diego-portales/index.html'
 
 claudia-gonzalez-godoy:
@@ -29,7 +29,7 @@ claudia-gonzalez-godoy:
       rol:
         es: 'esquemáticos y placas'
         en: 'schematics and boards'
-    - nombre: 'Aarón Montoya'
+    - nombre: 'Aarón Montoya-Moraga'
       rol:
         es: 'fabricación e importación'
         en: 'manufacturing and import'
@@ -174,26 +174,86 @@ universidad-diego-portales:
   titulo:
     es: 'Universidad Diego Portales'
     en: 'Universidad Diego Portales'
+  galeria:
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/jpg/folleto-momentos.jpg'
+      alt:
+        es: 'folleto de Momentos: trayectorias de investigación aplicada, exposición, talleres y charlas, 20 de noviembre al 1 de diciembre, Biblioteca Nicanor Parra'
+        en: 'flyer for Momentos: trayectorias de investigación aplicada, exhibition, workshops and talks, november 20 to december 1, Biblioteca Nicanor Parra'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-1.webp'
+      alt:
+        es: 'Talleres Momentos en la Universidad Diego Portales, foto 1'
+        en: 'Talleres Momentos at Universidad Diego Portales, photo 1'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-2.webp'
+      alt:
+        es: 'Talleres Momentos en la Universidad Diego Portales, foto 2'
+        en: 'Talleres Momentos at Universidad Diego Portales, photo 2'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-3.webp'
+      alt:
+        es: 'Talleres Momentos en la Universidad Diego Portales, foto 3'
+        en: 'Talleres Momentos at Universidad Diego Portales, photo 3'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-4.webp'
+      alt:
+        es: 'Talleres Momentos en la Universidad Diego Portales, foto 4'
+        en: 'Talleres Momentos at Universidad Diego Portales, photo 4'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-5.webp'
+      alt:
+        es: 'Talleres Momentos en la Universidad Diego Portales, foto 5'
+        en: 'Talleres Momentos at Universidad Diego Portales, photo 5'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-6.webp'
+      alt:
+        es: 'Talleres Momentos en la Universidad Diego Portales, foto 6'
+        en: 'Talleres Momentos at Universidad Diego Portales, photo 6'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-7.webp'
+      alt:
+        es: 'Talleres Momentos en la Universidad Diego Portales, foto 7'
+        en: 'Talleres Momentos at Universidad Diego Portales, photo 7'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-8.webp'
+      alt:
+        es: 'Talleres Momentos en la Universidad Diego Portales, foto 8'
+        en: 'Talleres Momentos at Universidad Diego Portales, photo 8'
   sections:
-    - titulo:
-        es: 'lorem ipsum'
-        en: 'lorem ipsum'
+    - id: descripcion
+      titulo:
+        es: 'descripción'
+        en: 'description'
       content:
         es: |-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
+          Talleres Momentos fue un ciclo de cuatro talleres de programación aplicada a artes y diseño, diseñados y dictados por el equipo de piruetas en Momentos: trayectorias de investigación aplicada, evento de exposición, talleres y charlas de la Universidad Diego Portales, entre el 20 de noviembre y el 1 de diciembre de 2023 en la Biblioteca Nicanor Parra, Santiago. participaron 50 personas: estudiantes de distintas escuelas de la UDP y personas externas.
+          <br><br>
+          los talleres fueron sensores y actuadores con Arduino, web e interactividad con p5.js, IA y web con ml5.js, y apps e interfaces con Figma.
         en: |-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
+          Talleres Momentos was a series of four workshops on programming applied to art and design, designed and taught by the piruetas team at Momentos: trayectorias de investigación aplicada (trajectories of applied research), an exhibition, workshops and talks event by Universidad Diego Portales, from november 20 to december 1 2023 at Biblioteca Nicanor Parra, Santiago. 50 people took part: students from different UDP schools and people from outside the university.
+          <br><br>
+          the workshops were sensors and actuators with Arduino, web and interactivity with p5.js, AI and web with ml5.js, and apps and interfaces with Figma.
+    - id: documentacion
+      titulo:
+        es: 'documentación'
+        en: 'documentation'
+      content:
+        es: |-
+          material de los talleres: <a href="https://github.com/piruetasxyz/2023-11-talleres-momentos">github.com/piruetasxyz/2023-11-talleres-momentos</a>
+        en: |-
+          workshop materials: <a href="https://github.com/piruetasxyz/2023-11-talleres-momentos">github.com/piruetasxyz/2023-11-talleres-momentos</a>
+    - id: creditos
+      titulo:
+        es: 'créditos'
+        en: 'credits'
+      content:
+        es: |-
+          Aarón Montoya-Moraga: diseño y dictado de talleres de Arduino, p5.js y ml5.js; ayudante del taller de Figma.<br>
+          Janis Sepúlveda: dictado del taller de Figma; ayudante del taller de p5.js.<br>
+          Sofía Sandoval: ayudante de los talleres de p5.js y Figma.<br>
+          Andrés Martin, Ignacio Passalacqua: ayudantes del taller de Arduino.<br>
+          Joaquín Pérez, Vale Montecinos: ayudantes del taller de ml5.js.
+        en: |-
+          Aarón Montoya-Moraga: design and teaching of the Arduino, p5.js and ml5.js workshops; assistant in the Figma workshop.<br>
+          Janis Sepúlveda: teaching of the Figma workshop; assistant in the p5.js workshop.<br>
+          Sofía Sandoval: assistant in the p5.js and Figma workshops.<br>
+          Andrés Martin, Ignacio Passalacqua: assistants in the Arduino workshop.<br>
+          Joaquín Pérez, Vale Montecinos: assistants in the ml5.js workshop.
     - titulo:
         es: 'proyectos'
         en: 'projects'
       content:
-        es: '<a href="/proyectos/talleres-momentos/index.html">talleres momentos</a>'
-        en: '<a href="/proyectos/talleres-momentos/index.html">talleres momentos</a>'
+        es: '<a href="/proyectos/talleres-momentos/index.html">Talleres Momentos</a>'
+        en: '<a href="/proyectos/talleres-momentos/index.html">Talleres Momentos</a>'

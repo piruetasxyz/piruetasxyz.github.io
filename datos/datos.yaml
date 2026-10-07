@@ -23,7 +23,7 @@ personas:
         es: 'empleades'
         en: 'employees'
       miembros:
-        - nombre: 'Aarón Montoya Moraga'
+        - nombre: 'Aarón Montoya-Moraga'
           pronombres:
             es: '(elle)'
             en: '(they)'
@@ -34,7 +34,7 @@ personas:
           modelo3d: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-personas/glb/montoyamoraga-2026-08.glb'
           descripcion:
             es: |-
-              Aarón Montoya Moraga es ingeniere civil electricista de
+              Aarón Montoya-Moraga es ingeniere civil electricista de
               la Pontificia Universidad Católica de Chile (2014).
               Master in Interactive Telecommunications, New York
               University, Estados Unidos (2017). Master of Science in
@@ -46,7 +46,7 @@ personas:
               paramétrico de fuente abierta y diseño de instrumentos
               musicales electrónicos.
             en: |-
-              Aarón Montoya Moraga is an electrical civil engineer from
+              Aarón Montoya-Moraga is an electrical civil engineer from
               the Pontificia Universidad Católica de Chile (2014). They
               hold a Master's in Interactive Telecommunications from New
               York University, USA (2017), and a Master of Science in
@@ -450,18 +450,18 @@ proyectos:
         en: 'electronic instrument / hardware'
 
     - titulo:
-        es: 'talleres momentos'
-        en: 'talleres momentos'
+        es: 'Talleres Momentos'
+        en: 'Talleres Momentos'
       meta:
         es: '2023'
         en: '2023'
       etiqueta:
         es: 'enseñanza'
         en: 'teaching'
-      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2022-piruetas-logo/jpg/piruetas-v0.jpg'
+      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/jpg/folleto-momentos.jpg'
       alt:
-        es: 'talleres momentos'
-        en: 'talleres momentos'
+        es: 'folleto de Momentos: trayectorias de investigación aplicada, exposición, talleres y charlas, 20 de noviembre al 1 de diciembre, Biblioteca Nicanor Parra'
+        en: 'flyer for Momentos: trayectorias de investigación aplicada, exhibition, workshops and talks, november 20 to december 1, Biblioteca Nicanor Parra'
       enlace: '/proyectos/talleres-momentos/index.html'
       subtitulo:
         es: 'actividades de enseñanza y workshops'
@@ -545,14 +545,14 @@ parla:
       content:
         es: |-
           empresa: @piruetas.xyz<br>
-          concepto: @montoyamoraga<br>
+          concepto: Aarón Montoya-Moraga<br>
           pcb: @misaa.cc<br>
           gráfica y fotografía: @rafita.studio<br>
           logística: @jnsplv<br>
           tipografía: @uno_ca
         en: |-
           company: @piruetas.xyz<br>
-          concept: @montoyamoraga<br>
+          concept: Aarón Montoya-Moraga<br>
           pcb: @misaa.cc<br>
           graphic design and photography: @rafita.studio<br>
           logistics: @jnsplv<br>
@@ -651,10 +651,10 @@ chufebu:
         en: 'credits'
       content:
         es: |-
-          aarón montoya-moraga: investigación, esquemático, pcb, fabricación y documentación.<br>
+          Aarón Montoya-Moraga: investigación, esquemático, pcb, fabricación y documentación.<br>
           matías serrano: revisor experto de esquemáticos y pcbs.
         en: |-
-          aarón montoya-moraga: research, schematic, PCB, manufacturing and documentation.<br>
+          Aarón Montoya-Moraga: research, schematic, PCB, manufacturing and documentation.<br>
           matías serrano: expert schematic and PCB reviewer.
 
     - id: licencia
@@ -766,10 +766,10 @@ chufe:
         en: 'credits'
       content:
         es: |-
-          aarón montoya-moraga: investigación, esquemático, pcb, fabricación y documentación.<br>
+          Aarón Montoya-Moraga: investigación, esquemático, pcb, fabricación y documentación.<br>
           matías serrano: revisor experto de esquemáticos y pcbs.
         en: |-
-          aarón montoya-moraga: research, schematic, PCB, manufacturing and documentation.<br>
+          Aarón Montoya-Moraga: research, schematic, PCB, manufacturing and documentation.<br>
           matías serrano: expert schematic and PCB reviewer.
 
     - id: licencia
@@ -846,6 +846,16 @@ boton:
           código fuente, ejemplos y referencia: <a href="https://github.com/piruetasxyz/Boton">github.com/piruetasxyz/Boton</a>
         en: |-
           source code, examples and reference (in Spanish): <a href="https://github.com/piruetasxyz/Boton">github.com/piruetasxyz/Boton</a>
+
+    - id: creditos
+      titulo:
+        es: 'créditos'
+        en: 'credits'
+      content:
+        es: |-
+          Aarón Montoya-Moraga: investigación, programación y documentación.
+        en: |-
+          Aarón Montoya-Moraga: research, programming and documentation.
 
     - id: licencia
       titulo:
@@ -928,6 +938,16 @@ perilla:
         en: |-
           source code, examples and reference (in Spanish): <a href="https://github.com/piruetasxyz/Perilla">github.com/piruetasxyz/Perilla</a>
 
+    - id: creditos
+      titulo:
+        es: 'créditos'
+        en: 'credits'
+      content:
+        es: |-
+          Aarón Montoya-Moraga: investigación, programación y documentación.
+        en: |-
+          Aarón Montoya-Moraga: research, programming and documentation.
+
     - id: licencia
       titulo:
         es: 'licencia'
@@ -1004,6 +1024,16 @@ kicad-visor:
         en: |-
           live demo: <a href="https://piruetas.xyz/kicad-visor-demo/">piruetas.xyz/kicad-visor-demo</a><br>
           source code and reference: <a href="https://github.com/piruetasxyz/kicad-visor">github.com/piruetasxyz/kicad-visor</a>
+
+    - id: creditos
+      titulo:
+        es: 'créditos'
+        en: 'credits'
+      content:
+        es: |-
+          Aarón Montoya-Moraga: investigación, programación y documentación.
+        en: |-
+          Aarón Montoya-Moraga: research, programming and documentation.
 
     - id: licencia
       titulo:
@@ -1086,6 +1116,16 @@ kicad-retrata:
         en: |-
           source code, examples and reference (in Spanish): <a href="https://github.com/piruetasxyz/kicad-retrata">github.com/piruetasxyz/kicad-retrata</a>
 
+    - id: creditos
+      titulo:
+        es: 'créditos'
+        en: 'credits'
+      content:
+        es: |-
+          Aarón Montoya-Moraga: investigación, programación y documentación.
+        en: |-
+          Aarón Montoya-Moraga: research, programming and documentation.
+
     - id: licencia
       titulo:
         es: 'licencia'
@@ -1139,6 +1179,10 @@ redondela:
     es: 'página en mantención'
     en: 'under maintenance'
   galeria:
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-redondela/jpg/redondela.jpg'
+      alt:
+        es: 'redondela'
+        en: 'redondela'
     - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-redondela/jpg/redondela-02.jpg'
       alt:
         es: 'redondela'
@@ -1151,13 +1195,85 @@ redondela:
 
 talleres-momentos:
   titulo:
-    es: 'página en mantención'
-    en: 'under maintenance'
+    es: 'Talleres Momentos'
+    en: 'Talleres Momentos'
+  galeria:
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/jpg/folleto-momentos.jpg'
+      alt:
+        es: 'folleto de Momentos: trayectorias de investigación aplicada, exposición, talleres y charlas, 20 de noviembre al 1 de diciembre, Biblioteca Nicanor Parra'
+        en: 'flyer for Momentos: trayectorias de investigación aplicada, exhibition, workshops and talks, november 20 to december 1, Biblioteca Nicanor Parra'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-1.webp'
+      alt:
+        es: 'Talleres Momentos en la Universidad Diego Portales, foto 1'
+        en: 'Talleres Momentos at Universidad Diego Portales, photo 1'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-2.webp'
+      alt:
+        es: 'Talleres Momentos en la Universidad Diego Portales, foto 2'
+        en: 'Talleres Momentos at Universidad Diego Portales, photo 2'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-3.webp'
+      alt:
+        es: 'Talleres Momentos en la Universidad Diego Portales, foto 3'
+        en: 'Talleres Momentos at Universidad Diego Portales, photo 3'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-4.webp'
+      alt:
+        es: 'Talleres Momentos en la Universidad Diego Portales, foto 4'
+        en: 'Talleres Momentos at Universidad Diego Portales, photo 4'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-5.webp'
+      alt:
+        es: 'Talleres Momentos en la Universidad Diego Portales, foto 5'
+        en: 'Talleres Momentos at Universidad Diego Portales, photo 5'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-6.webp'
+      alt:
+        es: 'Talleres Momentos en la Universidad Diego Portales, foto 6'
+        en: 'Talleres Momentos at Universidad Diego Portales, photo 6'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-7.webp'
+      alt:
+        es: 'Talleres Momentos en la Universidad Diego Portales, foto 7'
+        en: 'Talleres Momentos at Universidad Diego Portales, photo 7'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-8.webp'
+      alt:
+        es: 'Talleres Momentos en la Universidad Diego Portales, foto 8'
+        en: 'Talleres Momentos at Universidad Diego Portales, photo 8'
   sections:
-    - titulo: {}
+    - id: descripcion
+      titulo:
+        es: 'descripción'
+        en: 'description'
       content:
-        es: 'próximamente más información sobre este proyecto.'
-        en: 'more information about this project coming soon.'
+        es: |-
+          Talleres Momentos fue un ciclo de cuatro talleres de programación aplicada a artes y diseño, diseñados y dictados por el equipo de piruetas en Momentos: trayectorias de investigación aplicada, evento de exposición, talleres y charlas de la Universidad Diego Portales, entre el 20 de noviembre y el 1 de diciembre de 2023 en la Biblioteca Nicanor Parra, Santiago. participaron 50 personas: estudiantes de distintas escuelas de la UDP y personas externas.
+          <br><br>
+          los talleres fueron sensores y actuadores con Arduino, web e interactividad con p5.js, IA y web con ml5.js, y apps e interfaces con Figma.
+        en: |-
+          Talleres Momentos was a series of four workshops on programming applied to art and design, designed and taught by the piruetas team at Momentos: trayectorias de investigación aplicada (trajectories of applied research), an exhibition, workshops and talks event by Universidad Diego Portales, from november 20 to december 1 2023 at Biblioteca Nicanor Parra, Santiago. 50 people took part: students from different UDP schools and people from outside the university.
+          <br><br>
+          the workshops were sensors and actuators with Arduino, web and interactivity with p5.js, AI and web with ml5.js, and apps and interfaces with Figma.
+    - id: documentacion
+      titulo:
+        es: 'documentación'
+        en: 'documentation'
+      content:
+        es: |-
+          material de los talleres: <a href="https://github.com/piruetasxyz/2023-11-talleres-momentos">github.com/piruetasxyz/2023-11-talleres-momentos</a>
+        en: |-
+          workshop materials: <a href="https://github.com/piruetasxyz/2023-11-talleres-momentos">github.com/piruetasxyz/2023-11-talleres-momentos</a>
+    - id: creditos
+      titulo:
+        es: 'créditos'
+        en: 'credits'
+      content:
+        es: |-
+          Aarón Montoya-Moraga: diseño y dictado de talleres de Arduino, p5.js y ml5.js; ayudante del taller de Figma.<br>
+          Janis Sepúlveda: dictado del taller de Figma; ayudante del taller de p5.js.<br>
+          Sofía Sandoval: ayudante de los talleres de p5.js y Figma.<br>
+          Andrés Martin, Ignacio Passalacqua: ayudantes del taller de Arduino.<br>
+          Joaquín Pérez, Vale Montecinos: ayudantes del taller de ml5.js.
+        en: |-
+          Aarón Montoya-Moraga: design and teaching of the Arduino, p5.js and ml5.js workshops; assistant in the Figma workshop.<br>
+          Janis Sepúlveda: teaching of the Figma workshop; assistant in the p5.js workshop.<br>
+          Sofía Sandoval: assistant in the p5.js and Figma workshops.<br>
+          Andrés Martin, Ignacio Passalacqua: assistants in the Arduino workshop.<br>
+          Joaquín Pérez, Vale Montecinos: assistants in the ml5.js workshop.
     - titulo:
         es: 'cliente'
         en: 'client'
