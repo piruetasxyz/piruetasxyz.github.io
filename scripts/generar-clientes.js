@@ -110,12 +110,15 @@ function main() {
       return;
     }
 
-    const data = clientesYaml[slug];
-    if (!data) {
+    const detalle = clientesYaml[slug];
+    if (!detalle) {
       console.warn(`Omitiendo "${c.nombre}": no hay entrada "${slug}:" en clientes.yaml`);
       omitidos++;
       return;
     }
+
+    // las fechas viven en la fila de la lista; la ficha también las muestra
+    const data = { inicio: c.inicio != null ? c.inicio : c.anho, fin: c.fin, ...detalle };
 
     const dir = path.join(RAIZ, 'clientes', slug);
     const archivo = path.join(dir, 'index.html');

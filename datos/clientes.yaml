@@ -1,17 +1,24 @@
 en: 'clients'
 es: 'clientes'
+# fechas de cada cliente: `inicio` y `fin` opcional, como 'AAAA' o
+# 'AAAA-MM' (ej. inicio: '2023-11', fin: '2024-02'); `fin: 'presente'`
+# para trabajos en curso. se muestran en la lista y en la ficha.
 clientes:
   - nombre: 'Claudia González Godoy'
-    anho: 2026
+    inicio: '2026-09'
+    fin: '2026-09'
     enlace: '/clientes/claudia-gonzalez-godoy/index.html'
-  - nombre: 'bibliotecaCuir'
-    anho: 2026
+  - nombre: 'Biblioteca Cuir'
+    inicio: '2026-03'
+    fin: '2026-08'
     enlace: '/clientes/biblioteca-cuir/index.html'
   - nombre: 'Sokio'
-    anho: 2025
+    inicio: '2025-07'
+    fin: '2025-08'
     enlace: '/clientes/sokio/index.html'
   - nombre: 'Universidad Diego Portales'
-    anho: 2023
+    inicio: '2023-11'
+    fin: '2023-12'
     enlace: '/clientes/universidad-diego-portales/index.html'
 
 claudia-gonzalez-godoy:
@@ -119,56 +126,123 @@ claudia-gonzalez-godoy:
 
 biblioteca-cuir:
   titulo:
-    es: 'bibliotecaCuir'
-    en: 'bibliotecaCuir'
+    es: 'Biblioteca Cuir'
+    en: 'Biblioteca Cuir'
   galeria:
     - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-biblioteca-cuir-web/webp/portada-foto-actividad.webp'
       alt:
-        es: 'sitio web de bibliotecaCuir, portada con foto de una actividad'
-        en: 'bibliotecaCuir website, cover with a photo of an event'
+        es: 'sitio web de Biblioteca Cuir, portada con foto de una actividad'
+        en: 'Biblioteca Cuir website, cover with a photo of an event'
     - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-biblioteca-cuir-web/webp/inicio-objetos-coleccion.webp'
       alt:
-        es: 'sitio web de bibliotecaCuir, inicio con objetos de la colección'
-        en: 'bibliotecaCuir website, home page with objects from the collection'
+        es: 'sitio web de Biblioteca Cuir, inicio con objetos de la colección'
+        en: 'Biblioteca Cuir website, home page with objects from the collection'
   sections:
-    - titulo:
-        es: 'lorem ipsum'
-        en: 'lorem ipsum'
+    - id: descripcion
+      titulo:
+        es: 'descripción'
+        en: 'description'
       content:
         es: |-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
+          diseño e implementación de sitio web, incluyendo tanto la digitalización de los archivos de la Biblioteca Cuir como de sus proyectos.
         en: |-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
+          design and implementation of a website, including the digitization of both the Biblioteca Cuir archives and its projects.
+    - id: documentacion
+      titulo:
+        es: 'documentación'
+        en: 'documentation'
+      content:
+        es: |-
+          sitio web: <a href="https://bibliotecacuir.org">bibliotecacuir.org</a><br>
+          infraestructura web: <a href="https://github.com/bibliotecaCuir">github.com/bibliotecaCuir</a>
+        en: |-
+          website: <a href="https://bibliotecacuir.org">bibliotecacuir.org</a><br>
+          web infrastructure: <a href="https://github.com/bibliotecaCuir">github.com/bibliotecaCuir</a>
+    - id: creditos
+      titulo:
+        es: 'créditos'
+        en: 'credits'
+      content:
+        es: |-
+          Aarón Montoya-Moraga: diseño de la arquitectura web e implementación de GitHub Actions para automatización.<br>
+          Janis Sepúlveda: investigación de usuarios, entrevistas a clientes, diagramas de flujo, wireframes y prototipado.<br>
+          Mateo Arce Moore: programación web.
+        en: |-
+          Aarón Montoya-Moraga: web architecture design and implementation of GitHub Actions for automation.<br>
+          Janis Sepúlveda: user research, client interviews, flowcharts, wireframes and prototyping.<br>
+          Mateo Arce Moore: web programming.
 
 sokio:
   titulo:
     es: 'Sokio'
     en: 'Sokio'
+  # presentaciones: dónde se mostró el trabajo (nombre, lugar, ciudad,
+  # inicio/fin, enlace). prensa: medio, titulo (tal cual se publicó),
+  # fecha, enlace, archivo (copia en web.archive.org, opcional).
+  presentaciones:
+    - nombre:
+        es: 'Splitting/Absence, ciclo Nueva Ópera'
+        en: 'Splitting/Absence, Nueva Ópera series'
+      lugar: 'GAM, Sala A2'
+      ciudad: 'Santiago'
+      inicio: '2026-03'
+      enlace: 'https://gam.cl/es/que-hacer-en-gam/nueva-opera/splitting-absence/'
+    - nombre:
+        es: 'Section: New York, adelanto en formato taller de Splitting/Absence, encargo de Historias (The Clemente Center y New Latin Wave)'
+        en: 'Section: New York, a preview workshop of Splitting/Absence, commissioned by Historias (The Clemente Center and New Latin Wave)'
+      lugar: 'Teatro Latea'
+      ciudad: 'Nueva York'
+      inicio: '2025-05'
+      enlace: 'https://historias.nyc/programming/commissions/splitting-absence/'
+  prensa:
+    - medio: 'La Tercera, Culto'
+      titulo: 'Ópera y electrónica desnudan a Gordon Matta-Clark en el GAM'
+      fecha: '2026-03'
+      enlace: 'https://www.latercera.com/culto/noticia/opera-y-electronica-desnudan-a-gordon-matta-clark-en-el-gam/'
+    - medio: 'Revista Velvet'
+      titulo: 'Ópera y electrónica revisitan la obra de Gordon Matta-Clark en GAM'
+      fecha: '2026-03'
+      enlace: 'https://revistavelvet.cl/opera-y-electronica-revisitan-la-obra-de-gordon-matta-clark-en-gam/'
+    - medio: 'BioBioChile'
+      titulo: 'Estrenan en Chile la ópera Splitting/ Absence inspirada en Gordon Matta-Clark'
+      fecha: '2026-02'
+      enlace: 'https://www.biobiochile.cl/noticias/artes-y-cultura/actualidad-cultural/2026/02/10/estrenan-en-chile-la-opera-splitting-absence-inspirada-en-gordon-matta-clark.shtml'
+    - medio: 'Culturizarte'
+      titulo: 'Entrevista a compositor de la ópera «Splitting/Absence» Sokio: «Una ópera es una historia en música»'
+      fecha: '2026-04'
+      enlace: 'https://culturizarte.cl/entrevista-a-compositor-de-la-obra-de-teatro-splitting-absence-sokio-una-opera-es-una-historia-en-musica/'
   sections:
-    - titulo:
-        es: 'lorem ipsum'
-        en: 'lorem ipsum'
+    - id: descripcion
+      titulo:
+        es: 'descripción'
+        en: 'description'
       content:
         es: |-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
+          desarrollo de una máquina percutora robótica con solenoides controlados por MIDI para uso en la ópera Splitting/Absence.
         en: |-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat.
+          development of a robotic percussion machine with MIDI-controlled solenoids for use in the opera Splitting/Absence.
+    - id: creditos
+      titulo:
+        es: 'créditos'
+        en: 'credits'
+      content:
+        es: |-
+          Aarón Montoya-Moraga: planificación, compra de materiales y gestión del proyecto.<br>
+          Matías Serrano: esquemático, placa de circuito impreso y prototipado.<br>
+          Francisco Stephens: prototipado y soldadura.<br>
+          Bernardita Jesús: prototipado y fabricación.
+        en: |-
+          Aarón Montoya-Moraga: planning, purchasing of materials and project management.<br>
+          Matías Serrano: schematic, printed circuit board and prototyping.<br>
+          Francisco Stephens: prototyping and soldering.<br>
+          Bernardita Jesús: prototyping and fabrication.
+    - id: enlaces
+      titulo:
+        es: 'enlaces'
+        en: 'links'
+      content:
+        es: 'instagram de la ópera: <a href="https://www.instagram.com/splittingabsence/">@splittingabsence</a>'
+        en: 'the opera on instagram: <a href="https://www.instagram.com/splittingabsence/">@splittingabsence</a>'
 
 universidad-diego-portales:
   titulo:
@@ -244,13 +318,13 @@ universidad-diego-portales:
           Janis Sepúlveda: dictado del taller de Figma; ayudante del taller de p5.js.<br>
           Sofía Sandoval: ayudante de los talleres de p5.js y Figma.<br>
           Andrés Martin, Ignacio Passalacqua: ayudantes del taller de Arduino.<br>
-          Joaquín Pérez, Vale Montecinos: ayudantes del taller de ml5.js.
+          Joaquín Pérez, Valentina Montecinos: ayudantes del taller de ml5.js.
         en: |-
           Aarón Montoya-Moraga: design and teaching of the Arduino, p5.js and ml5.js workshops; assistant in the Figma workshop.<br>
           Janis Sepúlveda: teaching of the Figma workshop; assistant in the p5.js workshop.<br>
           Sofía Sandoval: assistant in the p5.js and Figma workshops.<br>
           Andrés Martin, Ignacio Passalacqua: assistants in the Arduino workshop.<br>
-          Joaquín Pérez, Vale Montecinos: assistants in the ml5.js workshop.
+          Joaquín Pérez, Valentina Montecinos: assistants in the ml5.js workshop.
     - titulo:
         es: 'proyectos'
         en: 'projects'

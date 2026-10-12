@@ -166,12 +166,66 @@ function imagenesDePagina(data) {
   return [...principales, ...galeria].filter((i) => i && (i.image || i.video));
 }
 
+const MESES = {
+  es: ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'],
+  en: ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'],
+};
+
+/* Lee una fecha del YAML: 'AAAA' (o el número AAAA) o 'AAAA-MM'.
+   Devuelve { anho, mes } con mes 1-12 o null, o null si no se
+   entiende. */
+function leerFecha(valor) {
+  if (valor == null || valor === '') return null;
+  const m = /^(\d{4})(?:-(\d{1,2}))?$/.exec(String(valor).trim());
+  if (!m) return null;
+  const mes = m[2] ? Number(m[2]) : null;
+  return { anho: m[1], mes: mes >= 1 && mes <= 12 ? mes : null };
+}
+
+/* Arma el periodo de `inicio`/`fin` en un idioma:
+   - '2023-11'            -> 'nov 2023'
+   - '2023-11'..'2023-12' -> 'nov – dic 2023'
+   - '2023-11'..'2024-02' -> 'nov 2023 – feb 2024'
+   - '2023'..'2024'       -> '2023 – 2024'
+   - fin: 'presente'      -> 'nov 2025 – presente' / 'present' */
+function textoPeriodo(inicio, fin, idioma) {
+  const ini = leerFecha(inicio);
+  if (!ini) return '';
+  const mes = (f) => (f.mes ? `${MESES[idioma][f.mes - 1]} ` : '');
+  const completa = (f) => `${mes(f)}${f.anho}`;
+
+  if (String(fin || '').trim() === 'presente') {
+    return `${completa(ini)} – ${idioma === 'es' ? 'presente' : 'present'}`;
+  }
+  const f = leerFecha(fin);
+  if (!f || (f.anho === ini.anho && f.mes === ini.mes)) return completa(ini);
+  if (f.anho === ini.anho && ini.mes && f.mes) {
+    return `${MESES[idioma][ini.mes - 1]} – ${completa(f)}`;
+  }
+  return `${completa(ini)} – ${completa(f)}`;
+}
+
+/* Periodo bilingüe (dos spans es/en) de un objeto con `inicio` y
+   `fin` opcional; cae a `anho` para entradas antiguas. '' si no hay
+   fecha. */
+function renderizarPeriodo(item, clase) {
+  const inicio = item.inicio != null ? item.inicio : item.anho;
+  const es = textoPeriodo(inicio, item.fin, 'es');
+  if (!es) return '';
+  return spanEsEn(es, textoPeriodo(inicio, item.fin, 'en'), clase);
+}
+
 function renderizarFichaTecnica(data) {
+  const periodo = renderizarPeriodo(data);
   const tieneFicha =
-    data.materiales || data.software || (data.equipo && data.equipo.length);
+    periodo || data.materiales || data.software || (data.equipo && data.equipo.length);
   if (!tieneFicha) return '';
 
   let filas = '';
+
+  if (periodo) {
+    filas += `<dt>${spanEsEn('fechas', 'dates')}</dt><dd>${periodo}</dd>`;
+  }
 
   function filaTexto(labelEs, labelEn, valor) {
     if (!valor) return;
@@ -226,6 +280,69 @@ function renderizarSecciones(sections) {
     .join('');
 }
 
+/* Un texto del YAML que puede venir suelto ('GAM') o traducido
+   ({ es, en }); siempre devuelve los dos spans es/en. */
+function textoEsEn(valor) {
+  if (valor && typeof valor === 'object') {
+    return spanEsEn(valor.es || valor.en || '', valor.en || valor.es || '');
+  }
+  return escaparHtml(valor || '');
+}
+
+/* Clave AAAAMM para ordenar del más nuevo al más antiguo. */
+function claveFecha(valor) {
+  const f = leerFecha(valor);
+  return f ? Number(f.anho) * 100 + (f.mes || 0) : 0;
+}
+
+function enlazar(contenido, enlace) {
+  return enlace ? `<a href="${escaparHtml(enlace)}">${contenido}</a>` : contenido;
+}
+
+function renderizarListaRegistro(tituloEs, tituloEn, filas) {
+  if (!filas.length) return '';
+  return (
+    `<h2 class="cajita">${spanEsEn(tituloEs, tituloEn)}</h2>` +
+    `<ul class="lista-registro">${filas.join('')}</ul>`
+  );
+}
+
+/* `presentaciones`: dónde se mostró el trabajo (muestras, funciones,
+   conciertos), cada una con nombre, lugar, ciudad, inicio/fin y
+   enlace opcionales. Más nueva primero. */
+function renderizarPresentaciones(presentaciones) {
+  if (!Array.isArray(presentaciones)) return '';
+  const filas = [...presentaciones]
+    .sort((a, b) => claveFecha(b.inicio) - claveFecha(a.inicio))
+    .map((p) => {
+      const donde = [p.lugar, p.ciudad].filter(Boolean).map(textoEsEn).join(', ');
+      const nombre = p.nombre ? enlazar(textoEsEn(p.nombre), p.enlace) : '';
+      const texto = [nombre, donde].filter(Boolean).join(', ');
+      const periodo = renderizarPeriodo(p);
+      return `<li>${texto}${periodo ? ` <span class="registro-fecha">${periodo}</span>` : ''}</li>`;
+    });
+  return renderizarListaRegistro('presentaciones', 'shows', filas);
+}
+
+/* `prensa`: artículos sobre el trabajo. El título va tal cual se
+   publicó (sin traducir); `archivo` es una copia opcional en
+   web.archive.org por si el enlace original muere. Más nuevo primero. */
+function renderizarPrensa(prensa) {
+  if (!Array.isArray(prensa)) return '';
+  const filas = [...prensa]
+    .sort((a, b) => claveFecha(b.fecha) - claveFecha(a.fecha))
+    .map((p) => {
+      const titulo = p.titulo ? enlazar(`<cite>${escaparHtml(p.titulo)}</cite>`, p.enlace) : '';
+      const texto = [textoEsEn(p.medio), titulo].filter(Boolean).join(', ');
+      const periodo = renderizarPeriodo({ inicio: p.fecha });
+      const archivo = p.archivo
+        ? ` (<a href="${escaparHtml(p.archivo)}">${spanEsEn('archivo', 'archive')}</a>)`
+        : '';
+      return `<li>${texto}${archivo}${periodo ? ` <span class="registro-fecha">${periodo}</span>` : ''}</li>`;
+    });
+  return renderizarListaRegistro('prensa', 'press', filas);
+}
+
 /* Porta renderProjectDetail (js/render.js). `data` es la entrada de
    YAML de la página (ya sea con un `titulo: {es,en}` propio, como en
    clientes.yaml, o con `es`/`en` sueltos en el nivel superior, como
@@ -237,9 +354,10 @@ function renderizarDetalle(data) {
   const h1 = `<h1 class="cajita">${spanEsEn((tituloData && tituloData.es) || '', (tituloData && tituloData.en) || '')}</h1>`;
   const ficha = renderizarFichaTecnica(data);
   const secciones = renderizarSecciones(data.sections);
+  const registro = renderizarPresentaciones(data.presentaciones) + renderizarPrensa(data.prensa);
   // primero el texto y después las imágenes, como en montoyamoraga.github.io
   const imagenes = renderizarGaleria(imagenesDePagina(data));
-  return `<div class="contenido-texto">${h1}${ficha}${secciones}${imagenes}</div>`;
+  return `<div class="contenido-texto">${h1}${ficha}${secciones}${registro}${imagenes}</div>`;
 }
 
 /* Porta createPersonaCard (js/render.js). A diferencia del original,
@@ -413,10 +531,9 @@ function renderizarClientesLista(clientes) {
       const tag = c.enlace ? 'a' : 'div';
       const href = c.enlace ? ` href="${escaparHtml(c.enlace)}"` : '';
       const nombre = escaparHtml(c.nombre || '');
-      const anho = c.anho ? escaparHtml(String(c.anho)) : '';
       return (
         `<div class="cliente-item"><${tag} class="cliente-nombre"${href}>${nombre}</${tag}>` +
-        `<div class="cliente-ano">${anho}</div></div>`
+        `<div class="cliente-ano">${renderizarPeriodo(c)}</div></div>`
       );
     })
     .join('');

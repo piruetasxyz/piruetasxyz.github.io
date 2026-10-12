@@ -137,6 +137,22 @@ personas:
                 en: 'github'
               url: 'https://github.com/matbutom'
 
+        - nombre: 'Matías Serrano'
+          pronombres:
+            es: '(él)'
+            en: '(he)'
+          rol:
+            es: 'esquemáticos, placas de circuito impreso, prototipado (desde 2024)'
+            en: 'schematics, printed circuit boards, prototyping (since 2024)'
+          descripcion:
+            es: false
+            en: false
+          enlaces:
+            - etiqueta:
+                es: 'sitio'
+                en: 'website'
+              url: 'https://misaa.cc/'
+
     - id: practicante
       encabezado:
         es: 'practicante'
@@ -233,15 +249,15 @@ personas:
             - etiqueta:
                 es: 'github'
                 en: 'github'
-              url: 'https://github.com/usuario'
+              url: 'https://github.com/jota-pe-ge'
 
         - nombre: 'Sofía Sandoval'
           pronombres:
             es: '(ella)'
             en: '(she)'
           rol:
-            es: false
-            en: false
+            es: 'docencia (2023)'
+            en: 'teaching (2023)'
           descripcion:
             es: false
             en: false
@@ -265,7 +281,7 @@ personas:
             - etiqueta:
                 es: 'github'
                 en: 'github'
-              url: 'https://github.com/usuario'
+              url: 'https://github.com/ipassala'
 
 proyectos:
   proyectos:
@@ -544,19 +560,17 @@ parla:
         es: 'créditos'
       content:
         es: |-
-          empresa: @piruetas.xyz<br>
-          concepto: Aarón Montoya-Moraga<br>
-          pcb: @misaa.cc<br>
-          gráfica y fotografía: @rafita.studio<br>
-          logística: @jnsplv<br>
-          tipografía: @uno_ca
+          Aarón Montoya-Moraga: concepto.<br>
+          Matías Serrano: pcb.<br>
+          Janis Sepúlveda: logística.<br>
+          rafita studio: gráfica y fotografía.<br>
+          @uno_ca: tipografía.
         en: |-
-          company: @piruetas.xyz<br>
-          concept: Aarón Montoya-Moraga<br>
-          pcb: @misaa.cc<br>
-          graphic design and photography: @rafita.studio<br>
-          logistics: @jnsplv<br>
-          font: @uno_ca
+          Aarón Montoya-Moraga: concept.<br>
+          Matías Serrano: PCB.<br>
+          Janis Sepúlveda: logistics.<br>
+          rafita studio: graphic design and photography.<br>
+          @uno_ca: font.
 
 chufebu:
   es: 'chufebu'
@@ -652,10 +666,10 @@ chufebu:
       content:
         es: |-
           Aarón Montoya-Moraga: investigación, esquemático, pcb, fabricación y documentación.<br>
-          matías serrano: revisor experto de esquemáticos y pcbs.
+          Matías Serrano: revisor experto de esquemáticos y pcbs.
         en: |-
           Aarón Montoya-Moraga: research, schematic, PCB, manufacturing and documentation.<br>
-          matías serrano: expert schematic and PCB reviewer.
+          Matías Serrano: expert schematic and PCB reviewer.
 
     - id: licencia
       titulo:
@@ -767,10 +781,10 @@ chufe:
       content:
         es: |-
           Aarón Montoya-Moraga: investigación, esquemático, pcb, fabricación y documentación.<br>
-          matías serrano: revisor experto de esquemáticos y pcbs.
+          Matías Serrano: revisor experto de esquemáticos y pcbs.
         en: |-
           Aarón Montoya-Moraga: research, schematic, PCB, manufacturing and documentation.<br>
-          matías serrano: expert schematic and PCB reviewer.
+          Matías Serrano: expert schematic and PCB reviewer.
 
     - id: licencia
       titulo:
@@ -1267,13 +1281,13 @@ talleres-momentos:
           Janis Sepúlveda: dictado del taller de Figma; ayudante del taller de p5.js.<br>
           Sofía Sandoval: ayudante de los talleres de p5.js y Figma.<br>
           Andrés Martin, Ignacio Passalacqua: ayudantes del taller de Arduino.<br>
-          Joaquín Pérez, Vale Montecinos: ayudantes del taller de ml5.js.
+          Joaquín Pérez, Valentina Montecinos: ayudantes del taller de ml5.js.
         en: |-
           Aarón Montoya-Moraga: design and teaching of the Arduino, p5.js and ml5.js workshops; assistant in the Figma workshop.<br>
           Janis Sepúlveda: teaching of the Figma workshop; assistant in the p5.js workshop.<br>
           Sofía Sandoval: assistant in the p5.js and Figma workshops.<br>
           Andrés Martin, Ignacio Passalacqua: assistants in the Arduino workshop.<br>
-          Joaquín Pérez, Vale Montecinos: assistants in the ml5.js workshop.
+          Joaquín Pérez, Valentina Montecinos: assistants in the ml5.js workshop.
     - titulo:
         es: 'cliente'
         en: 'client'
