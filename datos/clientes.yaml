@@ -165,17 +165,75 @@ biblioteca-cuir:
       content:
         es: |-
           Aarón Montoya-Moraga: diseño de la arquitectura web e implementación de GitHub Actions para automatización.<br>
-          Janis Sepúlveda: investigación de usuarios, entrevistas a clientes, diagramas de flujo, wireframes y prototipado.<br>
-          Mateo Arce Moore: programación web.
+          Janis Sepúlveda: investigación de usuarios y prototipado.<br>
+          Mateo Arce Moore: programación web y diseño gráfico.
         en: |-
           Aarón Montoya-Moraga: web architecture design and implementation of GitHub Actions for automation.<br>
-          Janis Sepúlveda: user research, client interviews, flowcharts, wireframes and prototyping.<br>
-          Mateo Arce Moore: web programming.
+          Janis Sepúlveda: user research and prototyping.<br>
+          Mateo Arce Moore: web programming and graphic design.
 
 sokio:
   titulo:
     es: 'Sokio'
     en: 'Sokio'
+  imagen_social: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/jpg/caja-numeros-diagonal.jpg'
+  galeria:
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/caja-numeros-diagonal.webp'
+      alt:
+        es: 'percutora, caja de aluminio con sus siete luces numeradas'
+        en: 'percutora, aluminium box with its seven numbered lights'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/caja-numeros-frente.webp'
+      alt:
+        es: 'percutora vista desde arriba, con las luces numeradas del 1 al 7'
+        en: 'percutora seen from above, with lights numbered 1 to 7'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/caja-diagonal-conectores.webp'
+      alt:
+        es: 'percutora, caja con sus conectores RCA dorados'
+        en: 'percutora, box with its gold RCA connectors'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/caja-frente.webp'
+      alt:
+        es: 'percutora, caja de frente'
+        en: 'percutora, box from the front'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/caja-lateral-conectores.webp'
+      alt:
+        es: 'percutora, lateral con conector USB, alimentación y salidas RCA'
+        en: 'percutora, side with USB connector, power and RCA outputs'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/caja-tapa.webp'
+      alt:
+        es: 'percutora, tapa inferior de la caja'
+        en: 'percutora, bottom lid of the box'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/caja-abierta.webp'
+      alt:
+        es: 'percutora abierta, con la placa morada y el cableado adentro'
+        en: 'percutora open, with the purple board and wiring inside'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/carcasa-cable.webp'
+      alt:
+        es: 'carcasa impresa en 3D con su cable'
+        en: '3D printed housing with its cable'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/carcasa-tubo.webp'
+      alt:
+        es: 'carcasa impresa en 3D montada en un tubo'
+        en: '3D printed housing mounted on a tube'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/caja-modelo-3d.webp'
+      alt:
+        es: 'modelo 3D de la caja, en vista explotada'
+        en: '3D model of the box, exploded view'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/placa-cables-mesa.webp'
+      alt:
+        es: 'placas con cables en la mesa de trabajo'
+        en: 'boards with wires on the workbench'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/placa-cables-teensy.webp'
+      alt:
+        es: 'placa con Teensy y cables de salida'
+        en: 'board with Teensy and output wires'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/placa-soldada.webp'
+      alt:
+        es: 'placa soldada'
+        en: 'soldered board'
+    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/placa-reverso.webp'
+      alt:
+        es: 'reverso de la placa'
+        en: 'back of the board'
   # presentaciones: dónde se mostró el trabajo (nombre, lugar, ciudad,
   # inicio/fin, enlace). prensa: medio, titulo (tal cual se publicó),
   # fecha, enlace, archivo (copia en web.archive.org, opcional).
@@ -230,12 +288,14 @@ sokio:
           Aarón Montoya-Moraga: planificación, compra de materiales y gestión del proyecto.<br>
           Matías Serrano: esquemático, placa de circuito impreso y prototipado.<br>
           Francisco Stephens: prototipado y soldadura.<br>
-          Bernardita Jesús: prototipado y fabricación.
+          Bernardita Jesús: prototipado y fabricación.<br><br>
+          percutora es un spinoff de <a href="https://github.com/misaaaaaa/strangeTrigger">strangeTrigger</a>, el proyecto original de Matías Serrano.
         en: |-
           Aarón Montoya-Moraga: planning, purchasing of materials and project management.<br>
           Matías Serrano: schematic, printed circuit board and prototyping.<br>
           Francisco Stephens: prototyping and soldering.<br>
-          Bernardita Jesús: prototyping and fabrication.
+          Bernardita Jesús: prototyping and fabrication.<br><br>
+          percutora is a spinoff of <a href="https://github.com/misaaaaaa/strangeTrigger">strangeTrigger</a>, Matías Serrano's original project.
     - id: enlaces
       titulo:
         es: 'enlaces'
