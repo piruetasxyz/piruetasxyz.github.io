@@ -4,8 +4,26 @@ inicio:
   sections:
     - titulo: {}
       content:
-        es: 'piruetas SpA es un estudio chileno de arte electrónico y computacional fundado en 2022.'
-        en: 'piruetas SpA is a chilean studio founded in 2022, focusing on electronic and computational art.'
+        es: |-
+          piruetas SpA es un estudio chileno de arte electrónico y
+          computacional, fundado en 2022 por Aarón Montoya-Moraga.
+          diseñamos circuitos, sintetizadores y herramientas de
+          hardware y código abierto, y trabajamos por encargo con
+          artistas e instituciones. nuestro trabajo se ha presentado
+          en el <a href="/clientes/sokio/index.html">Centro Cultural
+          Gabriela Mistral</a> y en el
+          <a href="/clientes/rocio-c-gomez/index.html">Centro Cultural
+          de España</a> en Santiago, entre otros.
+        en: |-
+          piruetas SpA is a chilean studio for electronic and
+          computational art, founded in 2022 by Aarón Montoya-Moraga.
+          we design circuits, synthesizers and open source hardware
+          and software tools, and we take commissions from artists
+          and institutions. our work has been presented at
+          <a href="/clientes/sokio/index.html">Centro Cultural
+          Gabriela Mistral</a> and
+          <a href="/clientes/rocio-c-gomez/index.html">Centro Cultural
+          de España</a> in Santiago, among others.
     - titulo:
         es: 'enlaces'
         en: 'links'

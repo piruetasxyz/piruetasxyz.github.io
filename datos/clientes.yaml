@@ -4,6 +4,10 @@ es: 'clientes'
 # 'AAAA-MM' (ej. inicio: '2023-11', fin: '2024-02'); `fin: 'presente'`
 # para trabajos en curso. se muestran en la lista y en la ficha.
 clientes:
+  - nombre: 'Rocío C. Gómez'
+    inicio: '2026-10'
+    fin: '2026-10'
+    enlace: '/clientes/rocio-c-gomez/index.html'
   - nombre: 'Claudia González Godoy'
     inicio: '2026-09'
     fin: '2026-09'
@@ -20,6 +24,49 @@ clientes:
     inicio: '2023-11'
     fin: '2023-12'
     enlace: '/clientes/universidad-diego-portales/index.html'
+
+rocio-c-gomez:
+  titulo:
+    es: 'Rocío C. Gómez'
+    en: 'Rocío C. Gómez'
+  materiales:
+    es: 'Raspberry Pi'
+    en: 'Raspberry Pi'
+  software:
+    es: 'Python, Bash'
+    en: 'Python, Bash'
+  sections:
+    - id: descripcion
+      titulo:
+        es: 'descripción'
+        en: 'description'
+      content:
+        es: |-
+          scripts en Python, automatización con Bash y configuración
+          de Raspberry Pi para la obra <em>Cultivan el desorden en
+          todas sus formas</em> de la artista Rocío C. Gómez,
+          presentada en el Centro Cultural de España en Santiago como
+          parte de la residencia
+          <a href="https://ccesantiago.aecid.es/w/residencia-soltar-la-lengua">Soltar la lengua</a>.
+        en: |-
+          Python scripts, Bash automation and Raspberry Pi setup for
+          the piece <em>Cultivan el desorden en todas sus formas</em>
+          by artist Rocío C. Gómez, presented at Centro Cultural de
+          España in Santiago as part of the residency
+          <a href="https://ccesantiago.aecid.es/w/residencia-soltar-la-lengua">Soltar la lengua</a>.
+    - id: creditos
+      titulo:
+        es: 'créditos'
+        en: 'credits'
+      content:
+        es: |-
+          Aarón Montoya-Moraga: programación en Python, programación en Bash y configuración de hardware.<br>
+          Mateo Arce Moore: programación en Python e investigación de hardware.<br>
+          Janis Sepúlveda Vera: pruebas de software e investigación de hardware.
+        en: |-
+          Aarón Montoya-Moraga: Python programming, Bash programming and hardware setup.<br>
+          Mateo Arce Moore: Python programming and hardware research.<br>
+          Janis Sepúlveda Vera: software testing and hardware research.
 
 claudia-gonzalez-godoy:
   titulo:
@@ -285,9 +332,9 @@ sokio:
         en: 'description'
       content:
         es: |-
-          desarrollo de una máquina percutora robótica con solenoides controlados por MIDI para uso en la ópera Splitting/Absence.
+          desarrollo de una máquina percutora robótica con solenoides controlados por MIDI para uso en la ópera Splitting/Absence, presentada en el Centro Cultural Gabriela Mistral (GAM) en marzo de 2026.
         en: |-
-          development of a robotic percussion machine with MIDI-controlled solenoids for use in the opera Splitting/Absence.
+          development of a robotic percussion machine with MIDI-controlled solenoids for use in the opera Splitting/Absence, presented at Centro Cultural Gabriela Mistral (GAM) in March 2026.
     - id: creditos
       titulo:
         es: 'créditos'
