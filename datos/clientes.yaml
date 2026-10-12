@@ -31,19 +31,6 @@ claudia-gonzalez-godoy:
   software:
     es: 'KiCad'
     en: 'KiCad'
-  equipo:
-    - nombre: 'Mateo Arce'
-      rol:
-        es: 'esquemáticos y placas'
-        en: 'schematics and boards'
-    - nombre: 'Aarón Montoya-Moraga'
-      rol:
-        es: 'fabricación e importación'
-        en: 'manufacturing and import'
-    - nombre: 'Bernardita Jesús'
-      rol:
-        es: 'fotografías'
-        en: 'photography'
   galeria:
     - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/00.webp'
       alt:
@@ -123,11 +110,27 @@ claudia-gonzalez-godoy:
           4017 chip as a sequencer, and the 4093 chip as an
           oscillator, and ported them to pcbs to be used in the
           course students' final projects.
+    - id: creditos
+      titulo:
+        es: 'créditos'
+        en: 'credits'
+      content:
+        es: |-
+          Aarón Montoya-Moraga: fabricación e importación.<br>
+          Mateo Arce Moore: esquemáticos y placas.<br>
+          Bernardita Jesús: fotografías.
+        en: |-
+          Aarón Montoya-Moraga: manufacturing and import.<br>
+          Mateo Arce Moore: schematics and boards.<br>
+          Bernardita Jesús: photography.
 
 biblioteca-cuir:
   titulo:
     es: 'Biblioteca Cuir'
     en: 'Biblioteca Cuir'
+  materiales:
+    es: 'HTML, CSS, JavaScript, YAML, GitHub Actions'
+    en: 'HTML, CSS, JavaScript, YAML, GitHub Actions'
   galeria:
     - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-biblioteca-cuir-web/webp/portada-foto-actividad.webp'
       alt:
@@ -176,6 +179,12 @@ sokio:
   titulo:
     es: 'Sokio'
     en: 'Sokio'
+  materiales:
+    es: 'solenoides, PCB, microcontrolador Teensy, PLA+'
+    en: 'solenoids, PCB, Teensy microcontroller, PLA+'
+  software:
+    es: 'KiCad, Arduino, C++'
+    en: 'KiCad, Arduino, C++'
   imagen_social: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/jpg/caja-numeros-diagonal.jpg'
   galeria:
     - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/caja-numeros-diagonal.webp'
@@ -308,6 +317,12 @@ universidad-diego-portales:
   titulo:
     es: 'Universidad Diego Portales'
     en: 'Universidad Diego Portales'
+  materiales:
+    es: 'Arduino'
+    en: 'Arduino'
+  software:
+    es: 'Arduino, p5.js, ml5.js, Figma, Markdown'
+    en: 'Arduino, p5.js, ml5.js, Figma, Markdown'
   galeria:
     - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/jpg/folleto-momentos.jpg'
       alt:

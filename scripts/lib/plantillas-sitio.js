@@ -217,8 +217,7 @@ function renderizarPeriodo(item, clase) {
 
 function renderizarFichaTecnica(data) {
   const periodo = renderizarPeriodo(data);
-  const tieneFicha =
-    periodo || data.materiales || data.software || (data.equipo && data.equipo.length);
+  const tieneFicha = periodo || data.materiales || data.software;
   if (!tieneFicha) return '';
 
   let filas = '';
@@ -236,23 +235,6 @@ function renderizarFichaTecnica(data) {
 
   filaTexto('materiales', 'materials', data.materiales);
   filaTexto('software', 'software', data.software);
-
-  if (Array.isArray(data.equipo) && data.equipo.length) {
-    const items = data.equipo
-      .map((miembro) => {
-        const nombre = `<span class="equipo-nombre">${escaparHtml(miembro.nombre || '')}</span>`;
-        const tieneRol =
-          miembro.rol && (miembro.rol.es || miembro.rol.en);
-        const rol = tieneRol
-          ? spanEsEn(miembro.rol.es || '', miembro.rol.en || '', 'equipo-rol')
-          : '';
-        return `<li>${nombre}${rol}</li>`;
-      })
-      .join('');
-    filas +=
-      `<dt>${spanEsEn('equipo', 'team')}</dt>` +
-      `<dd><ul class="equipo-list">${items}</ul></dd>`;
-  }
 
   return `<dl class="ficha-tecnica">${filas}</dl>`;
 }
