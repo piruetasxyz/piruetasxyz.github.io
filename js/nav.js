@@ -73,12 +73,15 @@ const navbarContent = `
     <div class="nav-section">
         <h3 class="nav-titulo"><a href="/clientes/index.html"><span class="es">clientes</span><span class="en">clients</span></a></h3>
         <div class="nav-contenido">
+            <!-- clientes:inicio (generado por scripts/generar-clientes.js desde datos/clientes.yaml) -->
             <ol>
+                <li><a href="/clientes/rocio-c-gomez/index.html">rocío c. gómez</a></li>
                 <li><a href="/clientes/claudia-gonzalez-godoy/index.html">claudia gonzález godoy</a></li>
                 <li><a href="/clientes/biblioteca-cuir/index.html">bibliotecaCuir</a></li>
                 <li><a href="/clientes/sokio/index.html">sokio</a></li>
                 <li><a href="/clientes/universidad-diego-portales/index.html">universidad diego portales</a></li>
             </ol>
+            <!-- clientes:fin -->
         </div>
     </div>
 

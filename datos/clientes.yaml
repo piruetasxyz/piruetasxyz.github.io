@@ -3,6 +3,8 @@ es: 'clientes'
 # fechas de cada cliente: `inicio` y `fin` opcional, como 'AAAA' o
 # 'AAAA-MM' (ej. inicio: '2023-11', fin: '2024-02'); `fin: 'presente'`
 # para trabajos en curso. se muestran en la lista y en la ficha.
+# `nombreMenu` (opcional): cómo aparece en el menú lateral; si falta,
+# se usa `nombre` en minúsculas.
 clientes:
   - nombre: 'Rocío C. Gómez'
     inicio: '2026-10'
@@ -13,6 +15,7 @@ clientes:
     fin: '2026-09'
     enlace: '/clientes/claudia-gonzalez-godoy/index.html'
   - nombre: 'Biblioteca Cuir'
+    nombreMenu: 'bibliotecaCuir'
     inicio: '2026-03'
     fin: '2026-08'
     enlace: '/clientes/biblioteca-cuir/index.html'

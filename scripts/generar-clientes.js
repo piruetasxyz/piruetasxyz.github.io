@@ -18,6 +18,7 @@ const fs = require('fs');
 const path = require('path');
 const jsyaml = require('../lib/js-yaml.min.js');
 const {
+  escaparHtml,
   renderizarDetalle,
   renderizarTituloH1,
   renderizarClientesLista,
@@ -34,6 +35,7 @@ const {
 const RAIZ = path.join(__dirname, '..');
 const CLIENTES_YAML = path.join(RAIZ, 'datos', 'clientes.yaml');
 const INDEX_HTML = path.join(RAIZ, 'clientes', 'index.html');
+const NAV_JS = path.join(RAIZ, 'js', 'nav.js');
 
 function plantillaNueva(slug, data) {
   let html = `<!DOCTYPE html>
@@ -87,6 +89,25 @@ function hornearIndice(clientesYaml) {
   console.log('  clientes/index.html');
 }
 
+function hornearMenu(clientes) {
+  const js = fs.readFileSync(NAV_JS, 'utf8');
+  const marcas = /(<!-- clientes:inicio[^>]*-->\n)[\s\S]*?([ \t]*<!-- clientes:fin -->)/;
+  if (!marcas.test(js)) {
+    console.warn('No se encontraron los marcadores de clientes en js/nav.js');
+    return;
+  }
+  const items = clientes
+    .filter((c) => c.enlace)
+    .map((c) => {
+      const nombre = escaparHtml(c.nombreMenu || (c.nombre || '').toLowerCase());
+      return `                <li><a href="${escaparHtml(c.enlace)}">${nombre}</a></li>`;
+    })
+    .join('\n');
+  const lista = `            <ol>\n${items}\n            </ol>\n`;
+  fs.writeFileSync(NAV_JS, js.replace(marcas, (_, inicio, fin) => `${inicio}${lista}${fin}`), 'utf8');
+  console.log('  js/nav.js');
+}
+
 function main() {
   const clientesYaml = jsyaml.load(fs.readFileSync(CLIENTES_YAML, 'utf8'));
   const clientes = (clientesYaml && clientesYaml.clientes) || [];
@@ -97,6 +118,7 @@ function main() {
   }
 
   hornearIndice(clientesYaml);
+  hornearMenu(clientes);
 
   let creados = 0;
   let actualizados = 0;

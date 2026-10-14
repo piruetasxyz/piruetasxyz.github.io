@@ -25,14 +25,14 @@ jobs:
         with:
           node-version: 20
 
-      - name: Hornear clientes/index.html y clientes/*/index.html desde datos/clientes.yaml
+      - name: Hornear clientes/index.html, clientes/*/index.html y el menú de js/nav.js desde datos/clientes.yaml
         run: node scripts/generar-clientes.js
 
       - name: Commitear páginas generadas
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add clientes
+          git add clientes js/nav.js
           if git diff --cached --quiet; then
             echo "Sin cambios que commitear."
           else
