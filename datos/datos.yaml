@@ -752,16 +752,16 @@ chufe:
   imagenes:
     - image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-chufe/svg/chufe-esquematico.svg'
       alt:
-        es: 'esquemático de chufe v0.1 rev-a'
-        en: 'chufe v0.1 rev-a schematic'
+        es: 'esquemático de chufe v0.1 rev-b'
+        en: 'chufe v0.1 rev-b schematic'
     - image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-chufe/svg/chufe-placa.svg'
       alt:
-        es: 'placa de chufe v0.1 rev-a'
-        en: 'chufe v0.1 rev-a board'
+        es: 'placa de chufe v0.1 rev-b'
+        en: 'chufe v0.1 rev-b board'
     - video: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-chufe/mp4/chufe-placa-3d-giro.mp4'
       alt:
-        es: 'render 3D de la placa de chufe v0.1 rev-a, girando'
-        en: '3D render of the chufe v0.1 rev-a board, turning'
+        es: 'render 3D de la placa de chufe v0.1 rev-b, girando'
+        en: '3D render of the chufe v0.1 rev-b board, turning'
 
   sections:
     - id: descripcion
@@ -772,9 +772,9 @@ chufe:
         es: |-
           chufe es una fuente de alimentación eurorack de hardware
           abierto, hecha por piruetas.
-          recibe 12 V DC por un jack y entrega ±12V y +5V en un header
-          de alimentación eurorack de 16 pines y en un conector molex
-          KK-396 de 4 pines, con un LED para cada línea.
+          recibe 12 V DC por un jack y entrega ±12V y +5V en dos
+          headers de alimentación eurorack de 16 pines, con un LED
+          para cada línea.
           está hecha para alimentar un bus como
           <a href="/proyectos/chufebu/index.html">chufebu</a>.
           está diseñada en KiCad 10 con las bibliotecas estándar de
@@ -783,8 +783,8 @@ chufe:
           chufe is an open source hardware eurorack power supply
           by piruetas.
           It takes 12 V DC from a barrel jack and outputs ±12V and
-          +5V on a 16-pin eurorack power header and a 4-pin Molex
-          KK-396 connector, with an LED for each rail.
+          +5V on two 16-pin eurorack power headers, with an LED for
+          each rail.
           It is designed to feed a power bus such as
           <a href="/proyectos/chufebu/index.html">chufebu</a>.
           It is designed in KiCad 10 with KiCad's standard
@@ -799,14 +799,14 @@ chufe:
           entrada de 12 V DC por jack, con protección contra polaridad inversa.<br>
           salidas de +12V y -12V desde un convertidor DC-DC aislado de 20 W.<br>
           salida de +5V desde un regulador lineal L7805.<br>
-          1 header de alimentación eurorack de 16 pines (2x08) y 1 conector molex KK-396 de 4 pines: -12V, GND, +5V y +12V.<br>
+          2 headers de alimentación eurorack de 16 pines (2x08), con -12V, GND, +12V y +5V en ambos.<br>
           4 LEDs indicadores: entrada, -12V, +12V y +5V.<br>
           placa de 50 × 65 mm, 2 capas, con 4 agujeros de montaje M3.
         en: |-
           12 V DC barrel jack input, with reverse polarity protection.<br>
           +12V and -12V outputs from a 20 W isolated DC-DC converter.<br>
           +5V output from an L7805 linear regulator.<br>
-          1 eurorack power header, 16 pins (2x08), and 1 Molex KK-396 4-pin connector: -12V, GND, +5V and +12V.<br>
+          2 eurorack power headers, 16 pins (2x08), with -12V, GND, +12V and +5V on both.<br>
           4 indicator LEDs: input, -12V, +12V and +5V.<br>
           50 × 65 mm board, 2 layers, with 4 M3 mounting holes.
 
@@ -817,10 +817,12 @@ chufe:
       content:
         es: |-
           piruetas vende chufe armado y probado.<br>
-          versión v0.1 rev-a: octubre 2026, todavía sin probar.
+          versión v0.1 rev-b: fabricada y probada en noviembre 2026.<br>
+          versión v0.1 rev-a: fabricada y probada en octubre 2026. tenía un header de 16 pines y un conector molex KK-396.
         en: |-
           piruetas sells chufe assembled and tested.<br>
-          Version v0.1 rev-a: October 2026, not yet tested.
+          Version v0.1 rev-b: manufactured and tested in November 2026.<br>
+          Version v0.1 rev-a: manufactured and tested in October 2026. It had one 16-pin header and a Molex KK-396 connector.
 
     - id: documentacion
       titulo:
@@ -1267,6 +1269,10 @@ atenu:
       alt:
         es: 'placa de atenu v0.1 rev-b'
         en: 'atenu v0.1 rev-b board'
+    - video: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-atenu/mp4/atenu-placa-3d-giro.mp4'
+      alt:
+        es: 'render 3D de la placa de atenu v0.1 rev-b, girando'
+        en: '3D render of the atenu v0.1 rev-b board, turning'
 
   sections:
     - id: descripcion
@@ -1371,6 +1377,10 @@ suma:
       alt:
         es: 'placa de suma v0.1 rev-b'
         en: 'suma v0.1 rev-b board'
+    - video: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-suma/mp4/suma-placa-3d-giro.mp4'
+      alt:
+        es: 'render 3D de la placa de suma v0.1 rev-b, girando'
+        en: '3D render of the suma v0.1 rev-b board, turning'
 
   sections:
     - id: descripcion
