@@ -20,7 +20,7 @@ function escaparHtml(texto) {
 }
 
 const DOMINIO = 'https://piruetas.xyz';
-const IMAGEN_DEFECTO = 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2022-piruetas-logo/jpg/piruetas-v0.jpg';
+const IMAGEN_DEFECTO = 'https://piruetas.xyz/piruetas-web-media/2022-piruetas-logo/jpg/piruetas-v0.jpg';
 const DESCRIPCION_DEFECTO = 'piruetas es un estudio chileno de arte electrónico y computacional fundado en 2022.';
 
 function textoPlano(html) {
@@ -45,7 +45,7 @@ function absolutizarUrl(ruta) {
    (.../<proyecto>/redes/<nombre>.jpg), que genera el script
    scripts/generar-redes-sociales.sh de ese repositorio. Devuelve null
    si la url no es de piruetas-web-media. */
-const PATRON_MEDIA = /^(https:\/\/cdn\.jsdelivr\.net\/gh\/piruetasxyz\/piruetas-web-media@main\/[^/]+)\/(?:jpg|png|svg)\/([^/]+)\.(?:jpe?g|png|svg)$/i;
+const PATRON_MEDIA = /^(https:\/\/piruetas\.xyz\/piruetas-web-media\/[^/]+)\/(?:jpg|png|svg)\/([^/]+)\.(?:jpe?g|png|svg)$/i;
 
 function imagenRedesSociales(url) {
   const m = PATRON_MEDIA.exec(url);

@@ -82,55 +82,55 @@ claudia-gonzalez-godoy:
     es: 'KiCad'
     en: 'KiCad'
   galeria:
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/00.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-claudia-gonzalez-godoy-placas/webp/00.webp'
       alt:
         es: 'Claudia González Godoy, placa 00'
         en: 'Claudia González Godoy, plate 00'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/01.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-claudia-gonzalez-godoy-placas/webp/01.webp'
       alt:
         es: 'Claudia González Godoy, placa 01'
         en: 'Claudia González Godoy, plate 01'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/02.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-claudia-gonzalez-godoy-placas/webp/02.webp'
       alt:
         es: 'Claudia González Godoy, placa 02'
         en: 'Claudia González Godoy, plate 02'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/03.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-claudia-gonzalez-godoy-placas/webp/03.webp'
       alt:
         es: 'Claudia González Godoy, placa 03'
         en: 'Claudia González Godoy, plate 03'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/04.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-claudia-gonzalez-godoy-placas/webp/04.webp'
       alt:
         es: 'Claudia González Godoy, placa 04'
         en: 'Claudia González Godoy, plate 04'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/05.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-claudia-gonzalez-godoy-placas/webp/05.webp'
       alt:
         es: 'Claudia González Godoy, placa 05'
         en: 'Claudia González Godoy, plate 05'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/06.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-claudia-gonzalez-godoy-placas/webp/06.webp'
       alt:
         es: 'Claudia González Godoy, placa 06'
         en: 'Claudia González Godoy, plate 06'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/07.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-claudia-gonzalez-godoy-placas/webp/07.webp'
       alt:
         es: 'Claudia González Godoy, placa 07'
         en: 'Claudia González Godoy, plate 07'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/08.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-claudia-gonzalez-godoy-placas/webp/08.webp'
       alt:
         es: 'Claudia González Godoy, placa 08'
         en: 'Claudia González Godoy, plate 08'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/09.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-claudia-gonzalez-godoy-placas/webp/09.webp'
       alt:
         es: 'Claudia González Godoy, placa 09'
         en: 'Claudia González Godoy, plate 09'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/10.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-claudia-gonzalez-godoy-placas/webp/10.webp'
       alt:
         es: 'Claudia González Godoy, placa 10'
         en: 'Claudia González Godoy, plate 10'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/11.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-claudia-gonzalez-godoy-placas/webp/11.webp'
       alt:
         es: 'Claudia González Godoy, placa 11'
         en: 'Claudia González Godoy, plate 11'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-claudia-gonzalez-godoy-placas/webp/12.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-claudia-gonzalez-godoy-placas/webp/12.webp'
       alt:
         es: 'Claudia González Godoy, placa 12'
         en: 'Claudia González Godoy, plate 12'
@@ -182,11 +182,11 @@ biblioteca-cuir:
     es: 'HTML, CSS, JavaScript, YAML, GitHub Actions'
     en: 'HTML, CSS, JavaScript, YAML, GitHub Actions'
   galeria:
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-biblioteca-cuir-web/webp/portada-foto-actividad.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-biblioteca-cuir-web/webp/portada-foto-actividad.webp'
       alt:
         es: 'sitio web de Biblioteca Cuir, portada con foto de una actividad'
         en: 'Biblioteca Cuir website, cover with a photo of an event'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-biblioteca-cuir-web/webp/inicio-objetos-coleccion.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-biblioteca-cuir-web/webp/inicio-objetos-coleccion.webp'
       alt:
         es: 'sitio web de Biblioteca Cuir, inicio con objetos de la colección'
         en: 'Biblioteca Cuir website, home page with objects from the collection'
@@ -235,61 +235,61 @@ sokio:
   software:
     es: 'KiCad, Arduino, C++'
     en: 'KiCad, Arduino, C++'
-  imagen_social: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/jpg/caja-numeros-diagonal.jpg'
+  imagen_social: 'https://piruetas.xyz/piruetas-web-media/2025-sokio-percutora/jpg/caja-numeros-diagonal.jpg'
   galeria:
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/caja-numeros-diagonal.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-sokio-percutora/webp/caja-numeros-diagonal.webp'
       alt:
         es: 'percutora, caja de aluminio con sus siete luces numeradas'
         en: 'percutora, aluminium box with its seven numbered lights'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/caja-numeros-frente.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-sokio-percutora/webp/caja-numeros-frente.webp'
       alt:
         es: 'percutora vista desde arriba, con las luces numeradas del 1 al 7'
         en: 'percutora seen from above, with lights numbered 1 to 7'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/caja-diagonal-conectores.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-sokio-percutora/webp/caja-diagonal-conectores.webp'
       alt:
         es: 'percutora, caja con sus conectores RCA dorados'
         en: 'percutora, box with its gold RCA connectors'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/caja-frente.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-sokio-percutora/webp/caja-frente.webp'
       alt:
         es: 'percutora, caja de frente'
         en: 'percutora, box from the front'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/caja-lateral-conectores.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-sokio-percutora/webp/caja-lateral-conectores.webp'
       alt:
         es: 'percutora, lateral con conector USB, alimentación y salidas RCA'
         en: 'percutora, side with USB connector, power and RCA outputs'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/caja-tapa.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-sokio-percutora/webp/caja-tapa.webp'
       alt:
         es: 'percutora, tapa inferior de la caja'
         en: 'percutora, bottom lid of the box'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/caja-abierta.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-sokio-percutora/webp/caja-abierta.webp'
       alt:
         es: 'percutora abierta, con la placa morada y el cableado adentro'
         en: 'percutora open, with the purple board and wiring inside'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/carcasa-cable.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-sokio-percutora/webp/carcasa-cable.webp'
       alt:
         es: 'carcasa impresa en 3D con su cable'
         en: '3D printed housing with its cable'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/carcasa-tubo.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-sokio-percutora/webp/carcasa-tubo.webp'
       alt:
         es: 'carcasa impresa en 3D montada en un tubo'
         en: '3D printed housing mounted on a tube'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/caja-modelo-3d.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-sokio-percutora/webp/caja-modelo-3d.webp'
       alt:
         es: 'modelo 3D de la caja, en vista explotada'
         en: '3D model of the box, exploded view'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/placa-cables-mesa.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-sokio-percutora/webp/placa-cables-mesa.webp'
       alt:
         es: 'placas con cables en la mesa de trabajo'
         en: 'boards with wires on the workbench'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/placa-cables-teensy.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-sokio-percutora/webp/placa-cables-teensy.webp'
       alt:
         es: 'placa con Teensy y cables de salida'
         en: 'board with Teensy and output wires'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/placa-soldada.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-sokio-percutora/webp/placa-soldada.webp'
       alt:
         es: 'placa soldada'
         en: 'soldered board'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-sokio-percutora/webp/placa-reverso.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-sokio-percutora/webp/placa-reverso.webp'
       alt:
         es: 'reverso de la placa'
         en: 'back of the board'
@@ -374,39 +374,39 @@ universidad-diego-portales:
     es: 'Arduino, p5.js, ml5.js, Figma, Markdown'
     en: 'Arduino, p5.js, ml5.js, Figma, Markdown'
   galeria:
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/jpg/folleto-momentos.jpg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2023-universidad-diego-portales-talleres-momentos/jpg/folleto-momentos.jpg'
       alt:
         es: 'folleto de Momentos: trayectorias de investigación aplicada, exposición, talleres y charlas, 20 de noviembre al 1 de diciembre, Biblioteca Nicanor Parra'
         en: 'flyer for Momentos: trayectorias de investigación aplicada, exhibition, workshops and talks, november 20 to december 1, Biblioteca Nicanor Parra'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-1.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2023-universidad-diego-portales-talleres-momentos/webp/teaching-1.webp'
       alt:
         es: 'Talleres Momentos en la Universidad Diego Portales, foto 1'
         en: 'Talleres Momentos at Universidad Diego Portales, photo 1'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-2.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2023-universidad-diego-portales-talleres-momentos/webp/teaching-2.webp'
       alt:
         es: 'Talleres Momentos en la Universidad Diego Portales, foto 2'
         en: 'Talleres Momentos at Universidad Diego Portales, photo 2'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-3.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2023-universidad-diego-portales-talleres-momentos/webp/teaching-3.webp'
       alt:
         es: 'Talleres Momentos en la Universidad Diego Portales, foto 3'
         en: 'Talleres Momentos at Universidad Diego Portales, photo 3'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-4.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2023-universidad-diego-portales-talleres-momentos/webp/teaching-4.webp'
       alt:
         es: 'Talleres Momentos en la Universidad Diego Portales, foto 4'
         en: 'Talleres Momentos at Universidad Diego Portales, photo 4'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-5.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2023-universidad-diego-portales-talleres-momentos/webp/teaching-5.webp'
       alt:
         es: 'Talleres Momentos en la Universidad Diego Portales, foto 5'
         en: 'Talleres Momentos at Universidad Diego Portales, photo 5'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-6.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2023-universidad-diego-portales-talleres-momentos/webp/teaching-6.webp'
       alt:
         es: 'Talleres Momentos en la Universidad Diego Portales, foto 6'
         en: 'Talleres Momentos at Universidad Diego Portales, photo 6'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-7.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2023-universidad-diego-portales-talleres-momentos/webp/teaching-7.webp'
       alt:
         es: 'Talleres Momentos en la Universidad Diego Portales, foto 7'
         en: 'Talleres Momentos at Universidad Diego Portales, photo 7'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-8.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2023-universidad-diego-portales-talleres-momentos/webp/teaching-8.webp'
       alt:
         es: 'Talleres Momentos en la Universidad Diego Portales, foto 8'
         en: 'Talleres Momentos at Universidad Diego Portales, photo 8'

@@ -40,7 +40,9 @@ node scripts/generar-personas.js
 Este repositorio no guarda imágenes: todas viven en
 [piruetas-web-media](https://github.com/piruetasxyz/piruetas-web-media),
 en carpetas `AAAA-cliente-proyecto/`, y el YAML las enlaza vía
-jsDelivr (`https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/...`).
+GitHub Pages de ese repositorio, que hereda el dominio `piruetas.xyz`
+(`https://piruetas.xyz/piruetas-web-media/...`). No se usa jsDelivr
+porque su espejo de GitHub no sirve repositorios de más de 50 MB.
 
 Las páginas de proyectos y clientes muestran primero el texto y
 después cada imagen en su propia fila de ancho completo, nunca texto e
@@ -51,11 +53,11 @@ archivo para verla en tamaño completo:
 ```yaml
 chufebu:
   imagenes:
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-chufebu/svg/chufebu-placa.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-chufebu/svg/chufebu-placa.svg'
       alt:
         es: 'placa de chufebu v0.1 rev-a'
         en: 'chufebu v0.1 rev-a board'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-chufebu/svg/chufebu-esquematico.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-chufebu/svg/chufebu-esquematico.svg'
       alt:
         es: 'esquemático de chufebu v0.1 rev-a'
         en: 'chufebu v0.1 rev-a schematic'
@@ -69,7 +71,7 @@ y el `alt` va como `aria-label`. Los videos viven en la carpeta
 sociales:
 
 ```yaml
-    - video: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-chufebu/mp4/chufebu-placa-3d-giro.mp4'
+    - video: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-chufebu/mp4/chufebu-placa-3d-giro.mp4'
       alt:
         es: 'render 3D de la placa de chufebu v0.1 rev-a, girando'
         en: '3D render of the chufebu v0.1 rev-a board, turning'
@@ -103,7 +105,7 @@ página, `imagen_social` apunta a la imagen original (no a la de
 `redes/`), por ejemplo:
 
 ```yaml
-imagen_social: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-parla/jpg/parla-placa.jpg'
+imagen_social: 'https://piruetas.xyz/piruetas-web-media/2025-piruetas-parla/jpg/parla-placa.jpg'
 ```
 
 Al agregar una imagen nueva, primero se sube a piruetas-web-media y

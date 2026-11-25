@@ -56,8 +56,8 @@ personas:
           rol:
             es: 'Investigador principal'
             en: 'Principal Investigator'
-          foto: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-personas/jpg/aaron-montoya.jpg'
-          modelo3d: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-personas/glb/montoyamoraga-2026-08.glb'
+          foto: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-personas/jpg/aaron-montoya.jpg'
+          modelo3d: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-personas/glb/montoyamoraga-2026-08.glb'
           descripcion:
             es: |-
               Aarón Montoya-Moraga es ingeniere civil electricista de
@@ -103,7 +103,7 @@ personas:
           rol:
             es: 'Diseñadora, jefa de proyectos'
             en: 'Designer, project manager'
-          foto: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-personas/jpg/janis-sepulveda.jpg'
+          foto: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-personas/jpg/janis-sepulveda.jpg'
           descripcion:
             es: |-
               Janis Sepúlveda Vera es diseñadora industrial de la
@@ -141,8 +141,8 @@ personas:
           # placeholder hasta tener una foto real (ver plan de
           # reemplazo de render.js, Etapa 4): sin esto, una vista sin
           # JS del visor 3D no tiene nada que mostrar
-          foto: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2022-piruetas-logo/jpg/piruetas-v0.jpg'
-          modelo3d: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-personas/glb/mateo-arce-2026-09.glb'
+          foto: 'https://piruetas.xyz/piruetas-web-media/2022-piruetas-logo/jpg/piruetas-v0.jpg'
+          modelo3d: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-personas/glb/mateo-arce-2026-09.glb'
           rol:
             es: 'programador, diseñador gráfico'
             en: 'programmer, graphic designer'
@@ -320,7 +320,7 @@ proyectos:
       etiqueta:
         es: 'popusintes'
         en: 'popusintes'
-      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-chufe/svg/chufe-esquematico.svg'
+      image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-chufe/svg/chufe-esquematico.svg'
       alt:
         es: 'esquemático de chufe'
         en: 'chufe schematic'
@@ -338,7 +338,7 @@ proyectos:
       etiqueta:
         es: 'popusintes'
         en: 'popusintes'
-      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-chufebu/svg/chufebu-esquematico.svg'
+      image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-chufebu/svg/chufebu-esquematico.svg'
       alt:
         es: 'esquemático de chufebu'
         en: 'chufebu schematic'
@@ -356,7 +356,7 @@ proyectos:
       etiqueta:
         es: 'popusintes'
         en: 'popusintes'
-      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-atenu/svg/atenu-esquematico.svg'
+      image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-atenu/svg/atenu-esquematico.svg'
       alt:
         es: 'esquemático de atenu'
         en: 'atenu schematic'
@@ -374,14 +374,14 @@ proyectos:
       etiqueta:
         es: 'popusintes'
         en: 'popusintes'
-      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2022-piruetas-logo/jpg/piruetas-v0.jpg'
+      image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-suma/svg/suma-esquematico.svg'
       alt:
-        es: 'suma'
-        en: 'suma'
+        es: 'esquemático de suma'
+        en: 'suma schematic'
       enlace: '/proyectos/suma/index.html'
       subtitulo:
-        es: 'proyecto en desarrollo'
-        en: 'project in development'
+        es: 'mezclador eurorack de hardware abierto'
+        en: 'open source hardware eurorack mixer'
 
     - titulo:
         es: 'parla'
@@ -392,7 +392,7 @@ proyectos:
       etiqueta:
         es: 'popusintes'
         en: 'popusintes'
-      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-parla/jpg/parla-canasto.jpg'
+      image: 'https://piruetas.xyz/piruetas-web-media/2025-piruetas-parla/jpg/parla-canasto.jpg'
       alt:
         es: 'parla'
         en: 'parla'
@@ -410,7 +410,7 @@ proyectos:
       etiqueta:
         es: 'popusintes'
         en: 'popusintes'
-      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2022-piruetas-logo/jpg/piruetas-v0.jpg'
+      image: 'https://piruetas.xyz/piruetas-web-media/2022-piruetas-logo/jpg/piruetas-v0.jpg'
       alt:
         es: 'osca'
         en: 'osca'
@@ -428,7 +428,7 @@ proyectos:
       etiqueta:
         es: 'biblioteca micro'
         en: 'mcu library'
-      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-boton/svg/boton-grafico.svg'
+      image: 'https://piruetas.xyz/piruetas-web-media/2025-piruetas-boton/svg/boton-grafico.svg'
       alt:
         es: 'gráfico de Boton: la lectura de un botón con rebotes y su valor estable después del antirrebote'
         en: 'Boton plot: a bouncing button reading and its stable value after debouncing'
@@ -446,7 +446,7 @@ proyectos:
       etiqueta:
         es: 'biblioteca micro'
         en: 'mcu library'
-      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-perilla/svg/perilla-grafico.svg'
+      image: 'https://piruetas.xyz/piruetas-web-media/2025-piruetas-perilla/svg/perilla-grafico.svg'
       alt:
         es: 'gráfico de Perilla: la lectura de una perilla y su valor mapeado de 0 a 100'
         en: 'Perilla plot: a knob reading and its value mapped from 0 to 100'
@@ -464,7 +464,7 @@ proyectos:
       etiqueta:
         es: 'biblioteca docs'
         en: 'docs library'
-      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-kicad-visor/svg/kicad-visor-arbol.svg'
+      image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-kicad-visor/svg/kicad-visor-arbol.svg'
       alt:
         es: 'estructura de archivos del repositorio de kicad-visor, como treemap'
         en: 'file structure of the kicad-visor repository, as a treemap'
@@ -482,7 +482,7 @@ proyectos:
       etiqueta:
         es: 'biblioteca docs'
         en: 'docs library'
-      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-kicad-retrata/svg/kicad-retrata-arbol.svg'
+      image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-kicad-retrata/svg/kicad-retrata-arbol.svg'
       alt:
         es: 'estructura de archivos del repositorio de kicad-retrata, como treemap'
         en: 'file structure of the kicad-retrata repository, as a treemap'
@@ -500,7 +500,7 @@ proyectos:
       etiqueta:
         es: 'software'
         en: 'software'
-      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-redondela/jpg/redondela.jpg'
+      image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-redondela/jpg/redondela.jpg'
       alt:
         es: 'redondela'
         en: 'redondela'
@@ -518,7 +518,7 @@ proyectos:
       etiqueta:
         es: 'hardware'
         en: 'hardware'
-      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2022-piruetas-logo/jpg/piruetas-v0.jpg'
+      image: 'https://piruetas.xyz/piruetas-web-media/2022-piruetas-logo/jpg/piruetas-v0.jpg'
       alt:
         es: 'gerassic organ'
         en: 'gerassic organ'
@@ -536,7 +536,7 @@ proyectos:
       etiqueta:
         es: 'enseñanza'
         en: 'teaching'
-      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/jpg/folleto-momentos.jpg'
+      image: 'https://piruetas.xyz/piruetas-web-media/2023-universidad-diego-portales-talleres-momentos/jpg/folleto-momentos.jpg'
       alt:
         es: 'folleto de Momentos: trayectorias de investigación aplicada, exposición, talleres y charlas, 20 de noviembre al 1 de diciembre, Biblioteca Nicanor Parra'
         en: 'flyer for Momentos: trayectorias de investigación aplicada, exhibition, workshops and talks, november 20 to december 1, Biblioteca Nicanor Parra'
@@ -556,7 +556,7 @@ parla:
     en: 'popusintes'
 
   hero:
-    image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-parla/jpg/parla-canasto.jpg'
+    image: 'https://piruetas.xyz/piruetas-web-media/2025-piruetas-parla/jpg/parla-canasto.jpg'
     alt:
       es: 'parla'
       en: 'parla'
@@ -645,18 +645,18 @@ chufebu:
     en: 'popusintes'
 
   imagenes:
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-chufebu/svg/chufebu-esquematico.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-chufebu/svg/chufebu-esquematico.svg'
       alt:
-        es: 'esquemático de chufebu v0.1 rev-a'
-        en: 'chufebu v0.1 rev-a schematic'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-chufebu/svg/chufebu-placa.svg'
+        es: 'esquemático de chufebu v0.1 rev-b'
+        en: 'chufebu v0.1 rev-b schematic'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-chufebu/svg/chufebu-placa.svg'
       alt:
-        es: 'placa de chufebu v0.1 rev-a'
-        en: 'chufebu v0.1 rev-a board'
-    - video: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-chufebu/mp4/chufebu-placa-3d-giro.mp4'
+        es: 'placa de chufebu v0.1 rev-b'
+        en: 'chufebu v0.1 rev-b board'
+    - video: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-chufebu/mp4/chufebu-placa-3d-giro.mp4'
       alt:
-        es: 'render 3D de la placa de chufebu v0.1 rev-a, girando'
-        en: '3D render of the chufebu v0.1 rev-a board, turning'
+        es: 'render 3D de la placa de chufebu v0.1 rev-b, girando'
+        en: '3D render of the chufebu v0.1 rev-b board, turning'
 
   sections:
     - id: descripcion
@@ -668,16 +668,14 @@ chufebu:
           chufebu es un bus de alimentación eurorack de hardware
           abierto, hecho por piruetas.
           distribuye ±12V, +5V, CV y GATE a cinco headers de
-          alimentación eurorack de 16 pines, cada uno con su propio
-          conector molex KK-396 de 4 pines para pruebas.
+          alimentación eurorack de 16 pines.
           está diseñado en KiCad 10 usando solamente las bibliotecas
           estándar de KiCad.
         en: |-
           chufebu is an open source hardware eurorack power bus
           board by piruetas.
           It distributes ±12V, +5V, CV and GATE to five 16-pin
-          eurorack power headers, each one paired with its own
-          4-pin Molex KK-396 connector for testing.
+          eurorack power headers.
           It is designed in KiCad 10 using only KiCad's standard
           libraries.
 
@@ -688,14 +686,12 @@ chufebu:
       content:
         es: |-
           5 headers de alimentación eurorack de 16 pines (2x08), conectados en bus.<br>
-          5 conectores molex KK-396 de 4 pines: -12V, GND, +5V y +12V.<br>
           las líneas CV y GATE también van en bus entre los 5 headers.<br>
-          placa de 100 × 45 mm, 2 capas, con 2 agujeros de montaje M3.
+          placa de 100 × 40 mm, 2 capas, con 4 agujeros de montaje M3.
         en: |-
           5 eurorack power headers, 16 pins (2x08), bussed together.<br>
-          5 Molex KK-396 4-pin connectors: -12V, GND, +5V and +12V.<br>
           CV and GATE lines are also bussed across the 5 headers.<br>
-          100 × 45 mm board, 2 layers, with 2 M3 mounting holes.
+          100 × 40 mm board, 2 layers, with 4 M3 mounting holes.
 
     - id: producto
       titulo:
@@ -704,10 +700,12 @@ chufebu:
       content:
         es: |-
           piruetas vende chufebu armado y probado.<br>
-          versión v0.1 rev-a: fabricada en octubre 2026, todavía sin probar.
+          versión v0.1 rev-b: fabricada y probada en noviembre 2026.<br>
+          versión v0.1 rev-a: fabricada en octubre 2026, probada y funciona. incluía 5 conectores molex KK-396 de 4 pines.
         en: |-
           piruetas sells chufebu assembled and tested.<br>
-          Version v0.1 rev-a: manufactured in October 2026, not yet tested.
+          Version v0.1 rev-b: manufactured and tested in November 2026.<br>
+          Version v0.1 rev-a: manufactured in October 2026, tested and working. It included 5 Molex KK-396 4-pin connectors.
 
     - id: documentacion
       titulo:
@@ -752,15 +750,15 @@ chufe:
     en: 'popusintes'
 
   imagenes:
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-chufe/svg/chufe-esquematico.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-chufe/svg/chufe-esquematico.svg'
       alt:
         es: 'esquemático de chufe v0.1 rev-a'
         en: 'chufe v0.1 rev-a schematic'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-chufe/svg/chufe-placa.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-chufe/svg/chufe-placa.svg'
       alt:
         es: 'placa de chufe v0.1 rev-a'
         en: 'chufe v0.1 rev-a board'
-    - video: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-chufe/mp4/chufe-placa-3d-giro.mp4'
+    - video: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-chufe/mp4/chufe-placa-3d-giro.mp4'
       alt:
         es: 'render 3D de la placa de chufe v0.1 rev-a, girando'
         en: '3D render of the chufe v0.1 rev-a board, turning'
@@ -867,19 +865,19 @@ boton:
     en: 'mcu library'
 
   imagenes:
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-boton/svg/boton-grafico.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-piruetas-boton/svg/boton-grafico.svg'
       alt:
         es: 'gráfico de Boton: la lectura de un botón con rebotes y su valor estable después del antirrebote'
         en: 'Boton plot: a bouncing button reading and its stable value after debouncing'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-boton/svg/boton-umbral.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-piruetas-boton/svg/boton-umbral.svg'
       alt:
         es: 'gráfico de Boton: pulsos sin rebotes de 20 a 100 ms, y solo los que duran más que el antirrebote cambian el valor'
         en: 'Boton plot: clean pulses from 20 to 100 ms, and only the ones longer than the debounce time change the value'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-boton/svg/boton-pulsaciones.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-piruetas-boton/svg/boton-pulsaciones.svg'
       alt:
         es: 'gráfico de Boton: pulsaciones con rebotes cada vez más rápidas, y las de 35 ms se pierden'
         en: 'Boton plot: bouncing presses getting faster, and the 35 ms ones are lost'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-boton/svg/boton-arbol.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-piruetas-boton/svg/boton-arbol.svg'
       alt:
         es: 'estructura de archivos del repositorio de Boton, como treemap'
         en: 'file structure of the Boton repository, as a treemap'
@@ -952,23 +950,23 @@ perilla:
     en: 'mcu library'
 
   imagenes:
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-perilla/svg/perilla-grafico.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-piruetas-perilla/svg/perilla-grafico.svg'
       alt:
         es: 'gráfico de Perilla: la lectura de una perilla y su valor mapeado de 0 a 100'
         en: 'Perilla plot: a knob reading and its value mapped from 0 to 100'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-perilla/svg/perilla-rangos.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-piruetas-perilla/svg/perilla-rangos.svg'
       alt:
         es: 'gráfico de Perilla: el valor mapeado para cada lectura, con los rangos 0-100, 0-255 y 100-0'
         en: 'Perilla plot: the mapped value for every reading, with the ranges 0-100, 0-255 and 100-0'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-perilla/svg/perilla-ruido.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-piruetas-perilla/svg/perilla-ruido.svg'
       alt:
         es: 'gráfico de Perilla: una perilla girada muy lento con ruido, y el valor mapeado saltando entre números vecinos'
         en: 'Perilla plot: a knob turned very slowly with noise, and the mapped value jumping between neighboring numbers'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-perilla/svg/perilla-pico.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-piruetas-perilla/svg/perilla-pico.svg'
       alt:
         es: 'gráfico de Perilla: lecturas de 12 bits de Raspberry Pi Pico, que se pasan de 100 sin setRangoLeido(0, 4095)'
         en: 'Perilla plot: 12-bit Raspberry Pi Pico readings, which go past 100 without setRangoLeido(0, 4095)'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-perilla/svg/perilla-arbol.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2025-piruetas-perilla/svg/perilla-arbol.svg'
       alt:
         es: 'estructura de archivos del repositorio de Perilla, como treemap'
         en: 'file structure of the Perilla repository, as a treemap'
@@ -1043,11 +1041,11 @@ kicad-visor:
     en: 'docs library'
 
   imagenes:
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-kicad-visor/svg/kicad-visor-arbol.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-kicad-visor/svg/kicad-visor-arbol.svg'
       alt:
         es: 'estructura de archivos del repositorio de kicad-visor, como treemap'
         en: 'file structure of the kicad-visor repository, as a treemap'
-    - video: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-chufebu/mp4/chufebu-placa-3d-giro.mp4'
+    - video: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-chufebu/mp4/chufebu-placa-3d-giro.mp4'
       alt:
         es: 'render 3D de la placa de chufebu v0.1 rev-a, girando en loop, hecho con kicad-visor'
         en: '3D render of the chufebu v0.1 rev-a board, turning in a loop, made with kicad-visor'
@@ -1130,15 +1128,15 @@ kicad-retrata:
     en: 'docs library'
 
   imagenes:
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-kicad-retrata/svg/kicad-retrata-arbol.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-kicad-retrata/svg/kicad-retrata-arbol.svg'
       alt:
         es: 'estructura de archivos del repositorio de kicad-retrata, como treemap'
         en: 'file structure of the kicad-retrata repository, as a treemap'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-chufebu/svg/chufebu-esquematico.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-chufebu/svg/chufebu-esquematico.svg'
       alt:
         es: 'esquemático de chufebu v0.1 rev-a, retratado por kicad-retrata'
         en: 'chufebu v0.1 rev-a schematic, captured by kicad-retrata'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-chufebu/svg/chufebu-placa.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-chufebu/svg/chufebu-placa.svg'
       alt:
         es: 'placa de chufebu v0.1 rev-a, retratada por kicad-retrata'
         en: 'chufebu v0.1 rev-a board, captured by kicad-retrata'
@@ -1261,11 +1259,11 @@ atenu:
     en: 'popusintes'
 
   imagenes:
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-atenu/svg/atenu-esquematico.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-atenu/svg/atenu-esquematico.svg'
       alt:
         es: 'esquemático de atenu v0.1 rev-b'
         en: 'atenu v0.1 rev-b schematic'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-atenu/svg/atenu-placa.svg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-atenu/svg/atenu-placa.svg'
       alt:
         es: 'placa de atenu v0.1 rev-b'
         en: 'atenu v0.1 rev-b board'
@@ -1355,25 +1353,112 @@ atenu:
         en: 'hardware licensed under CERN-OHL-P-2.0, and panel and documentation under CC-BY-SA-4.0.'
 
 suma:
-  titulo:
-    es: 'página en mantención'
-    en: 'under maintenance'
+  es: 'suma'
+  en: 'suma'
+  meta:
+    es: '2026'
+    en: '2026'
+  etiqueta:
+    es: 'popusintes'
+    en: 'popusintes'
+
+  imagenes:
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-suma/svg/suma-esquematico.svg'
+      alt:
+        es: 'esquemático de suma v0.1 rev-b'
+        en: 'suma v0.1 rev-b schematic'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-suma/svg/suma-placa.svg'
+      alt:
+        es: 'placa de suma v0.1 rev-b'
+        en: 'suma v0.1 rev-b board'
+
   sections:
-    - titulo: {}
+    - id: descripcion
+      titulo:
+        es: 'descripción'
+        en: 'description'
       content:
-        es: 'próximamente más información sobre este proyecto.'
-        en: 'more information about this project coming soon.'
+        es: |-
+          suma es un mezclador eurorack de hardware abierto, hecho por
+          piruetas, parte de popusintes.
+          suma tres entradas, cada una con su potenciómetro, en una
+          salida, con un amplificador operacional dual TL072.
+          la placa está diseñada en KiCad 10 y el panel en OpenSCAD.
+        en: |-
+          suma is an open source hardware eurorack mixer by piruetas,
+          part of popusintes.
+          It sums three inputs, each with its own potentiometer, into
+          one output, using a TL072 dual op amp.
+          The board is designed in KiCad 10 and the panel in OpenSCAD.
+
+    - id: caracteristicas
+      titulo:
+        es: 'características'
+        en: 'features'
+      content:
+        es: |-
+          3 entradas (jacks mono de 3.5 mm), cada una con su potenciómetro.<br>
+          1 salida con la suma de las entradas.<br>
+          amplificador operacional dual TL072.<br>
+          alimentación por header eurorack de 10 pines (2x05), ±12V, con diodos Schottky de protección contra polaridad inversa.<br>
+          placa de 25 × 100 mm, 2 capas. panel de 5 HP.
+        en: |-
+          3 inputs (3.5 mm mono jacks), each with its own potentiometer.<br>
+          1 output with the sum of the inputs.<br>
+          TL072 dual op amp.<br>
+          Powered by a 10-pin (2x05) eurorack header, ±12V, with Schottky diodes for reverse polarity protection.<br>
+          25 × 100 mm board, 2 layers. 5 HP panel.
+
+    - id: revisiones
+      titulo:
+        es: 'revisiones'
+        en: 'revisions'
+      content:
+        es: |-
+          v0.1 rev-b: noviembre 2026, fabricada y probada. es la revisión actual: corrige las huellas de los diodos y de los potenciómetros (en sentido horario sube el volumen), quita la salida invertida y agrega el panel.<br>
+          v0.1 rev-a: octubre 2026, fabricada en JLCPCB. no funciona tal como viene armada: los diodos de protección y los potenciómetros quedaron al revés.
+        en: |-
+          v0.1 rev-b: November 2026, made and tested. It is the current revision: it fixes the diode and potentiometer footprints (turning clockwise raises the volume), removes the inverted output and adds the panel.<br>
+          v0.1 rev-a: October 2026, made at JLCPCB. It does not work as assembled: the protection diodes and the potentiometers are reversed.
+
+    - id: documentacion
+      titulo:
+        es: 'documentación'
+        en: 'documentation'
+      content:
+        es: |-
+          esquemático, placa y bill of materials: <a href="https://piruetas.xyz/suma/">piruetas.xyz/suma</a><br>
+          archivos fuente de KiCad, OpenSCAD, de fabricación y de armado: <a href="https://github.com/piruetasxyz/suma">github.com/piruetasxyz/suma</a>
+        en: |-
+          schematic, board and bill of materials (in Spanish): <a href="https://piruetas.xyz/suma/">piruetas.xyz/suma</a><br>
+          KiCad, OpenSCAD, fabrication and assembly files: <a href="https://github.com/piruetasxyz/suma">github.com/piruetasxyz/suma</a>
+
+    - id: creditos
+      titulo:
+        es: 'créditos'
+        en: 'credits'
+      content:
+        es: 'Aarón Montoya-Moraga: investigación, esquemático, pcb, fabricación y documentación.'
+        en: 'Aarón Montoya-Moraga: research, schematic, PCB, manufacturing and documentation.'
+
+    - id: licencia
+      titulo:
+        es: 'licencia'
+        en: 'license'
+      content:
+        es: 'hardware bajo CERN-OHL-P-2.0, y panel y documentación bajo CC-BY-SA-4.0.'
+        en: 'hardware licensed under CERN-OHL-P-2.0, and panel and documentation under CC-BY-SA-4.0.'
 
 redondela:
   titulo:
     es: 'página en mantención'
     en: 'under maintenance'
   galeria:
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-redondela/jpg/redondela.jpg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-redondela/jpg/redondela.jpg'
       alt:
         es: 'redondela'
         en: 'redondela'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-redondela/jpg/redondela-02.jpg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2026-piruetas-redondela/jpg/redondela-02.jpg'
       alt:
         es: 'redondela'
         en: 'redondela'
@@ -1388,39 +1473,39 @@ talleres-momentos:
     es: 'Talleres Momentos'
     en: 'Talleres Momentos'
   galeria:
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/jpg/folleto-momentos.jpg'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2023-universidad-diego-portales-talleres-momentos/jpg/folleto-momentos.jpg'
       alt:
         es: 'folleto de Momentos: trayectorias de investigación aplicada, exposición, talleres y charlas, 20 de noviembre al 1 de diciembre, Biblioteca Nicanor Parra'
         en: 'flyer for Momentos: trayectorias de investigación aplicada, exhibition, workshops and talks, november 20 to december 1, Biblioteca Nicanor Parra'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-1.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2023-universidad-diego-portales-talleres-momentos/webp/teaching-1.webp'
       alt:
         es: 'Talleres Momentos en la Universidad Diego Portales, foto 1'
         en: 'Talleres Momentos at Universidad Diego Portales, photo 1'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-2.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2023-universidad-diego-portales-talleres-momentos/webp/teaching-2.webp'
       alt:
         es: 'Talleres Momentos en la Universidad Diego Portales, foto 2'
         en: 'Talleres Momentos at Universidad Diego Portales, photo 2'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-3.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2023-universidad-diego-portales-talleres-momentos/webp/teaching-3.webp'
       alt:
         es: 'Talleres Momentos en la Universidad Diego Portales, foto 3'
         en: 'Talleres Momentos at Universidad Diego Portales, photo 3'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-4.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2023-universidad-diego-portales-talleres-momentos/webp/teaching-4.webp'
       alt:
         es: 'Talleres Momentos en la Universidad Diego Portales, foto 4'
         en: 'Talleres Momentos at Universidad Diego Portales, photo 4'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-5.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2023-universidad-diego-portales-talleres-momentos/webp/teaching-5.webp'
       alt:
         es: 'Talleres Momentos en la Universidad Diego Portales, foto 5'
         en: 'Talleres Momentos at Universidad Diego Portales, photo 5'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-6.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2023-universidad-diego-portales-talleres-momentos/webp/teaching-6.webp'
       alt:
         es: 'Talleres Momentos en la Universidad Diego Portales, foto 6'
         en: 'Talleres Momentos at Universidad Diego Portales, photo 6'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-7.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2023-universidad-diego-portales-talleres-momentos/webp/teaching-7.webp'
       alt:
         es: 'Talleres Momentos en la Universidad Diego Portales, foto 7'
         en: 'Talleres Momentos at Universidad Diego Portales, photo 7'
-    - image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2023-universidad-diego-portales-talleres-momentos/webp/teaching-8.webp'
+    - image: 'https://piruetas.xyz/piruetas-web-media/2023-universidad-diego-portales-talleres-momentos/webp/teaching-8.webp'
       alt:
         es: 'Talleres Momentos en la Universidad Diego Portales, foto 8'
         en: 'Talleres Momentos at Universidad Diego Portales, photo 8'
