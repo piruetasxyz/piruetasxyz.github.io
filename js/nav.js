@@ -37,6 +37,8 @@ const navbarContent = `
             <ol>
                 <li><a href="/proyectos/chufebu/index.html">chufebu</a> (2026)</li>
                 <li><a href="/proyectos/chufe/index.html">chufe</a> (2026)</li>
+                <li><a href="/proyectos/atenu/index.html">atenu</a> (2026)</li>
+                <li><a href="/proyectos/suma/index.html">suma</a> (2026)</li>
             </ol>
 
             <h5><span class="es">bibliotecas micro</span><span class="en">MCU libraries</span></h5>

@@ -384,6 +384,42 @@ proyectos:
         en: 'project in development'
 
     - titulo:
+        es: 'atenu'
+        en: 'atenu'
+      meta:
+        es: '2026'
+        en: '2026'
+      etiqueta:
+        es: 'popusintes'
+        en: 'popusintes'
+      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2022-piruetas-logo/jpg/piruetas-v0.jpg'
+      alt:
+        es: 'atenu'
+        en: 'atenu'
+      enlace: '/proyectos/atenu/index.html'
+      subtitulo:
+        es: 'proyecto en desarrollo'
+        en: 'project in development'
+
+    - titulo:
+        es: 'suma'
+        en: 'suma'
+      meta:
+        es: '2026'
+        en: '2026'
+      etiqueta:
+        es: 'popusintes'
+        en: 'popusintes'
+      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2022-piruetas-logo/jpg/piruetas-v0.jpg'
+      alt:
+        es: 'suma'
+        en: 'suma'
+      enlace: '/proyectos/suma/index.html'
+      subtitulo:
+        es: 'proyecto en desarrollo'
+        en: 'project in development'
+
+    - titulo:
         es: 'Boton'
         en: 'Boton'
       meta:
@@ -1205,6 +1241,26 @@ gerassic-organ:
         en: 'more information about this project coming soon.'
 
 osca:
+  titulo:
+    es: 'página en mantención'
+    en: 'under maintenance'
+  sections:
+    - titulo: {}
+      content:
+        es: 'próximamente más información sobre este proyecto.'
+        en: 'more information about this project coming soon.'
+
+atenu:
+  titulo:
+    es: 'página en mantención'
+    en: 'under maintenance'
+  sections:
+    - titulo: {}
+      content:
+        es: 'próximamente más información sobre este proyecto.'
+        en: 'more information about this project coming soon.'
+
+suma:
   titulo:
     es: 'página en mantención'
     en: 'under maintenance'

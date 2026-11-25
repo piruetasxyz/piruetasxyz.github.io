@@ -56,6 +56,8 @@ const PAGINAS = [
   { clave: 'maquinitas-tidal', archivo: 'proyectos/maquinitas-tidal/index.html' },
   { clave: 'gerassic-organ', archivo: 'proyectos/gerassic-organ/index.html' },
   { clave: 'osca', archivo: 'proyectos/osca/index.html' },
+  { clave: 'atenu', archivo: 'proyectos/atenu/index.html' },
+  { clave: 'suma', archivo: 'proyectos/suma/index.html' },
   { clave: 'boton', archivo: 'proyectos/boton/index.html' },
   { clave: 'perilla', archivo: 'proyectos/perilla/index.html' },
   { clave: 'kicad-visor', archivo: 'proyectos/kicad-visor/index.html' },
