@@ -312,24 +312,6 @@ personas:
 proyectos:
   proyectos:
     - titulo:
-        es: 'chufebu'
-        en: 'chufebu'
-      meta:
-        es: '2026'
-        en: '2026'
-      etiqueta:
-        es: 'popusintes'
-        en: 'popusintes'
-      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-chufebu/svg/chufebu-esquematico.svg'
-      alt:
-        es: 'esquemático de chufebu'
-        en: 'chufebu schematic'
-      enlace: '/proyectos/chufebu/index.html'
-      subtitulo:
-        es: 'bus de alimentación eurorack de hardware abierto'
-        en: 'open source hardware eurorack power bus'
-
-    - titulo:
         es: 'chufe'
         en: 'chufe'
       meta:
@@ -348,40 +330,22 @@ proyectos:
         en: 'open source hardware eurorack power supply'
 
     - titulo:
-        es: 'parla'
-        en: 'parla'
+        es: 'chufebu'
+        en: 'chufebu'
       meta:
-        es: '2025'
-        en: '2025'
+        es: '2026'
+        en: '2026'
       etiqueta:
         es: 'popusintes'
         en: 'popusintes'
-      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-parla/jpg/parla-canasto.jpg'
+      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2026-piruetas-chufebu/svg/chufebu-esquematico.svg'
       alt:
-        es: 'parla'
-        en: 'parla'
-      enlace: '/proyectos/parla/index.html'
+        es: 'esquemático de chufebu'
+        en: 'chufebu schematic'
+      enlace: '/proyectos/chufebu/index.html'
       subtitulo:
-        es: 'pequeño parlante con amplificador mono para sintetizadores'
-        en: 'small speaker with mono amplifier for synthesizers'
-
-    - titulo:
-        es: 'osca'
-        en: 'osca'
-      meta:
-        es: 'soon'
-        en: 'soon'
-      etiqueta:
-        es: 'popusintes'
-        en: 'popusintes'
-      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2022-piruetas-logo/jpg/piruetas-v0.jpg'
-      alt:
-        es: 'osca'
-        en: 'osca'
-      enlace: '/proyectos/osca/index.html'
-      subtitulo:
-        es: 'proyecto en desarrollo'
-        en: 'project in development'
+        es: 'bus de alimentación eurorack de hardware abierto'
+        en: 'open source hardware eurorack power bus'
 
     - titulo:
         es: 'atenu'
@@ -415,6 +379,42 @@ proyectos:
         es: 'suma'
         en: 'suma'
       enlace: '/proyectos/suma/index.html'
+      subtitulo:
+        es: 'proyecto en desarrollo'
+        en: 'project in development'
+
+    - titulo:
+        es: 'parla'
+        en: 'parla'
+      meta:
+        es: '2025'
+        en: '2025'
+      etiqueta:
+        es: 'popusintes'
+        en: 'popusintes'
+      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2025-piruetas-parla/jpg/parla-canasto.jpg'
+      alt:
+        es: 'parla'
+        en: 'parla'
+      enlace: '/proyectos/parla/index.html'
+      subtitulo:
+        es: 'pequeño parlante con amplificador mono para sintetizadores'
+        en: 'small speaker with mono amplifier for synthesizers'
+
+    - titulo:
+        es: 'osca'
+        en: 'osca'
+      meta:
+        es: 'soon'
+        en: 'soon'
+      etiqueta:
+        es: 'popusintes'
+        en: 'popusintes'
+      image: 'https://cdn.jsdelivr.net/gh/piruetasxyz/piruetas-web-media@main/2022-piruetas-logo/jpg/piruetas-v0.jpg'
+      alt:
+        es: 'osca'
+        en: 'osca'
+      enlace: '/proyectos/osca/index.html'
       subtitulo:
         es: 'proyecto en desarrollo'
         en: 'project in development'

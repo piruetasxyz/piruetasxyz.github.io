@@ -35,22 +35,22 @@ const navbarContent = `
         <div class="nav-contenido">
             <h5>popusintes</h5>
             <ol>
-                <li><a href="/proyectos/chufebu/index.html">chufebu</a> (2026)</li>
                 <li><a href="/proyectos/chufe/index.html">chufe</a> (2026)</li>
+                <li><a href="/proyectos/chufebu/index.html">chufebu</a> (2026)</li>
                 <li><a href="/proyectos/atenu/index.html">atenu</a> (2026)</li>
                 <li><a href="/proyectos/suma/index.html">suma</a> (2026)</li>
             </ol>
 
             <h5><span class="es">bibliotecas micro</span><span class="en">MCU libraries</span></h5>
             <ol>
-                <li><a href="/proyectos/boton/index.html">Boton</a></li>
-                <li><a href="/proyectos/perilla/index.html">Perilla</a></li>
+                <li><a href="/proyectos/boton/index.html">Boton</a> (2025)</li>
+                <li><a href="/proyectos/perilla/index.html">Perilla</a> (2025)</li>
             </ol>
 
             <h5><span class="es">bibliotecas docs</span><span class="en">docs libraries</span></h5>
             <ol>
-                <li><a href="/proyectos/kicad-visor/index.html">kicad-visor</a></li>
-                <li><a href="/proyectos/kicad-retrata/index.html">kicad-retrata</a></li>
+                <li><a href="/proyectos/kicad-visor/index.html">kicad-visor</a> (2026)</li>
+                <li><a href="/proyectos/kicad-retrata/index.html">kicad-retrata</a> (2026)</li>
             </ol>
 
             <!-- ocultos por ahora: redondela, gerassic organ, talleres momentos
@@ -77,11 +77,11 @@ const navbarContent = `
         <div class="nav-contenido">
             <!-- clientes:inicio (generado por scripts/generar-clientes.js desde datos/clientes.yaml) -->
             <ol>
-                <li><a href="/clientes/rocio-c-gomez/index.html">rocío c. gómez</a></li>
-                <li><a href="/clientes/claudia-gonzalez-godoy/index.html">claudia gonzález godoy</a></li>
-                <li><a href="/clientes/biblioteca-cuir/index.html">bibliotecaCuir</a></li>
-                <li><a href="/clientes/sokio/index.html">sokio</a></li>
-                <li><a href="/clientes/universidad-diego-portales/index.html">universidad diego portales</a></li>
+                <li><a href="/clientes/rocio-c-gomez/index.html">rocío c. gómez</a> (2026)</li>
+                <li><a href="/clientes/claudia-gonzalez-godoy/index.html">claudia gonzález godoy</a> (2026)</li>
+                <li><a href="/clientes/biblioteca-cuir/index.html">bibliotecaCuir</a> (2026)</li>
+                <li><a href="/clientes/sokio/index.html">sokio</a> (2025)</li>
+                <li><a href="/clientes/universidad-diego-portales/index.html">universidad diego portales</a> (2023)</li>
             </ol>
             <!-- clientes:fin -->
         </div>

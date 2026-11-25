@@ -100,7 +100,13 @@ function hornearMenu(clientes) {
     .filter((c) => c.enlace)
     .map((c) => {
       const nombre = escaparHtml(c.nombreMenu || (c.nombre || '').toLowerCase());
-      return `                <li><a href="${escaparHtml(c.enlace)}">${nombre}</a></li>`;
+      // año entre parentesis, como en proyectos: "(2025)", o
+      // "(2025–2026)" si el periodo cruza de año
+      const anhoInicio = String(c.inicio != null ? c.inicio : c.anho || '').slice(0, 4);
+      const anhoFin = String(c.fin || '').slice(0, 4);
+      const anhos = anhoFin && anhoFin !== anhoInicio ? `${anhoInicio}–${anhoFin}` : anhoInicio;
+      const sufijo = anhos ? ` (${escaparHtml(anhos)})` : '';
+      return `                <li><a href="${escaparHtml(c.enlace)}">${nombre}</a>${sufijo}</li>`;
     })
     .join('\n');
   const lista = `            <ol>\n${items}\n            </ol>\n`;
