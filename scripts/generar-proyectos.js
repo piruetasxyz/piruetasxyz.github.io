@@ -58,6 +58,7 @@ const PAGINAS = [
   { clave: 'osca', archivo: 'proyectos/osca/index.html' },
   { clave: 'atenu', archivo: 'proyectos/atenu/index.html' },
   { clave: 'suma', archivo: 'proyectos/suma/index.html' },
+  { clave: 'frambu', archivo: 'proyectos/frambu/index.html' },
   { clave: 'boton', archivo: 'proyectos/boton/index.html' },
   { clave: 'perilla', archivo: 'proyectos/perilla/index.html' },
   { clave: 'kicad-visor', archivo: 'proyectos/kicad-visor/index.html' },

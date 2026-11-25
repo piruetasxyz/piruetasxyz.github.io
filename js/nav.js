@@ -41,6 +41,11 @@ const navbarContent = `
                 <li><a href="/proyectos/suma/index.html">suma</a> (2026)</li>
             </ol>
 
+            <h5>popucompus</h5>
+            <ol>
+                <li><a href="/proyectos/frambu/index.html">frambu</a> (2026)</li>
+            </ol>
+
             <h5><span class="es">bibliotecas micro</span><span class="en">MCU libraries</span></h5>
             <ol>
                 <li><a href="/proyectos/boton/index.html">Boton</a> (2025)</li>
